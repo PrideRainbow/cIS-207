@@ -140,3 +140,192 @@ final class APICaller{
                 guard let results =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] else {
                     print("error in getting JSON")
                     return
+                }
+//                print(results)
+                if let message = results["message"] as? String {
+                    completion(.failure(message))
+                }
+//                print(results)
+                let chartData = ChartData(results: results)
+//                print(chartData)
+//                print("loaded chart data for \(searchSymbol). found \(chartData.close.count) pieces of data for close")
+                
+                completion(.chartSuccess(chartData))
+            } catch {
+                print("Cannot Decode JSON Response")
+                completion(.failure(error.localizedDescription))
+                return
+            }
+        }
+        task.resume()
+    }
+    
+    func getChartDataWithSplitsAndDividends(searchSymbol: String, range: String, completion: @escaping (ConnectionResult) -> Void)
+    {
+//    let urlString = "https://yfapi.net/v8/finance/chart/aapl?range=max&region=US&interval=1mo&lang=en&events=div%2Csplit"
+        let urlString = "https://yfapi.net/v8/finance/chart/\(searchSymbol)?range=max&region=US&interval=1mo&lang=en&events=div%2Csplit"
+        
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+            guard let data = data else { return }
+
+            do {
+                guard let results =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] else {
+                    print("error in getting JSON")
+                    return
+                }
+//                print(results)
+                if let message = results["message"] as? String {
+                    completion(.failure(message))
+                }
+//                print(results)
+                let chartData = ChartData(results: results)
+//                print(chartData)
+
+                completion(.chartSuccess(chartData))
+            } catch {
+                print("Cannot Decode JSON Response")
+                completion(.failure(error.localizedDescription))
+                return
+            }
+        }
+        task.resume()
+    }
+    
+    // MARK: Reccomendations by symbol
+    /*
+     Sample response:
+      {
+        "finance": {
+          "result": [
+            {
+              "symbol": "PYPL",
+              "recommendedSymbols": [
+                {
+                  "symbol": "SQ",
+                  "score": 0.228741
+                },
+                {
+                  "symbol": "NVDA",
+                  "score": 0.162863
+                },
+                {
+                  "symbol": "V",
+                  "score": 0.15888
+                },
+                {
+                  "symbol": "SHOP",
+                  "score": 0.158117
+                },
+                {
+                  "symbol": "CRM",
+                  "score": 0.154448
+                }
+              ]
+            }
+          ],
+          "error": null
+        }
+      }
+     */
+    func getReccomendationsBySymbol(symbol: String, completion: @escaping (ConnectionResult) -> Void) {
+        // https://yfapi.net/v6/finance/recommendationsbysymbol/PYPL
+        let urlString = Constants.reccomdationsBySymbolURL + symbol.uppercased()
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) {
+            (data, response, error) in
+            guard let data = data else { return }
+            
+            // Check for Error Message from API
+            guard let results = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
+
+            // check for error message from API Call
+            if let message = results["message"] as? String, let hint = results["hint"] as? String {
+                print("Message Found: \(message), Hint: \(hint)")
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            if let response = try? decoder.decode(StockReccomendations.self, from: data) {
+//                print(response)
+                completion(.stockReccomendations(response.finance.result))
+            }
+            else {
+                completion(.failure("Failed to get Stock Reccomendations"))
+            }
+        }
+        task.resume()
+    }
+    
+    // MARK: Quote summary contains a description website and other key statistics. BTC-USD does not contain a lot of information so a lot of the model in optional...
+    func getQuoteSummary(symbol: String, completion: @escaping (ConnectionResult)-> Void)
+    {
+        let urlString = Constants.quoteSummaryURL(symbol: symbol)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) {
+            (data, response, error) in
+            guard let data = data else { return }
+            
+            // Check for Error Message from API
+            guard let results = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
+
+//            print(results)
+            // check for error message from API Call
+            if let message = results["message"] as? String, let hint = results["hint"] as? String {
+                print("Message Found: \(message), Hint: \(hint)")
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            if let response = try? decoder.decode(Summary.self, from: data) {
+//                print(response)
+                completion(.quoteSummarySuccess(response.quoteSummary.result))
+            }
+            else {
+                completion(.failure("Failed to get Quote Summary"))
+            }
+        }
+        task.resume()
+    }
+    
+    
+    // I used quickType.io to decode the data. It was having trouble with the ExchangeTimeZone Enum, so I changed that to String and it works great now.
+    func getMarketData(completion: @escaping (ConnectionResult) -> Void) {
+        let urlString = Constants.marketSummaryURL
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) {
+            (data, response, error) in
+            guard let data = data else { return }
+            
+            guard let results = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
+
+            // check for error message from API Call
+            if let message = results["message"] as? String, let hint = results["hint"] as? String {
+                print("Message Found: \(message), Hint: \(hint)")
+                return
+            }
