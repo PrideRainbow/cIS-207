@@ -329,3 +329,21 @@ final class APICaller{
                 print("Message Found: \(message), Hint: \(hint)")
                 return
             }
+            guard let json = try? JSONSerialization.data(withJSONObject: results) else {return}
+            let decoder = JSONDecoder()
+            if let response = try? decoder.decode(CompleteMarketSummary.self, from: json) {
+//                print(response)
+                completion(.marketSummarySuccess(response.marketSummaryResponse.result))
+//                self.marketData = response.marketSummaryResponse.result
+            }
+            
+        }
+        task.resume()
+    }
+    
+    
+    
+    
+    
+}
+
