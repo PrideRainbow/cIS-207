@@ -7,4 +7,13 @@
       "size" : "20x20"
     },
     {
-      "filename" :
+      "filename" : "60.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "29.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
