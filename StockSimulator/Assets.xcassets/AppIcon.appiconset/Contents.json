@@ -91,4 +91,13 @@
       "size" : "29x29"
     },
     {
-      "fi
+      "filename" : "40.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "80.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x4
