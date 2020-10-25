@@ -100,4 +100,15 @@
       "filename" : "80.png",
       "idiom" : "ipad",
       "scale" : "2x",
-      "size" : "40x4
+      "size" : "40x40"
+    },
+    {
+      "filename" : "50.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "50x50"
+    },
+    {
+      "filename" : "100.png",
+      "idiom" : "ipad",
+      "scale
