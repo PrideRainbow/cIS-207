@@ -122,4 +122,15 @@
     },
     {
       "filename" : "144.png",
-      "idiom" : "ip
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "72x72"
+    },
+    {
+      "filename" : "76.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "filename"
