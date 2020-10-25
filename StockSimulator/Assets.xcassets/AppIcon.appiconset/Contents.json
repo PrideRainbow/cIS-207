@@ -111,4 +111,15 @@
     {
       "filename" : "100.png",
       "idiom" : "ipad",
-      "scale
+      "scale" : "2x",
+      "size" : "50x50"
+    },
+    {
+      "filename" : "72.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "72x72"
+    },
+    {
+      "filename" : "144.png",
+      "idiom" : "ip
