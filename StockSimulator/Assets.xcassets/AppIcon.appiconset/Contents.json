@@ -152,4 +152,12 @@
     },
     {
       "filename" : "48.png",
-      
+      "idiom" : "watch",
+      "role" : "notificationCenter",
+      "scale" : "2x",
+      "size" : "24x24",
+      "subtype" : "38mm"
+    },
+    {
+      "filename" : "55.png",
+      "idiom" : "watch"
