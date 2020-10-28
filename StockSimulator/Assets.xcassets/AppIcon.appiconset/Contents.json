@@ -181,4 +181,13 @@
       "size" : "29x29"
     },
     {
-      "idio
+      "idiom" : "watch",
+      "role" : "notificationCenter",
+      "scale" : "2x",
+      "size" : "33x33",
+      "subtype" : "45mm"
+    },
+    {
+      "filename" : "80.png",
+      "idiom" : "watch",
+    
