@@ -160,4 +160,13 @@
     },
     {
       "filename" : "55.png",
-      "idiom" : "watch"
+      "idiom" : "watch",
+      "role" : "notificationCenter",
+      "scale" : "2x",
+      "size" : "27.5x27.5",
+      "subtype" : "42mm"
+    },
+    {
+      "filename" : "58.png",
+      "idiom" : "watch",
+      "role" : "companio
