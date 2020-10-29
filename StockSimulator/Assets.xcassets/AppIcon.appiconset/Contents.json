@@ -190,4 +190,12 @@
     {
       "filename" : "80.png",
       "idiom" : "watch",
-    
+      "role" : "appLauncher",
+      "scale" : "2x",
+      "size" : "40x40",
+      "subtype" : "38mm"
+    },
+    {
+      "filename" : "88.png",
+      "idiom" : "watch",
+      "role" : "appLauncher"
