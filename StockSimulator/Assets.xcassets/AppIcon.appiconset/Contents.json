@@ -208,3 +208,15 @@
       "role" : "appLauncher",
       "scale" : "2x",
       "size" : "46x46",
+      "subtype" : "41mm"
+    },
+    {
+      "filename" : "100.png",
+      "idiom" : "watch",
+      "role" : "appLauncher",
+      "scale" : "2x",
+      "size" : "50x50",
+      "subtype" : "44mm"
+    },
+    {
+      "i
