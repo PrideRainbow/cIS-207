@@ -219,4 +219,12 @@
       "subtype" : "44mm"
     },
     {
-      "i
+      "idiom" : "watch",
+      "role" : "appLauncher",
+      "scale" : "2x",
+      "size" : "51x51",
+      "subtype" : "45mm"
+    },
+    {
+      "filename" : "172.png",
+      
