@@ -227,4 +227,12 @@
     },
     {
       "filename" : "172.png",
-      
+      "idiom" : "watch",
+      "role" : "quickLook",
+      "scale" : "2x",
+      "size" : "86x86",
+      "subtype" : "38mm"
+    },
+    {
+      "filename" : "196.png",
+      "idiom" : "watc
