@@ -264,4 +264,15 @@
     },
     {
       "filename" : "16.png",
-      "idiom" : "mac
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "32.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "filen
