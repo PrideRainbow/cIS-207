@@ -10,4 +10,14 @@
           "red" : "0.000"
         }
       },
-      "idiom" : "un
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-sp
