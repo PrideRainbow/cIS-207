@@ -28,4 +28,11 @@
           "red" : "0.462"
         }
       },
-      "idio
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
