@@ -20,4 +20,9 @@ struct AccountRow: View {
         vm = AccountViewModel(account: self.account)
     }
     
-    var body
+    var body: some View {
+        HStack (alignment: .firstTextBaseline){
+            Text(account.wrappedName)
+                .font(.title3)
+                .fontWeight(.bold)
+            Spac
