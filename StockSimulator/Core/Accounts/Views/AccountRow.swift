@@ -11,4 +11,13 @@ struct AccountRow: View {
     
     @Environment(\.managedObjectContext) var moc // CoreData
     
-    var vm: Acc
+    var vm: AccountViewModel
+    var account: Account
+    
+    init(account: Account)
+    {
+        self.account = account
+        vm = AccountViewModel(account: self.account)
+    }
+    
+    var body
