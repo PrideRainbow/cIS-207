@@ -25,4 +25,8 @@ struct AccountRow: View {
             Text(account.wrappedName)
                 .font(.title3)
                 .fontWeight(.bold)
-            Spac
+            Spacer()
+            VStack(alignment: .trailing){
+                Text(String(format: "$%.2f", account.currentValue))
+                    .font(.headline)
+                Text(account.percentC
