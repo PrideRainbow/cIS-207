@@ -29,4 +29,10 @@ struct AccountRow: View {
             VStack(alignment: .trailing){
                 Text(String(format: "$%.2f", account.currentValue))
                     .font(.headline)
-                Text(account.percentC
+                Text(account.percentChange)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+            }
+        }
+        .onAppear(perform: updateAccountValue)
+        .backgroun
