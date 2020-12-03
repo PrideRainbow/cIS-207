@@ -35,4 +35,14 @@ struct AccountRow: View {
             }
         }
         .onAppear(perform: updateAccountValue)
-        .backgroun
+        .background {
+            Color.theme.background
+                .opacity(0.001)
+        }
+    }
+    
+    func updateAccountValue()
+    {
+        
+        vm.updateAssetValues()
+        var stockSymbols = [
