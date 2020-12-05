@@ -48,4 +48,8 @@ struct AccountRow: View {
         var stockSymbols = [String]()
         if let theTransactionsSet = self.account.transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction] {
             for t in theTransactions {
-        
+                if let theStock = t.stock {
+                    if !stockSymbols.contains(theStock.wrappedSymbol) {
+                        stockSymbols.append(theStock.wrappedSymbol)
+                    }
+                
