@@ -52,4 +52,13 @@ struct AccountRow: View {
                     if !stockSymbols.contains(theStock.wrappedSymbol) {
                         stockSymbols.append(theStock.wrappedSymbol)
                     }
-                
+                }
+            }
+    
+            var searchString = ""
+            for s in stockSymbols
+            {
+                searchString += s+","
+            }
+            
+            let
