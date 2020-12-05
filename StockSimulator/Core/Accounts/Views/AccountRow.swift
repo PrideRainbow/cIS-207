@@ -61,4 +61,8 @@ struct AccountRow: View {
                 searchString += s+","
             }
             
-            let
+            let apiCaller = APICaller.shared
+            apiCaller.getQuoteData(searchSymbols: searchString) {
+                connectionResult in
+                
+                switch connectionRe
