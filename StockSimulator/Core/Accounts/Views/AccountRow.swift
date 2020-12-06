@@ -71,4 +71,7 @@ struct AccountRow: View {
                         for snapshot in theStocks
                         {
                             let matchingTransactions = theTransactions.filter({ t in
-                                return t.stock?.wrap
+                                return t.stock?.wrappedSymbol == snapshot.symbol
+                            })
+                            for t in matchingTransactions {
+                                t.stock?.updateValuesFromStockSnapshot(snaps
