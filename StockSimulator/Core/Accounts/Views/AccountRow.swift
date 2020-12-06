@@ -68,4 +68,7 @@ struct AccountRow: View {
                 switch connectionResult {
                     case .success(let theStocks):
                         // link the stocks to the current stock prices, update the values,
-                        for snap
+                        for snapshot in theStocks
+                        {
+                            let matchingTransactions = theTransactions.filter({ t in
+                                return t.stock?.wrap
