@@ -65,4 +65,7 @@ struct AccountRow: View {
             apiCaller.getQuoteData(searchSymbols: searchString) {
                 connectionResult in
                 
-                switch connectionRe
+                switch connectionResult {
+                    case .success(let theStocks):
+                        // link the stocks to the current stock prices, update the values,
+                        for snap
