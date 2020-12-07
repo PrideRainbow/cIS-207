@@ -74,4 +74,11 @@ struct AccountRow: View {
                                 return t.stock?.wrappedSymbol == snapshot.symbol
                             })
                             for t in matchingTransactions {
-                                t.stock?.updateValuesFromStockSnapshot(snaps
+                                t.stock?.updateValuesFromStockSnapshot(snapshot: snapshot)
+                            }
+                        }
+                        try? moc.save()
+                        
+
+                    case .failure(let error):
+       
