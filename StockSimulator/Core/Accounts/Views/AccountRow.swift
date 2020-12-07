@@ -81,4 +81,9 @@ struct AccountRow: View {
                         
 
                     case .failure(let error):
-       
+                        print(error)
+//                        errorMessage = error
+//                        showingErrorAlert = true
+                    
+                    default:
+   
