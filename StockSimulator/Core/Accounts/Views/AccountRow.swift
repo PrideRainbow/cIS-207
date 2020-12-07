@@ -86,4 +86,12 @@ struct AccountRow: View {
 //                        showingErrorAlert = true
                     
                     default:
-   
+                        print("ConnectionResult is not success or failure")
+                }
+            }
+        }
+    }
+}
+
+struct AccountRow_Previews: PreviewProvider {
+    static var previe
