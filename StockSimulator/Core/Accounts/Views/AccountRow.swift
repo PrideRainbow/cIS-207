@@ -94,4 +94,7 @@ struct AccountRow: View {
 }
 
 struct AccountRow_Previews: PreviewProvider {
-    static var previe
+    static var previews: some View {
+        AccountRow(account: Account())
+    }
+}
