@@ -65,3 +65,44 @@ struct AccountsView: View {
             .navigationTitle("Accounts")
             .onAppear(perform: loadData)
             .background {
+                if let ac = selectedAccount {
+                    NavigationLink(destination: AccountView(account: ac), isActive: $showDetailView) {
+                        EmptyView()
+                    }
+                }
+                else {
+                    EmptyView()
+                }
+            }
+            
+
+        }
+        .navigationViewStyle(.stack)
+        
+    }
+    
+    func loadData () {
+        
+        for account in accounts {
+            let vm = AccountViewModel(account: account)
+            vm.updateAssetValues()
+        }
+
+    }
+    
+    
+    
+    
+}
+
+struct AccountsView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        let context = dev.dataController.container.viewContext
+        return AccountsView()
+            .environment(\.managedObjectContext, context)
+        
+//        AccountsView()
+//            .environment(\.managedObjectContext, dev.dataController.container.viewContext)
+    }
+}
