@@ -17,4 +17,9 @@ struct AssetView: View {
     var asset: Asset
     var account: Account
     
-    var b
+    var body: some View {
+        
+        List {
+            StockBasicView(stockSnapshot: StockSnapshot(stock: asset.stock))
+            ChartView(symbol: asset.stock.wrappedSymbol)
+//                ChartView(stockSnapsho
