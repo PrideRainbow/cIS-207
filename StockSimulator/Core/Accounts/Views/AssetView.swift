@@ -22,4 +22,10 @@ struct AssetView: View {
         List {
             StockBasicView(stockSnapshot: StockSnapshot(stock: asset.stock))
             ChartView(symbol: asset.stock.wrappedSymbol)
-//                ChartView(stockSnapsho
+//                ChartView(stockSnapshot: StockSnapshot(stock: asset.stock))
+                .frame(height: 300)
+          
+            yourSharesSection
+            .font(.body)
+            
+            Section(head
