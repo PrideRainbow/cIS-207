@@ -28,4 +28,9 @@ struct AssetView: View {
             yourSharesSection
             .font(.body)
             
-            Section(head
+            Section(header: Text("Trade Info")) {
+                TradeFormView(account: account, stockSnapshot: StockSnapshot(stock: asset.stock))
+            }
+            
+        }
+        .navigationTitle(asset.stock.wrappe
