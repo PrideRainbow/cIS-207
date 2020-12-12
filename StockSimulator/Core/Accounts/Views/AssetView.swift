@@ -33,4 +33,14 @@ struct AssetView: View {
             }
             
         }
-        .navigationTitle(asset.stock.wrappe
+        .navigationTitle(asset.stock.wrappedSymbol)
+    }
+    
+
+}
+
+struct AssetView_Previews: PreviewProvider {
+    static var previews: some View {
+        let account = dev.sampleAccount
+        let stock = dev.sampleStock
+ 
