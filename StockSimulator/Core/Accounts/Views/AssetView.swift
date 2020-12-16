@@ -43,4 +43,11 @@ struct AssetView_Previews: PreviewProvider {
     static var previews: some View {
         let account = dev.sampleAccount
         let stock = dev.sampleStock
- 
+        AssetView(asset: Asset(transactions: [], stock: stock), account:account)
+    }
+}
+
+extension AssetView {
+    
+    private var yourSharesSection: some View {
+        Sec
