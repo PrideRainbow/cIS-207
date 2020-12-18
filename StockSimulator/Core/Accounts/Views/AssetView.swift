@@ -55,4 +55,10 @@ extension AssetView {
                 Text("Market Value:")
                 Spacer()
                 Text(String(format: "$%.2f", asset.totalValue))
-                    .f
+                    .foregroundColor(Color.theme.secondaryText)
+            }
+            
+            HStack {
+                Text("Unrealized Gain:")
+                Spacer()
+                Text(String(format: "$%.2f", a
