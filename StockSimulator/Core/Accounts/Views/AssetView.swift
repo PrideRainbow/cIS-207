@@ -50,4 +50,9 @@ struct AssetView_Previews: PreviewProvider {
 extension AssetView {
     
     private var yourSharesSection: some View {
-        Sec
+        Section(header: Text("Your Shares")) {
+            HStack{
+                Text("Market Value:")
+                Spacer()
+                Text(String(format: "$%.2f", asset.totalValue))
+                    .f
