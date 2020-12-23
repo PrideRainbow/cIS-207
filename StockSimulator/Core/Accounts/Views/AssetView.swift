@@ -66,4 +66,8 @@ extension AssetView {
             }
             HStack {
                 Text("Day Gain/Loss:")
- 
+                Spacer()
+                Text(String(format: "$%.2f", asset.amountChange24h))
+                    .foregroundColor(asset.amountChange24h >= 0 ? Color.theme.green : Color.theme.red)
+            }
+           
