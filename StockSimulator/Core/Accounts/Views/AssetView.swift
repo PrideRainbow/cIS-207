@@ -61,4 +61,9 @@ extension AssetView {
             HStack {
                 Text("Unrealized Gain:")
                 Spacer()
-                Text(String(format: "$%.2f", a
+                Text(String(format: "$%.2f", asset.amountChange))
+                    .foregroundColor(asset.amountChange >= 0 ? Color.theme.green : Color.theme.red)
+            }
+            HStack {
+                Text("Day Gain/Loss:")
+ 
