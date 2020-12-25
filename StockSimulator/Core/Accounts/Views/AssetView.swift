@@ -80,4 +80,8 @@ extension AssetView {
                 Text("Average Price:")
                 Spacer()
                 Text(String(format: "$%.2f", asset.averagePurchasePrice))
-           
+                    .foregroundColor(Color.theme.secondaryText)
+            }
+        }
+    }
+}
