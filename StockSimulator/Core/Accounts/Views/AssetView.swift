@@ -74,4 +74,10 @@ extension AssetView {
                 Text("Quantity:")
                 Spacer()
                 Text(String(format: "%.2f", asset.totalShares))
-                    .foregroundColor(Color.theme.secondaryTex
+                    .foregroundColor(Color.theme.secondaryText)
+            }
+            HStack {
+                Text("Average Price:")
+                Spacer()
+                Text(String(format: "$%.2f", asset.averagePurchasePrice))
+           
