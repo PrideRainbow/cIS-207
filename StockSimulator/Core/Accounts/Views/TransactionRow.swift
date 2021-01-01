@@ -15,4 +15,7 @@ struct TransactionRow: View {
             HStack {
                 Text("\(transaction.eventType ?? "Unknown"): ")
                     .font(.headline)
-      
+                Spacer()
+                Text("Cost Basis: \(transaction.costBasis.asCurrencyWith6Decimals())")
+                    .font(.headline)
+                    .foregroundColor(Color.theme.green)
