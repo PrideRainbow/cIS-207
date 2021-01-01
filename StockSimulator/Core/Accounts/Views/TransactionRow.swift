@@ -26,4 +26,6 @@ struct TransactionRow: View {
                     .font(.subheadline)
                     .foregroundColor(Color.theme.secondaryText)
                 Spacer()
-                Text("\(transaction.numShares > 0.01 ? transaction.numShares.formattedWithAbbreviations(): transaction.numShares.asDecimalWith6Dec
+                Text("\(transaction.numShares > 0.01 ? transaction.numShares.formattedWithAbbreviations(): transaction.numShares.asDecimalWith6Decimals()) shares of \(transaction.stock?.wrappedSymbol ?? "Unknown") at price \(transaction.purchasePrice.asCurrencyWith2Decimals())")
+                    .font(.body)
+                   
