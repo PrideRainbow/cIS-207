@@ -19,3 +19,9 @@ struct TransactionRow: View {
                 Text("Cost Basis: \(transaction.costBasis.asCurrencyWith6Decimals())")
                     .font(.headline)
                     .foregroundColor(Color.theme.green)
+
+            }
+            HStack {
+                Text("\(transaction.wrappedBuyDate.asShortDateString())")
+                    .font(.subheadline)
+                    .foregro
