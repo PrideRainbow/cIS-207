@@ -24,4 +24,6 @@ struct TransactionRow: View {
             HStack {
                 Text("\(transaction.wrappedBuyDate.asShortDateString())")
                     .font(.subheadline)
-                    .foregro
+                    .foregroundColor(Color.theme.secondaryText)
+                Spacer()
+                Text("\(transaction.numShares > 0.01 ? transaction.numShares.formattedWithAbbreviations(): transaction.numShares.asDecimalWith6Dec
