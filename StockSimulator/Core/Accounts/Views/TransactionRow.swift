@@ -39,4 +39,7 @@ struct TransactionRow: View {
 }
 
 struct TransactionRow_Previews: PreviewProvider {
-    s
+    static var previews: some View {
+        TransactionRow(transaction: dev.sampleTransaction)
+    }
+}
