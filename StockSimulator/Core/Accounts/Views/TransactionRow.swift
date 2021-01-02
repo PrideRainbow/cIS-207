@@ -28,4 +28,15 @@ struct TransactionRow: View {
                 Spacer()
                 Text("\(transaction.numShares > 0.01 ? transaction.numShares.formattedWithAbbreviations(): transaction.numShares.asDecimalWith6Decimals()) shares of \(transaction.stock?.wrappedSymbol ?? "Unknown") at price \(transaction.purchasePrice.asCurrencyWith2Decimals())")
                     .font(.body)
-                   
+                    .foregroundColor(Color.theme.secondaryText)
+                
+            }
+        }
+        
+        
+        
+    }
+}
+
+struct TransactionRow_Previews: PreviewProvider {
+    s
