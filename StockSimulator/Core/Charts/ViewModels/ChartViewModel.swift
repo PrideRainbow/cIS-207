@@ -52,3 +52,65 @@ final class ChartViewModel: ObservableObject {
                         completion(.failure(errorMessage))
                     }
                 default:
+                    print("loading chart data was not a success or failure")
+                    self.chartData = ChartData(emptyData: true)
+                    self.closeData = []
+                    self.closeDataNormalized = []
+                    completion(.failure("Error loading ChartData"))
+            }
+        }
+    }
+    
+    
+    func setData(from chartData: ChartData)
+    {
+        self.chartData = chartData
+        self.closeData = chartData.wrappedClose
+        self.closeDataNormalized = chartData.wrappedClose.normalized
+        self.maxY = getMaxY()
+//        self.maxY = self.chartData.close.max() ?? 0
+//        self.minY = self.chartData.close.min() ?? 0
+        self.minY = getMinY()
+        self.medY = (self.maxY + self.minY) / 2
+        self.q1 =  (self.medY + self.minY) / 2
+        self.q3 = (self.maxY + self.medY) / 2
+        
+        if let last = self.chartData.close.last ?? 0, let first = self.chartData.close.first ?? 0 {
+            let priceChange = last - first
+            self.lineColor = priceChange >= 0 ?  Color.theme.green : Color.theme.red
+        }
+        else {
+            lineColor = Color.theme.green
+        }
+
+        let lastDateTimeInterval = TimeInterval(self.chartData.timestamp.last ?? 0)
+        let firstDateTimeInterval = TimeInterval(self.chartData.timestamp.first ?? 0)
+        self.endingDate = Date(timeIntervalSince1970: lastDateTimeInterval)
+        self.startingDate = Date(timeIntervalSince1970: firstDateTimeInterval)
+        
+        
+    }
+    
+    private func getMaxY() -> Double {
+        var max = -10000000.0
+        for i in chartData.close {
+            if let val = i {
+                if val > max {
+                    max = val
+                }
+            }
+        }
+        return max
+    }
+    private func getMinY() -> Double {
+        var min = 100000000.0
+        for i in chartData.close {
+            if let val = i {
+                if val < min {
+                    min = val
+                }
+            }
+        }
+        return min
+    }
+}
