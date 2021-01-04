@@ -21,4 +21,13 @@ struct BarView: View {
             return maxValue
         }
         else if maxValue <= 0 {
-            
+            return minValue
+        }
+        else {
+            return maxValue - minValue
+        }
+    }
+    
+   
+    var body: some View {
+        let barHeight = totalHeight / range
