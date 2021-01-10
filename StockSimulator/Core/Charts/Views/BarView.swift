@@ -38,4 +38,7 @@ struct BarView: View {
             VStack(spacing: 0) { // Estimate BarChart
                 RoundedRectangle(cornerRadius: 5.0)
                     .fill(Color.clear) //
-                    .frame(height: value 
+                    .frame(height: value >= 0 ? abs(positivesHeight - barHeight) : abs(positivesHeight))
+                RoundedRectangle(cornerRadius: 5.0)
+                        .fill(color)
+                .frame(height: value >= 0 
