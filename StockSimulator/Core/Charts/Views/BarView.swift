@@ -30,4 +30,7 @@ struct BarView: View {
     
    
     var body: some View {
-        let barHeight = totalHeight / range
+        let barHeight = totalHeight / range * abs(value)
+        let negativesHeight = minValue < 0 ? (-1 * minValue / range * totalHeight): 0
+        let positivesHeight = maxValue > 0 ? abs(maxValue / range * totalHeight): 0
+   
