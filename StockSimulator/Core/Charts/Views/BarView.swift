@@ -33,4 +33,9 @@ struct BarView: View {
         let barHeight = totalHeight / range * abs(value)
         let negativesHeight = minValue < 0 ? (-1 * minValue / range * totalHeight): 0
         let positivesHeight = maxValue > 0 ? abs(maxValue / range * totalHeight): 0
-   
+        
+        ZStack {
+            VStack(spacing: 0) { // Estimate BarChart
+                RoundedRectangle(cornerRadius: 5.0)
+                    .fill(Color.clear) //
+                    .frame(height: value 
