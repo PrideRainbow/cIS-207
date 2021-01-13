@@ -46,4 +46,8 @@ struct BarView: View {
                 RoundedRectangle(cornerRadius: 5.0)
                     .fill(color)
                     .frame(height: value < 0 ? abs(barHeight) : 0)
-                RoundedRecta
+                RoundedRectangle(cornerRadius: 5.0)
+                    .fill(Color.clear)
+                    .frame(height: value < 0 ? abs(negativesHeight - barHeight): abs(negativesHeight))
+            }
+       
