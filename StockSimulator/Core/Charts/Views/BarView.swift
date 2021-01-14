@@ -50,4 +50,12 @@ struct BarView: View {
                     .fill(Color.clear)
                     .frame(height: value < 0 ? abs(negativesHeight - barHeight): abs(negativesHeight))
             }
-       
+            .frame(width: 50)
+        }
+    }
+}
+
+struct BarView_Previews: PreviewProvider {
+    static var previews: some View {
+        HStack {
+            BarView(name: "1Q2021", value: 1
