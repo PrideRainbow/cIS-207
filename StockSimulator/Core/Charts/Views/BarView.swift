@@ -58,4 +58,5 @@ struct BarView: View {
 struct BarView_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
-            BarView(name: "1Q2021", value: 1
+            BarView(name: "1Q2021", value: 1.2, maxValue: 1.8, minValue: -0.8, totalHeight: 300, color: Color.theme.green)
+            BarView(name: "2Q2021", value: -0.4, maxValue: 1.8, minValue: -0.8, totalHeight: 300, color: Colo
