@@ -181,3 +181,137 @@ extension ChartView {
             Divider()
         }
     }
+    
+    private var linegraph: some View {
+        LineGraph(dataPoints: vm.closeDataNormalized)
+            .trim(to: animateChart ? 1 : trimValue)
+//                        .stroke(lineColor)
+            .stroke(vm.lineColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+            .shadow(color: vm.lineColor, radius: 10, x: 0, y: 10)
+            .shadow(color: vm.lineColor.opacity(0.5), radius: 10, x: 0, y: 10)
+            .shadow(color: vm.lineColor.opacity(0.2), radius: 10, x: 0, y: 10)
+            .shadow(color: vm.lineColor.opacity(0.1), radius: 10, x: 0, y: 10)
+    }
+    
+    private var chartDateLabels: some View {
+        HStack {
+            Text(vm.startingDate.asShortDateString())
+            Spacer()
+            Text(vm.endingDate.asShortDateString())
+        }
+    }
+    
+    private var chartYAxis: some View {
+        VStack {
+            Text("\(vm.maxY.formattedWithAbbreviations())")
+            Spacer()
+            Text("\(vm.q3.formattedWithAbbreviations())")
+            Spacer()
+            Text("\(vm.medY.formattedWithAbbreviations())")
+            Spacer()
+            Text("\(vm.q1.formattedWithAbbreviations())")
+            Spacer()
+            Text("\(vm.minY.formattedWithAbbreviations())")
+        }
+    }
+    
+    private var indicatorStats: some View {
+        VStack {
+            HStack{
+                Text("Date/Time:")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text(currentDateTime)
+            }
+            HStack {
+                Text("Close:")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text(currentClose)
+            }
+            HStack {
+                Text("Volume:")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text(currentVolume)
+            }
+        }
+        .font(.caption2)
+        .padding(6)
+        .foregroundColor(Color.white)
+        .background(
+            Rectangle()
+                .fill(Color.gray.opacity(0.6))
+                .cornerRadius(10)
+                .shadow(color: Color.gray, radius: 5, x: 0.3, y: 0.3)
+        )
+    }
+    
+    func updateDragIndactorData(value: DragGesture.Value, width: CGFloat, points: [CGPoint]) {
+        let xShift = value.location.x
+        
+        self.index = max(min(Int((xShift / width).rounded()), vm.closeData.count - 1), 0)
+        
+        offset = CGSize(width: points.count > 0 ? points[index].x: xShift, height: 0)
+
+        if index < vm.closeData.count {
+            currentClose =  vm.closeData[index].asCurrencyWith2Decimals()
+            currentVolume = "\(Double(vm.chartData.wrappedvolume[index]).formattedWithAbbreviations())"
+            if selectedTimeInterval == "1d" || selectedTimeInterval == "5d" {
+                currentDateTime =  Date(timeIntervalSince1970: Double(vm.chartData.timestamp[index])).asShortDateAndTimeString()
+            } else {
+                currentDateTime = Date(timeIntervalSince1970: Double(vm.chartData.timestamp[index])).asShortDateString()
+            }
+        }
+    }
+    
+    @ViewBuilder func DragIndicator(height: CGFloat, points: [CGPoint]) -> some View {
+        VStack(spacing:0) {
+            Spacer()
+            Rectangle()
+                .fill(Color.theme.yellow)
+                .frame(width: 2, height: points.count > 0 ? max((height - points[index].y - 94), 0) : 20)
+
+            Circle()
+                .fill(Color.theme.yellow)
+                .frame(width: 22, height: 22)
+
+                .overlay(
+                    Circle()
+                        .fill(.white)
+                        .frame(width: 10, height: 10)
+                            )
+            Rectangle()
+                .fill(Color.theme.yellow)
+                .frame(width: 2, height: points.count > 0 ? points[index].y: 50)
+        }
+    }
+    
+    @ViewBuilder func volumeBarChart(width: CGFloat) -> some View {
+        let maxVolume = vm.chartData.wrappedvolume.max() ?? 1
+
+        
+        HStack(alignment: .bottom,spacing: width - 2) {
+            ForEach(0..<vm.chartData.wrappedvolume.count, id: \.self) { i in
+                Rectangle()
+                    .fill(i >= 1 && vm.closeData.count > i && vm.closeData[i] < vm.closeData[i-1] ? Color.theme.red : Color.theme.green)
+                    .frame(width: 2, height:maxVolume != 0 ? CGFloat(25 * vm.chartData.wrappedvolume[i] / maxVolume) : 1)
+                
+            }
+        }
+    }
+    
+    
+    private func getPoints(width: CGFloat, totalHeight: CGFloat) -> [CGPoint] {
+        var result = [CGPoint]()
+
+        for i in vm.closeDataNormalized.indices {
+            let x = width * CGFloat(i)
+            let y = totalHeight * vm.closeDataNormalized[i]
+//            print("Width: \(width), x: \(x)")
+            result.append(CGPoint(x: x, y: y))
+        }
+        return result
+    }
+    
+}
