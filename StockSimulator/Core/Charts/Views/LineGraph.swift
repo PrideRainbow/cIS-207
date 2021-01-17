@@ -24,4 +24,7 @@ struct LineGraph: Shape {
         return Path {
             p in
             // remove bad cases where there are less than 2 points
-            guard dataPoin
+            guard dataPoints.count > 1 else { return }
+            let start = dataPoints[0]
+            // flip start value y, because y = 0 is top and y = 1 is bottom
+            p.move(to: CGPoint(x: 0, y: (1 - CGFloat(sta
