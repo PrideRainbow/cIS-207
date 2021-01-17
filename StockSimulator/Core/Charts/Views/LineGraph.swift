@@ -27,4 +27,12 @@ struct LineGraph: Shape {
             guard dataPoints.count > 1 else { return }
             let start = dataPoints[0]
             // flip start value y, because y = 0 is top and y = 1 is bottom
-            p.move(to: CGPoint(x: 0, y: (1 - CGFloat(sta
+            p.move(to: CGPoint(x: 0, y: (1 - CGFloat(start)) * rect.height))
+
+            for i in dataPoints.indices {
+                p.addLine(to: point(at: i))
+            }
+
+        }
+    }
+}
