@@ -16,4 +16,12 @@ struct LineGraph: Shape {
         func point(at ix: Int) -> CGPoint {
             let point = dataPoints[ix]
             let x = rect.width * CGFloat(ix) / CGFloat(dataPoints.count - 1)
-            let y = (1 - CGFloat(
+            let y = (1 - CGFloat(point)) * rect.height
+
+            return CGPoint(x: x, y: y)
+        }
+
+        return Path {
+            p in
+            // remove bad cases where there are less than 2 points
+            guard dataPoin
