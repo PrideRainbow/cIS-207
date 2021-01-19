@@ -10,4 +10,7 @@ import SwiftUI
 
 class MarketSummaryViewModel: ObservableObject
 {
-    @Published var marketDat
+    @Published var marketData: [MarketSummary] = []
+    
+    @Published var snpMarketStats: [StatisticModel] = [] // this will display S&P market highlights on homeview
+    @Published var dowMarketStats: [StatisticModel] = [] //
