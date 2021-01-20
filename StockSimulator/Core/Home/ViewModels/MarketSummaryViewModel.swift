@@ -36,4 +36,10 @@ class MarketSummaryViewModel: ObservableObject
         APICaller.shared.getMarketData { result in
             switch result {
             case .marketSummarySuccess(let marketsummary):
-                DispatchQue
+                DispatchQueue.main.async {
+                    self.marketData = marketsummary
+                    self.isLoading = false
+                }
+                
+            case .failure(let string):
+          
