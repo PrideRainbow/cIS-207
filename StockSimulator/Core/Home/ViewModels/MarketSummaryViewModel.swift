@@ -16,4 +16,16 @@ class MarketSummaryViewModel: ObservableObject
     @Published var dowMarketStats: [StatisticModel] = [] // this will display dow market highlights on homeview
     @Published var nasdaqMarketStats: [StatisticModel] = [] // this will display nasdaq market highlights on homeview
     
+    
+    @Published var isLoading: Bool = false
+    
+    init() {
+        loadMarketData()
+    }
+    
+    func updateMarketData()
+    {
+        isLoading = true
+        loadMarketData()
+        updateOverviewData()
   
