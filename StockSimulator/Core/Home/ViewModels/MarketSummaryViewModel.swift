@@ -28,4 +28,12 @@ class MarketSummaryViewModel: ObservableObject
         isLoading = true
         loadMarketData()
         updateOverviewData()
-  
+        
+    }
+    
+    func loadMarketData()
+    {
+        APICaller.shared.getMarketData { result in
+            switch result {
+            case .marketSummarySuccess(let marketsummary):
+                DispatchQue
