@@ -42,4 +42,12 @@ class MarketSummaryViewModel: ObservableObject
                 }
                 
             case .failure(let string):
-          
+                print("Error loading market summary: \(string)")
+            default:
+                print("error in loading marketsummary")
+            }
+        }
+    }
+    
+    
+    f
