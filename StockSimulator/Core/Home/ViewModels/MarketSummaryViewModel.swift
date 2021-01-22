@@ -54,4 +54,6 @@ class MarketSummaryViewModel: ObservableObject
         APICaller.shared.getQuoteData(searchSymbols: "^GSPC,^DJI,^IXIC") { result in
             switch result {
             case .success(let stockSnapShots):
- 
+                if let snpData = stockSnapShots.first(where: { $0.symbol == "^GSPC" }) {
+                    DispatchQueue.main.async {
+                        self.snpMarketStats = self.createSt
