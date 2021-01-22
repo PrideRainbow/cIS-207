@@ -56,4 +56,8 @@ class MarketSummaryViewModel: ObservableObject
             case .success(let stockSnapShots):
                 if let snpData = stockSnapShots.first(where: { $0.symbol == "^GSPC" }) {
                     DispatchQueue.main.async {
-                        self.snpMarketStats = self.createSt
+                        self.snpMarketStats = self.createStatisticModels(stockSnapshot: snpData)
+                    }
+                }
+                if let dowData = stockSnapShots.first(where: { $0.symbol == "^DJI" }) {
+                    DispatchQueu
