@@ -50,4 +50,8 @@ class MarketSummaryViewModel: ObservableObject
     }
     
     
-    f
+    func updateOverviewData() {
+        APICaller.shared.getQuoteData(searchSymbols: "^GSPC,^DJI,^IXIC") { result in
+            switch result {
+            case .success(let stockSnapShots):
+ 
