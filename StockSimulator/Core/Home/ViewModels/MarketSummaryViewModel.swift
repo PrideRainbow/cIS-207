@@ -64,4 +64,6 @@ class MarketSummaryViewModel: ObservableObject
                         self.dowMarketStats = self.createStatisticModels(stockSnapshot: dowData)
                     }
                 }
-                if let na
+                if let nasdaqData = stockSnapShots.first(where: { $0.symbol == "^IXIC" }) {
+                    DispatchQueue.main.async {
+                        self.nasdaqMarketStats = self.createStatisticModels(stock
