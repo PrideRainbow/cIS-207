@@ -60,4 +60,8 @@ class MarketSummaryViewModel: ObservableObject
                     }
                 }
                 if let dowData = stockSnapShots.first(where: { $0.symbol == "^DJI" }) {
-                    DispatchQueu
+                    DispatchQueue.main.async {
+                        self.dowMarketStats = self.createStatisticModels(stockSnapshot: dowData)
+                    }
+                }
+                if let na
