@@ -73,4 +73,11 @@ class MarketSummaryViewModel: ObservableObject
                 print("Error getting overview stats: " + string)
                 
             default:
-             
+                print("Error in getting overview data")
+            }
+        }
+    }
+    
+    func updateDowData() {
+        APICaller.shared.getQuoteData(searchSymbols: "^DJI") { result in
+            swit
