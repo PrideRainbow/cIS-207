@@ -66,4 +66,11 @@ class MarketSummaryViewModel: ObservableObject
                 }
                 if let nasdaqData = stockSnapShots.first(where: { $0.symbol == "^IXIC" }) {
                     DispatchQueue.main.async {
-                        self.nasdaqMarketStats = self.createStatisticModels(stock
+                        self.nasdaqMarketStats = self.createStatisticModels(stockSnapshot: nasdaqData)
+                    }
+                }
+            case .failure(let string):
+                print("Error getting overview stats: " + string)
+                
+            default:
+             
