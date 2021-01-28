@@ -80,4 +80,8 @@ class MarketSummaryViewModel: ObservableObject
     
     func updateDowData() {
         APICaller.shared.getQuoteData(searchSymbols: "^DJI") { result in
-            swit
+            switch result {
+            case .success(let stockSnapShots):
+                if let snpData = stockSnapShots.first(where: { $0.symbol == "^DJI" }) {
+                    DispatchQueue.main.async {
+      
