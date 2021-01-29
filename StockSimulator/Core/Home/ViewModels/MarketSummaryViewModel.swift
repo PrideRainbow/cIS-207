@@ -88,4 +88,12 @@ class MarketSummaryViewModel: ObservableObject
                     }
                 }
             case .failure(let string):
-                print("Err
+                print("Error getting S&P stats: " + string)
+                
+            default:
+                print("Error in getting S&P data")
+            }
+        }
+    }
+    
+    func createStatisticModels(
