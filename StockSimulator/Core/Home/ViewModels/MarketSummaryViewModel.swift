@@ -84,4 +84,8 @@ class MarketSummaryViewModel: ObservableObject
             case .success(let stockSnapShots):
                 if let snpData = stockSnapShots.first(where: { $0.symbol == "^DJI" }) {
                     DispatchQueue.main.async {
-      
+                        self.snpMarketStats = self.createStatisticModels(stockSnapshot: snpData)
+                    }
+                }
+            case .failure(let string):
+                print("Err
