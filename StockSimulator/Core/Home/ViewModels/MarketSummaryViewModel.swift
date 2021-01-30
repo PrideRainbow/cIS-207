@@ -96,4 +96,7 @@ class MarketSummaryViewModel: ObservableObject
         }
     }
     
-    func createStatisticModels(
+    func createStatisticModels(stockSnapshot: StockSnapshot) -> [StatisticModel]
+    {
+        let regularMarketPrice = stockSnapshot.regularMarketPrice.asCurrencyWith6Decimals()
+        let priceStat = StatisticModel(title: "Price"
