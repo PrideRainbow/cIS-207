@@ -99,4 +99,6 @@ class MarketSummaryViewModel: ObservableObject
     func createStatisticModels(stockSnapshot: StockSnapshot) -> [StatisticModel]
     {
         let regularMarketPrice = stockSnapshot.regularMarketPrice.asCurrencyWith6Decimals()
-        let priceStat = StatisticModel(title: "Price"
+        let priceStat = StatisticModel(title: "Price", value: regularMarketPrice)
+//        let previousCloseStat = StatisticModel(title: "Previous Close", value: stockSnapshot.regularMarketPreviousClose.asCurrencyWith6Decimals())
+//        
