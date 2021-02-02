@@ -102,4 +102,6 @@ class MarketSummaryViewModel: ObservableObject
         let priceStat = StatisticModel(title: "Price", value: regularMarketPrice)
 //        let previousCloseStat = StatisticModel(title: "Previous Close", value: stockSnapshot.regularMarketPreviousClose.asCurrencyWith6Decimals())
 //        let avgVolume3Month = Double(stockSnapshot.averageDailyVolume3Month).formattedWithAbbreviations()
-//        let avgVolume3MonthStat = StatisticModel(title: "Average Volu
+//        let avgVolume3MonthStat = StatisticModel(title: "Average Volume 3 Months", value: avgVolume3Month)
+//        let avgVolume10Day = Double(stockSnapshot.averageDailyVolume10Day).formattedWithAbbreviations()
+//        let avgVolume10DayStat = S
