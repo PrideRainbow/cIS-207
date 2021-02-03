@@ -104,4 +104,6 @@ class MarketSummaryViewModel: ObservableObject
 //        let avgVolume3Month = Double(stockSnapshot.averageDailyVolume3Month).formattedWithAbbreviations()
 //        let avgVolume3MonthStat = StatisticModel(title: "Average Volume 3 Months", value: avgVolume3Month)
 //        let avgVolume10Day = Double(stockSnapshot.averageDailyVolume10Day).formattedWithAbbreviations()
-//        let avgVolume10DayStat = S
+//        let avgVolume10DayStat = StatisticModel(title: "Average Volume 10 Day", value: avgVolume10Day)
+//        let volume = Double(stockSnapshot.regularMarketVolume).formattedWithAbbreviations()
+//        let volumeStat = Sta
