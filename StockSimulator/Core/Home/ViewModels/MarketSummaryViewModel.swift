@@ -108,4 +108,5 @@ class MarketSummaryViewModel: ObservableObject
 //        let volume = Double(stockSnapshot.regularMarketVolume).formattedWithAbbreviations()
 //        let volumeStat = StatisticModel(title: "Regular Market Volume", value: volume)
 //        let shares = Double(stockSnapshot.sharesOutstanding ?? 0).formattedWithAbbreviations()
-//        l
+//        let sharesOutstanding = StatisticModel(title: "Shares Outstanding", value: shares)
+        let fiftyTwoWeekRange = StatisticModel(title: "FiftyTwo week range", value: stockSnapshot.fiftyTwoWe
