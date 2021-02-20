@@ -142,3 +142,85 @@ extension HomeView {
             Divider()
         }
     }
+    
+    private var snpStatsView: some View {
+        VStack (spacing: 2){
+            Text("S&P Data")
+                .font(.headline)
+                .bold()
+                .foregroundColor(Color.theme.accent)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            ForEach(vm.snpMarketStats) {
+                stat in
+                StatisticRow(stat: stat)
+            }
+        }
+        .padding(.bottom, 50)
+        .padding()
+//        .cornerRadius(16)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .strokeBorder()
+                .foregroundColor(Color.theme.buttonColor)
+        )
+
+    }
+    
+    private var dowStatsView: some View {
+        VStack (spacing: 2){
+            Text("Dow Data")
+                .font(.headline)
+                .bold()
+                .foregroundColor(Color.theme.accent)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            ForEach(vm.dowMarketStats) {
+                stat in
+                StatisticRow(stat: stat)
+            }
+        }
+        .padding(.bottom, 50)
+        .padding()
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .strokeBorder()
+                .foregroundColor(Color.theme.buttonColor)
+        )
+    }
+    private var nasdaqStatsView: some View {
+        VStack (spacing: 2){
+            Text("NASDAQ Data")
+                .font(.headline)
+                .bold()
+                .foregroundColor(Color.theme.accent)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            ForEach(vm.nasdaqMarketStats) {
+                stat in
+                StatisticRow(stat: stat)
+            }
+        }
+        .padding(.bottom, 50)
+        .padding()
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .strokeBorder()
+                .foregroundColor(Color.theme.buttonColor)
+        )
+    }
+    
+    private var marketDataView: some View {
+        VStack {
+            ForEach(vm.marketData, id: \.symbol) {
+                item in
+                VStack {
+                    MarketSummaryRow(marketSummary: item)
+                        .onTapGesture {
+                            selectedMarketSummary = item
+                            showDetailView.toggle()
+                        }
+                    Divider()
+                }
+            }
+            
+        }
+    }
+}
