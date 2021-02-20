@@ -12,3 +12,53 @@ import CoreData
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) var moc
+    
+//    @State var accounts: [Account]
+    
+    var body: some View {
+        TabView {
+            VStack {
+//                Text("Home Tab")
+                HomeView()
+            }
+//                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+         
+            AccountsView()
+                .tabItem {
+                    Image(systemName: "dollarsign.square.fill")
+                    Text("Accounts")
+                }
+         
+            WatchlistsView()
+                .tabItem {
+                    Image(systemName: "list.bullet.rectangle")
+                    Text("WatchLists")
+                }
+         
+            Text("Profile Tab")
+                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+                    Text("Profile")
+                }
+                .font(.body)
+        }
+        
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environment(\.managedObjectContext, dev.dataController.container.viewContext)
+            .environmentObject(dev.stockVM)
+
+
+            
+            
+    }
+}
