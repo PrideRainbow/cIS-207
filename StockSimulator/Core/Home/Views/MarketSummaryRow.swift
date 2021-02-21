@@ -21,4 +21,10 @@ struct MarketSummaryRow: View {
                 Text(marketSummary.regularMarketTime.fmt)
 
             }
-  
+            Spacer()
+            VStack(alignment: .leading) {
+                Text(marketSummary.market)
+                Text(marketSummary.quoteType)
+            }
+            .font(.body)
+         
