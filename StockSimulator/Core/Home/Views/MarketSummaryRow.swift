@@ -7,4 +7,11 @@
 
 import SwiftUI
 
-struct MarketSummary
+struct MarketSummaryRow: View {
+    
+    var marketSummary: MarketSummary
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(marketSummary.wrappedName)
+      
