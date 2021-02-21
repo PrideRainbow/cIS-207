@@ -14,4 +14,11 @@ struct MarketSummaryRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(marketSummary.wrappedName)
-      
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text(marketSummary.symbol)
+                    .font(.subheadline)
+                Text(marketSummary.regularMarketTime.fmt)
+
+            }
+  
