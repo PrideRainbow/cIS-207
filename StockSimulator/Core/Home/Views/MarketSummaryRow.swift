@@ -27,4 +27,8 @@ struct MarketSummaryRow: View {
                 Text(marketSummary.quoteType)
             }
             .font(.body)
-         
+            Spacer()
+            VStack(alignment: .trailing) {
+                Text(marketSummary.regularMarketPrice.fmt)
+                HStack {
+                    Image(systemName: marketSummary.
