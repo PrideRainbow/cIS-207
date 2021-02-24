@@ -54,4 +54,8 @@ struct MarketSummaryRow_Previews: PreviewProvider {
                 .previewLayout(.sizeThatFits)
         MarketSummaryRow(marketSummary: MarketSummary())
             .preferredColorScheme(.light)
- 
+            .previewLayout(.sizeThatFits)
+            
+    }
+}
+
