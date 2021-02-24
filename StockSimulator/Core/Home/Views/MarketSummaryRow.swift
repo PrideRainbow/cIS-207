@@ -49,4 +49,9 @@ struct MarketSummaryRow: View {
 struct MarketSummaryRow_Previews: PreviewProvider {
     static var previews: some View {
      
-        MarketSummaryRow(marketSummary: Mar
+        MarketSummaryRow(marketSummary: MarketSummary())
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+        MarketSummaryRow(marketSummary: MarketSummary())
+            .preferredColorScheme(.light)
+ 
