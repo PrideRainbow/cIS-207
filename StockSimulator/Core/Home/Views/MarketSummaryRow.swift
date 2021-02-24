@@ -40,4 +40,13 @@ struct MarketSummaryRow: View {
             .foregroundColor(marketSummary.regularMarketChange.raw >= 0 ? Color.theme.green : Color.theme.red)
         }
         .background(
-            Color.theme.background.opac
+            Color.theme.background.opacity(0.001)
+        )
+        
+    }
+}
+
+struct MarketSummaryRow_Previews: PreviewProvider {
+    static var previews: some View {
+     
+        MarketSummaryRow(marketSummary: Mar
