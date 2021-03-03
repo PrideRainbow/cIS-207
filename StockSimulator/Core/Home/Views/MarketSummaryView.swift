@@ -7,4 +7,13 @@
 
 import SwiftUI
 
-struct MarketS
+struct MarketSummaryView: View {
+    
+    var marketSummary: MarketSummary
+    
+    @ObservedObject var vm = StocksViewModel()
+    
+    var body: some View {
+        VStack {
+            Section(header: Text("Summary")) {
+      
