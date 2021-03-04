@@ -16,4 +16,9 @@ struct MarketSummaryView: View {
     var body: some View {
         VStack {
             Section(header: Text("Summary")) {
-      
+                HStack {
+                    Text("Symbol:")
+                    Spacer()
+                    Text(marketSummary.symbol)
+                        .foregroundColor(Color.theme.secondaryText)
+            
