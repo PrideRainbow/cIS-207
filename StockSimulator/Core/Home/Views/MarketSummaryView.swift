@@ -26,4 +26,6 @@ struct MarketSummaryView: View {
             VStack {
                 HStack(alignment: .top){
                     VStack(alignment: .leading) {
-                        Text("Symbol: \(marketSummary.symbol)"
+                        Text("Symbol: \(marketSummary.symbol)")
+                        Text("Market Time: \(marketSummary.regularMarketTime.fmt)")
+                        Text("Previous Close: \(marketSummary.regularMarketPreviousClose.fmt)")
