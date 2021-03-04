@@ -21,4 +21,9 @@ struct MarketSummaryView: View {
                     Spacer()
                     Text(marketSummary.symbol)
                         .foregroundColor(Color.theme.secondaryText)
-            
+                }
+            }
+            VStack {
+                HStack(alignment: .top){
+                    VStack(alignment: .leading) {
+                        Text("Symbol: \(marketSummary.symbol)"
