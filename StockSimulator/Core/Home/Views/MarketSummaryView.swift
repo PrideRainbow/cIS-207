@@ -29,3 +29,7 @@ struct MarketSummaryView: View {
                         Text("Symbol: \(marketSummary.symbol)")
                         Text("Market Time: \(marketSummary.regularMarketTime.fmt)")
                         Text("Previous Close: \(marketSummary.regularMarketPreviousClose.fmt)")
+                        Text("Market: \(marketSummary.market)")
+                        Text("Quote Type: \(marketSummary.quoteType)")
+                        
+          
