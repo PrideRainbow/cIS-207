@@ -32,4 +32,10 @@ struct MarketSummaryView: View {
                         Text("Market: \(marketSummary.market)")
                         Text("Quote Type: \(marketSummary.quoteType)")
                         
-          
+                    }
+                    .font(.body)
+                    Spacer()
+                    VStack {
+                        Text("\(marketSummary.regularMarketPrice.fmt)")
+                        HStack {
+             
