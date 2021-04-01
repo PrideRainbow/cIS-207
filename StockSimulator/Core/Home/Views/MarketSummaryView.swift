@@ -38,4 +38,6 @@ struct MarketSummaryView: View {
                     VStack {
                         Text("\(marketSummary.regularMarketPrice.fmt)")
                         HStack {
-             
+                            Image(systemName: marketSummary.regularMarketChange.raw >= 0 ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
+                            Text("\(marketSummary.regularMarketChangePercent.fmt)")
+       
