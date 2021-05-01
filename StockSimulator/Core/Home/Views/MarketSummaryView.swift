@@ -40,4 +40,8 @@ struct MarketSummaryView: View {
                         HStack {
                             Image(systemName: marketSummary.regularMarketChange.raw >= 0 ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
                             Text("\(marketSummary.regularMarketChangePercent.fmt)")
-       
+                        }
+                        
+                    }
+                    .font(.headline)
+                    .foregroundColor(marketSummary.regularMarketChange.raw >= 0 ? Color.theme.green
