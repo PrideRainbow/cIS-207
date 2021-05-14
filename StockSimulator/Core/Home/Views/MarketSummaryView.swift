@@ -55,4 +55,13 @@ struct MarketSummaryView: View {
             .navigationTitle(marketSummary.wrappedName)
     //        .onAppear(perform: loadStockSnapshot)
             .onAppear(perform: {
-    //          
+    //            print(marketSummary)
+            })
+        }
+    }
+}
+
+struct MarketSummaryView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            Marke
