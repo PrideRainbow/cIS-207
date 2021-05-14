@@ -44,4 +44,10 @@ struct MarketSummaryView: View {
                         
                     }
                     .font(.headline)
-                    .foregroundColor(marketSummary.regularMarketChange.raw >= 0 ? Color.theme.green
+                    .foregroundColor(marketSummary.regularMarketChange.raw >= 0 ? Color.theme.green : Color.theme.red)
+                }
+                .padding()
+    //            ChartView(stockSnapshot: stockSnapshot)
+                
+                ChartView(symbol: marketSummary.symbol)
+            
