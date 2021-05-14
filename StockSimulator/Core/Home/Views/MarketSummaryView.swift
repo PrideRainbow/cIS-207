@@ -50,4 +50,9 @@ struct MarketSummaryView: View {
     //            ChartView(stockSnapshot: stockSnapshot)
                 
                 ChartView(symbol: marketSummary.symbol)
-            
+                
+            }
+            .navigationTitle(marketSummary.wrappedName)
+    //        .onAppear(perform: loadStockSnapshot)
+            .onAppear(perform: {
+    //          
