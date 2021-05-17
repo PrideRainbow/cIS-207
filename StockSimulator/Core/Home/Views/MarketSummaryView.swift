@@ -64,4 +64,8 @@ struct MarketSummaryView: View {
 struct MarketSummaryView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            Marke
+            MarketSummaryView(marketSummary: MarketSummary())
+        }
+
+    }
+}
