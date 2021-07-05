@@ -27,4 +27,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                     
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0O0-CC-
