@@ -30,4 +30,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="0O0-CC-Uqe" firstAttribute="centerY" secondItem="qPv-9u-F8y" secondAttribute="centerY" id="G8S-mF-dXB"/>
-                                    <constraint firstItem="0O0-CC-Uqe" firstAttribute="centerX
+                                    <constraint firstItem="0O0-CC-Uqe" firstAttribute="centerX" secondItem="qPv-9u-F8y" secondAttribute="centerX" id="aIh-mt-0ca"/>
+                                </constraints>
+                            </view>
+                        </subv
