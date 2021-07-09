@@ -37,4 +37,6 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qPv-9u-F8y" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="
+                            <constraint firstItem="qPv-9u-F8y" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="X90-A1-dAW"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="qPv-9u-F8y" secondAttribute="bottom" id="bqk-RF-caA"/>
+          
