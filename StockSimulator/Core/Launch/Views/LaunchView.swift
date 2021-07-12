@@ -23,3 +23,10 @@ struct LaunchView: View {
         ZStack {
             Color.launch.background
                 .ignoresSafeArea()
+            Image("logo")
+                .resizable()
+                .frame(width: 100, height: 100)
+            ZStack{
+                if showLoadingText {
+                    HStack(spacing: 0) {
+  
