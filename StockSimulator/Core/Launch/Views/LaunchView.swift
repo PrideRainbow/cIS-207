@@ -14,4 +14,12 @@ struct LaunchView: View {
     
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
     
-    @State private var counter: I
+    @State private var counter: Int = 0
+    @State private var loops: Int = 0
+    
+    @Binding var showLaunchView: Bool
+    
+    var body: some View {
+        ZStack {
+            Color.launch.background
+                .ignoresSafeArea()
