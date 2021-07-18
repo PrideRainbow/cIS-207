@@ -29,4 +29,7 @@ struct LaunchView: View {
             ZStack{
                 if showLoadingText {
                     HStack(spacing: 0) {
-  
+                        ForEach(loadingText.indices) {
+                            index in
+                            Text(loadingText[index])
+                                .font
