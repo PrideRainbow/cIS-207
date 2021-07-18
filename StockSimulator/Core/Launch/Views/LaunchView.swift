@@ -32,4 +32,7 @@ struct LaunchView: View {
                         ForEach(loadingText.indices) {
                             index in
                             Text(loadingText[index])
-                                .font
+                                .font(.headline)
+                                .foregroundColor(Color.launch.accent)
+                                .fontWeight(.heavy)
+                                .offs
