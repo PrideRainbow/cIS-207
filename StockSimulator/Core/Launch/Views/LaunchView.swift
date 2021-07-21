@@ -41,4 +41,11 @@ struct LaunchView: View {
                     .transition(AnyTransition.scale.animation(.easeIn))
                 }
                 
-      
+            }
+            .offset(y: 70)
+        }
+        .onAppear {
+            showLoadingText.toggle()
+        }
+        .onReceive(timer, perform: { _ in
+            withAnimatio
