@@ -14,4 +14,10 @@ class StockDetailViewModel: ObservableObject
     @Published var symbol: String = ""
 //    @Published var stock: Stock? = nil
     
-    @Published va
+    @Published var overviewStatistics: [StatisticModel] = []
+    
+    @Published var stockSnapshot: StockSnapshot? = nil
+    
+    @Published var stockRating: Double = 0
+    
+    @Published var stockRecommendat
