@@ -64,4 +64,8 @@ struct LaunchView: View {
     }
 }
 
-struct LaunchView_Pr
+struct LaunchView_Previews: PreviewProvider {
+    static var previews: some View {
+        LaunchView(showLaunchView: .constant(true))
+    }
+}
