@@ -20,4 +20,7 @@ class StockDetailViewModel: ObservableObject
     
     @Published var stockRating: Double = 0
     
-    @Published var stockRecommendat
+    @Published var stockRecommendations: [RecommendedSymbol] = [] // this has an array of RecommendedSymbols
+    
+    @Published var quoteSummary: QuoteSummary? = nil
+//    @Environment(\.managedObjectContext) var moc // 
