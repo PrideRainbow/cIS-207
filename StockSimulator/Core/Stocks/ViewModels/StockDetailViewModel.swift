@@ -30,4 +30,9 @@ class StockDetailViewModel: ObservableObject
     init(stockSnapshot: StockSnapshot)
     {
         self.symbol = stockSnapshot.symbol
-  
+        
+        self.stockSnapshot = stockSnapshot
+        stockRecommendations = []
+        loadOverviewStats()
+        loadStockRecommendations()
+        loadQuoteSummary(symbol: sto
