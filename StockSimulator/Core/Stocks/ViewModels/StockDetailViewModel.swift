@@ -23,4 +23,11 @@ class StockDetailViewModel: ObservableObject
     @Published var stockRecommendations: [RecommendedSymbol] = [] // this has an array of RecommendedSymbols
     
     @Published var quoteSummary: QuoteSummary? = nil
-//    @Environment(\.managedObjectContext) var moc // 
+//    @Environment(\.managedObjectContext) var moc // CoreData
+    
+    @Published var earningsStatistics: [EarningsModel] = []
+
+    init(stockSnapshot: StockSnapshot)
+    {
+        self.symbol = stockSnapshot.symbol
+  
