@@ -35,4 +35,13 @@ class StockDetailViewModel: ObservableObject
         stockRecommendations = []
         loadOverviewStats()
         loadStockRecommendations()
-        loadQuoteSummary(symbol: sto
+        loadQuoteSummary(symbol: stockSnapshot.symbol)
+    }
+    
+    init(symbol: String)
+    {
+        self.symbol = symbol
+        reloadStockData(symbol: symbol)
+        loadStockRecommendations()
+        loadQuoteSummary(symbol: symbol)
+     
