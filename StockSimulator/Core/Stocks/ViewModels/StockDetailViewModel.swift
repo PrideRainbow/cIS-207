@@ -44,4 +44,13 @@ class StockDetailViewModel: ObservableObject
         reloadStockData(symbol: symbol)
         loadStockRecommendations()
         loadQuoteSummary(symbol: symbol)
-     
+        
+    }
+    
+    func calculateStockRating() {
+        
+        guard let stockSnapshot = stockSnapshot else {
+            return
+        }
+        
+        guard let quoteSummary = quoteSummary, let k
