@@ -53,4 +53,10 @@ class StockDetailViewModel: ObservableObject
             return
         }
         
-        guard let quoteSummary = quoteSummary, let k
+        guard let quoteSummary = quoteSummary, let keyStats = quoteSummary.defaultKeyStatistics else {
+            return
+        }
+        
+
+
+        // look at future earnings, PEG ratio, PE Ratio, 200 Day Average, 50 Day Average
