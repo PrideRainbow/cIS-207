@@ -69,4 +69,8 @@ class StockDetailViewModel: ObservableObject
         total += (dividendRate >= 10) ? 10 : dividendRate
 
         // average analyst rating
-      
+        // The weighting of the ratings is 1 for buy, 2 for outperform, 3 for hold, 4 for underperform and 5 for sell.
+        
+        
+//        let epsForward = stockSnapshot.epsForward ?? 0
+//    
