@@ -59,4 +59,8 @@ class StockDetailViewModel: ObservableObject
         
 
 
-        // look at future earnings, PEG ratio, PE Ratio, 200 Day Average, 50 Day Average
+        // look at future earnings, PEG ratio, PE Ratio, 200 Day Average, 50 Day Average. Dividend Percent, average analyst rating
+        
+        var total = 0.0
+        
+        // Dividend Score will be worth 10 points If dividend 10% or higher, stock gets a 10, otherwise stock gets the
