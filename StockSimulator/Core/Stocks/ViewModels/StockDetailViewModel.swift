@@ -63,4 +63,10 @@ class StockDetailViewModel: ObservableObject
         
         var total = 0.0
         
-        // Dividend Score will be worth 10 points If dividend 10% or higher, stock gets a 10, otherwise stock gets the
+        // Dividend Score will be worth 10 points If dividend 10% or higher, stock gets a 10, otherwise stock gets the dividend rate.
+        let dividendRate = (stockSnapshot.trailingAnnualDividendYield ?? 0) * 100
+        
+        total += (dividendRate >= 10) ? 10 : dividendRate
+
+        // average analyst rating
+      
