@@ -73,4 +73,10 @@ class StockDetailViewModel: ObservableObject
         
         
 //        let epsForward = stockSnapshot.epsForward ?? 0
-//    
+//        let eps = stockSnapshot.epsTrailingTwelveMonths ?? 0
+//        print("epsForward: \(epsForward), eps: \(eps)")
+//        let growth = epsForward - eps
+//        total += growth
+        
+        
+   
