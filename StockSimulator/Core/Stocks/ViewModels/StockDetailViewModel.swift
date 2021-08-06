@@ -79,4 +79,10 @@ class StockDetailViewModel: ObservableObject
 //        total += growth
         
         
-   
+        stockRating = total
+        
+    }
+    
+    func loadStockRecommendations() {
+        APICaller.shared.getReccomendationsBySymbol(symbol: self.symbol) { result in
+            switch 
