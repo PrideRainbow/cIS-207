@@ -95,4 +95,10 @@ class StockDetailViewModel: ObservableObject
                     self.stockRecommendations = result
                 }
             case .failure(let string):
-   
+                print("Error: " + string)
+            default:
+                print("Found unexpected result when loading stock reccomendations")
+            }
+        }
+    }
+    
