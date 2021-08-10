@@ -85,4 +85,8 @@ class StockDetailViewModel: ObservableObject
     
     func loadStockRecommendations() {
         APICaller.shared.getReccomendationsBySymbol(symbol: self.symbol) { result in
-            switch 
+            switch result {
+            case .stockReccomendations(let array):
+                var result : [RecommendedSymbol] = []
+                for r in array {
+                    result.append(contentsOf: r.recommended
