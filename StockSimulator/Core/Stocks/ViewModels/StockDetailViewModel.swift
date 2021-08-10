@@ -89,4 +89,10 @@ class StockDetailViewModel: ObservableObject
             case .stockReccomendations(let array):
                 var result : [RecommendedSymbol] = []
                 for r in array {
-                    result.append(contentsOf: r.recommended
+                    result.append(contentsOf: r.recommendedSymbols)
+                }
+                DispatchQueue.main.async {
+                    self.stockRecommendations = result
+                }
+            case .failure(let string):
+   
