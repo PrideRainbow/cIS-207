@@ -102,3 +102,11 @@ class StockDetailViewModel: ObservableObject
         }
     }
     
+    func loadOverviewStats()
+    {
+        guard let stockSnapshot = stockSnapshot else {
+            return
+        }
+        if stockSnapshot.quoteType == "CRYPTOCURRENCY"
+        {
+            loadCryptoSta
