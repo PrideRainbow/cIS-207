@@ -120,4 +120,9 @@ class StockDetailViewModel: ObservableObject
     
     private func loadStockStats()
     {
-        guard let stockSnapshot = s
+        guard let stockSnapshot = stockSnapshot else {
+            return
+        }
+
+        let regularMarketPrice = stockSnapshot.regularMarketPrice.asCurrencyWith6Decimals()
+        let priceStat = Statist
