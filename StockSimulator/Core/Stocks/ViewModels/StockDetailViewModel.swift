@@ -131,4 +131,6 @@ class StockDetailViewModel: ObservableObject
         let marketCapStat = StatisticModel(title: "Market Cap", value: marketCap)
         let open = stockSnapshot.regularMarketOpen.asCurrencyWith6Decimals()
         let openStat = StatisticModel(title: "Open", value: open)
-        let avgVolume3Month = Double(st
+        let avgVolume3Month = Double(stockSnapshot.averageDailyVolume3Month).formattedWithAbbreviations()
+        let avgVolume3MonthStat = StatisticModel(title: "Average Volume 3 Months", value: avgVolume3Month)
+   
