@@ -140,3 +140,6 @@ class StockDetailViewModel: ObservableObject
         let bid = (stockSnapshot.bid ?? 0).asCurrencyWith6Decimals()
         let bidStat = StatisticModel(title: "Bid", value: bid)
         let ask = (stockSnapshot.ask ?? 0).asCurrencyWith6Decimals()
+        let askStat = StatisticModel(title: "Ask", value: ask)
+        let shares = Double(stockSnapshot.sharesOutstanding ?? 0).formattedWithAbbreviations()
+        let sharesOutstandi
