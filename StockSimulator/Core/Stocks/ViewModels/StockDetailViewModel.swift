@@ -137,4 +137,6 @@ class StockDetailViewModel: ObservableObject
         let avgVolume10DayStat = StatisticModel(title: "Average Volume 10 Day", value: avgVolume10Day)
         let volume = Double(stockSnapshot.regularMarketVolume).formattedWithAbbreviations()
         let volumeStat = StatisticModel(title: "Regular Market Volume", value: volume)
-        let bid = (
+        let bid = (stockSnapshot.bid ?? 0).asCurrencyWith6Decimals()
+        let bidStat = StatisticModel(title: "Bid", value: bid)
+        let ask = (stockSnapshot.ask ?? 0).asCurrencyWith6Decimals()
