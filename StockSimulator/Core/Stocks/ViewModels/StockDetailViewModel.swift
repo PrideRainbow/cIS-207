@@ -142,4 +142,5 @@ class StockDetailViewModel: ObservableObject
         let ask = (stockSnapshot.ask ?? 0).asCurrencyWith6Decimals()
         let askStat = StatisticModel(title: "Ask", value: ask)
         let shares = Double(stockSnapshot.sharesOutstanding ?? 0).formattedWithAbbreviations()
-        let sharesOutstandi
+        let sharesOutstanding = StatisticModel(title: "Shares Outstanding", value: shares)
+        let fiftyTwoWeekRange = StatisticModel(title: "FiftyTwo week range", value: stockSnapshot.fiftyTwoWeekRan
