@@ -151,4 +151,6 @@ class StockDetailViewModel: ObservableObject
         let eps = (stockSnapshot.epsTrailingTwelveMonths ?? 0).asNumberString()
         let epsStat = StatisticModel(title: "EPS", value: eps)
         let dayHighStat = StatisticModel(title: "Day High", value: stockSnapshot.regularMarketDayHigh.asCurrencyWith6Decimals())
-        let dayLowStat = StatisticModel(title: "Day Low", value: stockSnapshot.regularMarketDayLow.asCurrencyWith
+        let dayLowStat = StatisticModel(title: "Day Low", value: stockSnapshot.regularMarketDayLow.asCurrencyWith6Decimals())
+        let fiftyDayAvgStat = StatisticModel(title: "50 Day Average", value: (stockSnapshot.fiftyDayAverage ?? 0).asCurrencyWith2Decimals())
+        let fiftyDayAvgChangeStat
