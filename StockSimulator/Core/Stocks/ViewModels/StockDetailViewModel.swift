@@ -150,4 +150,5 @@ class StockDetailViewModel: ObservableObject
         let forwardPeStat = StatisticModel(title: "Forward P/E", value: (stockSnapshot.forwardPE ?? 0).asNumberString())
         let eps = (stockSnapshot.epsTrailingTwelveMonths ?? 0).asNumberString()
         let epsStat = StatisticModel(title: "EPS", value: eps)
-        let dayHighStat = StatisticModel(title: "Day High", valu
+        let dayHighStat = StatisticModel(title: "Day High", value: stockSnapshot.regularMarketDayHigh.asCurrencyWith6Decimals())
+        let dayLowStat = StatisticModel(title: "Day Low", value: stockSnapshot.regularMarketDayLow.asCurrencyWith
