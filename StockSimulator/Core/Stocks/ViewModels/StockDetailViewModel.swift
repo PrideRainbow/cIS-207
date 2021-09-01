@@ -155,4 +155,5 @@ class StockDetailViewModel: ObservableObject
         let fiftyDayAvgStat = StatisticModel(title: "50 Day Average", value: (stockSnapshot.fiftyDayAverage ?? 0).asCurrencyWith2Decimals())
         let fiftyDayAvgChangeStat = StatisticModel(title: "50 Day Average Change", value: (stockSnapshot.fiftyDayAverageChange ?? 0).asCurrencyWith2Decimals(), percentageChange: (stockSnapshot.fiftyDayAverageChangePercent ?? 0) * 100)
         let twoHundredDayAvgStat = StatisticModel(title: "200 Day Average", value: stockSnapshot.twoHundredDayAverage.asCurrencyWith2Decimals())
-        let twoHundredDayAvgChangeStat = StatisticMo
+        let twoHundredDayAvgChangeStat = StatisticModel(title: "200 Day Average Change", value: stockSnapshot.twoHundredDayAverageChange.asCurrencyWith2Decimals(), percentageChange: stockSnapshot.twoHundredDayAverageChangePercent * 100)
+    
