@@ -166,3 +166,8 @@ class StockDetailViewModel: ObservableObject
         }
         let divDateStat = StatisticModel(title: "Dividend Date", value: dDate)
         
+        var earningsDate = "n/a"
+        if let earnDateInt = stockSnapshot.earningsTimestamp {
+            earningsDate = Date(timeIntervalSince1970: Double(earnDateInt)).asShortDateString()
+        }
+        le
