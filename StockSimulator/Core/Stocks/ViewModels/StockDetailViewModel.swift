@@ -158,4 +158,7 @@ class StockDetailViewModel: ObservableObject
         let twoHundredDayAvgChangeStat = StatisticModel(title: "200 Day Average Change", value: stockSnapshot.twoHundredDayAverageChange.asCurrencyWith2Decimals(), percentageChange: stockSnapshot.twoHundredDayAverageChangePercent * 100)
     
         let dividend = stockSnapshot.trailingAnnualDividendRate?.asCurrencyWith6Decimals() ?? "$0.00"
-        let dividendRate = ((stockSnapshot.trailingAnnualDividendYield ?? 0) * 100).a
+        let dividendRate = ((stockSnapshot.trailingAnnualDividendYield ?? 0) * 100).asPercentString()
+        let dividendStat = StatisticModel(title: "Dividend Yield (Rate)", value: "\(dividend)(\(dividendRate))")
+        var dDate = "n/a"
+        if let dividendDateInt = stockSnapshot.di
