@@ -161,4 +161,8 @@ class StockDetailViewModel: ObservableObject
         let dividendRate = ((stockSnapshot.trailingAnnualDividendYield ?? 0) * 100).asPercentString()
         let dividendStat = StatisticModel(title: "Dividend Yield (Rate)", value: "\(dividend)(\(dividendRate))")
         var dDate = "n/a"
-        if let dividendDateInt = stockSnapshot.di
+        if let dividendDateInt = stockSnapshot.dividendDate {
+            dDate = Date(timeIntervalSince1970: Double(dividendDateInt)).asShortDateString()
+        }
+        let divDateStat = StatisticModel(title: "Dividend Date", value: dDate)
+        
