@@ -170,4 +170,6 @@ class StockDetailViewModel: ObservableObject
         if let earnDateInt = stockSnapshot.earningsTimestamp {
             earningsDate = Date(timeIntervalSince1970: Double(earnDateInt)).asShortDateString()
         }
-        le
+        let earningsDateStat = StatisticModel(title: "Earnings Date", value: earningsDate)
+
+        overviewStatistics = [priceStat, previousCloseStat, dayHighStat, dayLowStat, marketCa
