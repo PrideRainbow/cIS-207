@@ -172,4 +172,4 @@ class StockDetailViewModel: ObservableObject
         }
         let earningsDateStat = StatisticModel(title: "Earnings Date", value: earningsDate)
 
-        overviewStatistics = [priceStat, previousCloseStat, dayHighStat, dayLowStat, marketCa
+        overviewStatistics = [priceStat, previousCloseStat, dayHighStat, dayLowStat, marketCapStat, openStat, sharesOutstanding, volumeStat, avgVolume3MonthStat,avgVolume10DayStat, bidStat, askStat,  fiftyTwoWeekRange, peStat, forwardPeStat, epsStat, fiftyDayAvgStat,fiftyDay
