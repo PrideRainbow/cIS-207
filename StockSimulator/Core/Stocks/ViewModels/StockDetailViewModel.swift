@@ -190,4 +190,6 @@ class StockDetailViewModel: ObservableObject
     {
         guard let stockSnapshot = stockSnapshot else {
             return
- 
+        }
+        let previousCloseStat = StatisticModel(title: "Previous Close", value: stockSnapshot.regularMarketPreviousClose.asCurrencyWith6Decimals())
+        let dayRangeStat = Stati
