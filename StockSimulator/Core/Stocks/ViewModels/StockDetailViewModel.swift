@@ -182,4 +182,12 @@ class StockDetailViewModel: ObservableObject
             print("no quote summary for \(symbol) found or no earnings found")
             return
         }
+        
+        earningsStatistics = earnings.earningsModels
+    }
     
+    private func loadCryptoStats()
+    {
+        guard let stockSnapshot = stockSnapshot else {
+            return
+ 
