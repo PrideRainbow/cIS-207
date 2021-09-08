@@ -197,4 +197,6 @@ class StockDetailViewModel: ObservableObject
         let marketCapStat = StatisticModel(title: "Market Cap", value: marketCap)
         
         let volume = Double(stockSnapshot.volume24Hr ?? 0).formattedWithAbbreviations()
-        let volume24HrStat = StatisticModel(title: 
+        let volume24HrStat = StatisticModel(title: "24Hr Volume", value: volume)
+        let volumeAll = Double(stockSnapshot.volumeAllCurrencies ?? 0).formattedWithAbbreviations()
+        let volumeAllStat = StatisticModel(title: "Volume All Curren
