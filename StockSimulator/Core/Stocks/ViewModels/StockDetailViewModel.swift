@@ -194,4 +194,7 @@ class StockDetailViewModel: ObservableObject
         let previousCloseStat = StatisticModel(title: "Previous Close", value: stockSnapshot.regularMarketPreviousClose.asCurrencyWith6Decimals())
         let dayRangeStat = StatisticModel(title: "24 HR Day Range", value: stockSnapshot.regularMarketDayRange)
         let marketCap = Double(stockSnapshot.marketCap ?? 0).formattedWithAbbreviations()
-        let marke
+        let marketCapStat = StatisticModel(title: "Market Cap", value: marketCap)
+        
+        let volume = Double(stockSnapshot.volume24Hr ?? 0).formattedWithAbbreviations()
+        let volume24HrStat = StatisticModel(title: 
