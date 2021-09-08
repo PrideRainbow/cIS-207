@@ -199,4 +199,6 @@ class StockDetailViewModel: ObservableObject
         let volume = Double(stockSnapshot.volume24Hr ?? 0).formattedWithAbbreviations()
         let volume24HrStat = StatisticModel(title: "24Hr Volume", value: volume)
         let volumeAll = Double(stockSnapshot.volumeAllCurrencies ?? 0).formattedWithAbbreviations()
-        let volumeAllStat = StatisticModel(title: "Volume All Curren
+        let volumeAllStat = StatisticModel(title: "Volume All Currencies", value: volumeAll)
+        let avgVolume3Month = Double(stockSnapshot.averageDailyVolume3Month).formattedWithAbbreviations()
+        let avgVolume3MonthStat = StatisticModel(titl
