@@ -205,4 +205,6 @@ class StockDetailViewModel: ObservableObject
         let avgVolume10Day = Double(stockSnapshot.averageDailyVolume10Day).formattedWithAbbreviations()
         let avgVolume10DayStat = StatisticModel(title: "Average Volume 10 Day", value: avgVolume10Day)
         let fiftyTwoWeekRangeStat = StatisticModel(title: "FiftyTwo Week Range", value: stockSnapshot.fiftyTwoWeekRange)
-//        let highStat = StatisticModel(titl
+//        let highStat = StatisticModel(title: "Fifty-Two Week High", value: stock.fiftyTwoWeekHigh.asCurrencyWith6Decimals())
+//        let lowStat = StatisticModel(title: "Fifty-Two Week Low", value: stock.fiftyTwoWeekLow.asCurrencyWith6Decimals())
+     
