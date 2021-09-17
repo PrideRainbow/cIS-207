@@ -207,4 +207,5 @@ class StockDetailViewModel: ObservableObject
         let fiftyTwoWeekRangeStat = StatisticModel(title: "FiftyTwo Week Range", value: stockSnapshot.fiftyTwoWeekRange)
 //        let highStat = StatisticModel(title: "Fifty-Two Week High", value: stock.fiftyTwoWeekHigh.asCurrencyWith6Decimals())
 //        let lowStat = StatisticModel(title: "Fifty-Two Week Low", value: stock.fiftyTwoWeekLow.asCurrencyWith6Decimals())
-     
+        let fiftyDayAvgStat = StatisticModel(title: "50 Day Average", value: (stockSnapshot.fiftyDayAverage ?? 0).asCurrencyWith2Decimals())
+        let fiftyDayAvgChangeStat = StatisticMod
