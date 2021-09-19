@@ -219,4 +219,10 @@ class StockDetailViewModel: ObservableObject
         }
         let startDateStat = StatisticModel(title: "Start Date", value: startDate)
         
-        overviewStatistics = [previousCloseStat, dayRangeStat, marketCapStat, volume24HrStat, volumeAllStat, avgVolume10DayStat, avgVolume3MonthStat, fiftyTwoWeekRangeStat, fiftyDayAvgStat, fiftyDayAvgChange
+        overviewStatistics = [previousCloseStat, dayRangeStat, marketCapStat, volume24HrStat, volumeAllStat, avgVolume10DayStat, avgVolume3MonthStat, fiftyTwoWeekRangeStat, fiftyDayAvgStat, fiftyDayAvgChangeStat, twoHundredDayAvgStat, twoHundredDayAvgChangeStat, currencyStat, startDateStat]
+    }
+    
+    func reloadStockData(symbol: String)
+    {
+        
+        APICaller.shared.getQuoteData(s
