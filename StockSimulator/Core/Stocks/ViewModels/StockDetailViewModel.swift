@@ -215,4 +215,8 @@ class StockDetailViewModel: ObservableObject
         
         var startDate = "n/a"
         if let startDateInt = stockSnapshot.startDate {
-            start
+            startDate = Date(timeIntervalSince1970: Double(startDateInt)).asShortDateString()
+        }
+        let startDateStat = StatisticModel(title: "Start Date", value: startDate)
+        
+        ov
