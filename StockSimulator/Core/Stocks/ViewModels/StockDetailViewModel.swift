@@ -219,4 +219,4 @@ class StockDetailViewModel: ObservableObject
         }
         let startDateStat = StatisticModel(title: "Start Date", value: startDate)
         
-        ov
+        overviewStatistics = [previousCloseStat, dayRangeStat, marketCapStat, volume24HrStat, volumeAllStat, avgVolume10DayStat, avgVolume3MonthStat, fiftyTwoWeekRangeStat, fiftyDayAvgStat, fiftyDayAvgChange
