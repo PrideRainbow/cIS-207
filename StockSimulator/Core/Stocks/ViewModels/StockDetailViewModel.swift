@@ -228,4 +228,6 @@ class StockDetailViewModel: ObservableObject
         APICaller.shared.getQuoteData(searchSymbols: "\(symbol.uppercased())") { connectionResult in
             switch connectionResult {
             case .success(let stockSnapshots):
-               
+                if let foundStock = stockSnapshots.first(where: { $0.symbol.uppercased() == self.symbol.uppercased()}) {
+                    DispatchQueue.main.async {
+                  
