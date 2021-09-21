@@ -225,4 +225,7 @@ class StockDetailViewModel: ObservableObject
     func reloadStockData(symbol: String)
     {
         
-        APICaller.shared.getQuoteData(s
+        APICaller.shared.getQuoteData(searchSymbols: "\(symbol.uppercased())") { connectionResult in
+            switch connectionResult {
+            case .success(let stockSnapshots):
+               
