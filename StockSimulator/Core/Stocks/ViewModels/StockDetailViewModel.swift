@@ -243,3 +243,9 @@ class StockDetailViewModel: ObservableObject
             
         }
     }
+    
+    func loadQuoteSummary(symbol: String)
+    {
+        APICaller.shared.getQuoteSummary(symbol: symbol) { result in
+            switch result {
+            case
