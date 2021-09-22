@@ -248,4 +248,8 @@ class StockDetailViewModel: ObservableObject
     {
         APICaller.shared.getQuoteSummary(symbol: symbol) { result in
             switch result {
-            case
+            case .quoteSummarySuccess(let array):
+//                print(array)
+                if let data = array.first {
+                    DispatchQueue.main.async {
+                        self
