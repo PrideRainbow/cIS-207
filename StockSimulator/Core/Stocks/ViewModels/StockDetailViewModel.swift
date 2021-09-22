@@ -235,4 +235,11 @@ class StockDetailViewModel: ObservableObject
                     }
                 }
             case .failure(let string):
-                print("Error loading
+                print("Error loading stock data for \(self.symbol): \(string)")
+            default:
+                print("Found Unexpected response getting quoteData")
+            }
+            
+            
+        }
+    }
