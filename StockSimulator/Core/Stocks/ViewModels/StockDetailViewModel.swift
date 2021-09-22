@@ -230,4 +230,9 @@ class StockDetailViewModel: ObservableObject
             case .success(let stockSnapshots):
                 if let foundStock = stockSnapshots.first(where: { $0.symbol.uppercased() == self.symbol.uppercased()}) {
                     DispatchQueue.main.async {
-                  
+                        self.stockSnapshot = foundStock
+                        self.loadOverviewStats()
+                    }
+                }
+            case .failure(let string):
+                print("Error loading
