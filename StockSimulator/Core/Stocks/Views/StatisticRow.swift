@@ -2,4 +2,15 @@
 //  StatisticRow.swift
 //  StockSimulator
 //
-//  C
+//  Created by Christopher Walter on 8/26/22.
+//
+
+import SwiftUI
+
+struct StatisticRow: View {
+    
+    let stat: StatisticModel
+    
+    var body: some View {
+        HStack(spacing: 15) {
+            Text(stat
