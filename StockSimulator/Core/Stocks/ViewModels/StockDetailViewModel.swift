@@ -260,4 +260,9 @@ class StockDetailViewModel: ObservableObject
             case .failure(let string):
                 print("Error loading QuoteSummary: \(string)")
             default:
-                print("Unexpected result when loading a quote summary for \(symbol)"
+                print("Unexpected result when loading a quote summary for \(symbol)")
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,5 @@
+//
+//  StatisticRow.swift
+//  StockSimulator
+//
+//  C
