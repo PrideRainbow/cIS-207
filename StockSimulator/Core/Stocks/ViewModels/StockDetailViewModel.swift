@@ -252,4 +252,9 @@ class StockDetailViewModel: ObservableObject
 //                print(array)
                 if let data = array.first {
                     DispatchQueue.main.async {
-                        self
+                        self.quoteSummary = data
+                        self.loadEarningsStats()
+                        self.calculateStockRating()
+                    }
+                }
+            case .failure(
