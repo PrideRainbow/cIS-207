@@ -13,4 +13,11 @@ struct StatisticRow: View {
     
     var body: some View {
         HStack(spacing: 15) {
-            Text(stat
+            Text(stat.title)
+                .font(.caption)
+                .lineLimit(2)
+//                .foregroundColor(Color.theme.secondaryText)
+            Spacer()
+            
+            HStack {
+         
