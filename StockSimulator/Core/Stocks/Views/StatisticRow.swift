@@ -26,4 +26,8 @@ struct StatisticRow: View {
                         Angle(degrees:(stat.percentageChange ?? 0) >= 0 ? 0 : 180))
                 
                 Text((stat.isPercentChange ?? true) ? (stat.percentageChange?.asPercentString() ?? ""): (stat.percentageChange?.formattedWithAbbreviations() ?? ""))
-                    .font
+                    .font(.caption)
+                    .bold()
+                    .lineLimit(2)
+            }
+            .foregroundColor((stat.percentageChange ?? 0) >= 0 ? Color.theme.green : 
