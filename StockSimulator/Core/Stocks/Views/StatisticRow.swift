@@ -20,4 +20,8 @@ struct StatisticRow: View {
             Spacer()
             
             HStack {
-         
+                Image(systemName: "triangle.fill")
+                    .font(.caption2)
+                    .rotationEffect(
+                        Angle(degrees:(stat.percentageChange ?? 0) >= 0 ? 0 : 180))
+     
