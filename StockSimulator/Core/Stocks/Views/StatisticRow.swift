@@ -34,4 +34,15 @@ struct StatisticRow: View {
             .opacity(stat.percentageChange == nil ? 0.0 : 1.0)
             Text(stat.value)
                 .font(.caption)
-                .foregroundColor(Color.th
+                .foregroundColor(Color.theme.accent)
+                .lineLimit(2)
+            
+            
+        }
+    
+        
+    }
+}
+
+struct StatisticRow_Previews: PreviewProvider {
+    static var previews: some View {
