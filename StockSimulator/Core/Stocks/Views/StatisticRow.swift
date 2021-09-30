@@ -30,4 +30,8 @@ struct StatisticRow: View {
                     .bold()
                     .lineLimit(2)
             }
-            .foregroundColor((stat.percentageChange ?? 0) >= 0 ? Color.theme.green : 
+            .foregroundColor((stat.percentageChange ?? 0) >= 0 ? Color.theme.green : Color.theme.red)
+            .opacity(stat.percentageChange == nil ? 0.0 : 1.0)
+            Text(stat.value)
+                .font(.caption)
+                .foregroundColor(Color.th
