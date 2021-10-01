@@ -46,3 +46,8 @@ struct StatisticRow: View {
 
 struct StatisticRow_Previews: PreviewProvider {
     static var previews: some View {
+        VStack {
+            StatisticRow(stat: dev.stat1)
+//                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.dark)
+            StatisticRow(stat: dev.stat2)
