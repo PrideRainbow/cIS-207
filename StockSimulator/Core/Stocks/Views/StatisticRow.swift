@@ -51,3 +51,8 @@ struct StatisticRow_Previews: PreviewProvider {
 //                .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
             StatisticRow(stat: dev.stat2)
+//                .previewLayout(.sizeThatFits)
+            StatisticRow(stat: dev.stat3)
+//                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.dark)
+     
