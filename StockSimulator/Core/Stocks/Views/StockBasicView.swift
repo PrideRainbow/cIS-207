@@ -8,3 +8,10 @@
 import SwiftUI
 
 struct StockBasicView: View {
+    
+//    @State var stockSnapshot: StockSnapshot? = nil
+    @State var stockSnapshot: StockSnapshot
+
+    var body: some View {
+        VStack {
+            HStac
