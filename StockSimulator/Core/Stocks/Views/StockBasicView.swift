@@ -14,4 +14,8 @@ struct StockBasicView: View {
 
     var body: some View {
         VStack {
-            HStac
+            HStack (alignment: .firstTextBaseline){
+                VStack(alignment: .leading){
+                    Text(stockSnapshot.symbol)
+                        .font(.title)
+                   
