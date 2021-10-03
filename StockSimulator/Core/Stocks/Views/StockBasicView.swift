@@ -18,4 +18,8 @@ struct StockBasicView: View {
                 VStack(alignment: .leading){
                     Text(stockSnapshot.symbol)
                         .font(.title)
-                   
+                        .fontWeight(.bold)
+                    Text(stockSnapshot.wrappedDisplayName)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+           
