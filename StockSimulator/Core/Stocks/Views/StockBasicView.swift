@@ -31,4 +31,8 @@ struct StockBasicView: View {
                         Text(stockSnapshot.regularMarketChangeFormatted)
                         
                         Text(stockSnapshot.regularMarketChangePercentFormatted)
-         
+                    }
+                    .foregroundColor(stockSnapshot.regularMarketChange >= 0 ? Color.theme.green : Color.theme.red)
+                    .font(.headline)
+                }
+ 
