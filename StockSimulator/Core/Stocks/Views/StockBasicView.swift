@@ -22,4 +22,10 @@ struct StockBasicView: View {
                     Text(stockSnapshot.wrappedDisplayName)
                         .font(.body)
                         .foregroundColor(.secondary)
-           
+                }
+                Spacer()
+                VStack {
+                    Text(String(format: "$%.2f", stockSnapshot.regularMarketPrice))
+                        .font(.title)
+                    HStack {
+ 
