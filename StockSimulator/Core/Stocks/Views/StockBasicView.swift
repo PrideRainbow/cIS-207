@@ -28,4 +28,7 @@ struct StockBasicView: View {
                     Text(String(format: "$%.2f", stockSnapshot.regularMarketPrice))
                         .font(.title)
                     HStack {
- 
+                        Text(stockSnapshot.regularMarketChangeFormatted)
+                        
+                        Text(stockSnapshot.regularMarketChangePercentFormatted)
+         
