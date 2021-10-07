@@ -35,4 +35,14 @@ struct StockBasicView: View {
                     .foregroundColor(stockSnapshot.regularMarketChange >= 0 ? Color.theme.green : Color.theme.red)
                     .font(.headline)
                 }
- 
+                .onAppear(perform: loadCurrentStockInfo)
+            }
+            
+        }
+        
+    }
+    
+    func loadCurrentStockInfo()
+    {
+        print("on appear called in stockBasicView")
+   
