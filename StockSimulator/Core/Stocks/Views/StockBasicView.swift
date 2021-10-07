@@ -50,4 +50,8 @@ struct StockBasicView: View {
         let apiCaller = APICaller.shared
         apiCaller.getQuoteData(searchSymbols: searchString.uppercased()) {
             connectionResult in
+            
+            switch connectionResult {
+                case .success(let theStocks):
+                    // link the stocks to the current stock prices, update the values,
       
