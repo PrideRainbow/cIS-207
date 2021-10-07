@@ -45,4 +45,9 @@ struct StockBasicView: View {
     func loadCurrentStockInfo()
     {
         print("on appear called in stockBasicView")
-   
+        let searchString = stockSnapshot.symbol
+        
+        let apiCaller = APICaller.shared
+        apiCaller.getQuoteData(searchSymbols: searchString.uppercased()) {
+            connectionResult in
+      
