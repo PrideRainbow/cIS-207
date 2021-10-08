@@ -62,4 +62,15 @@ struct StockBasicView: View {
                         }
                     }
                 case .failure(let error):
-          
+                    print(error)
+                
+                default:
+                    print("ConnectionResult is not success or failure")
+
+            }
+        }
+    }
+}
+
+
+st
