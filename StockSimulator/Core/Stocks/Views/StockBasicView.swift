@@ -54,4 +54,7 @@ struct StockBasicView: View {
             switch connectionResult {
                 case .success(let theStocks):
                     // link the stocks to the current stock prices, update the values,
-      
+                    for snapshot in theStocks
+                    {
+                        if snapshot.symbol == stockSnapshot.symbol {
+                            self.stockSnaps
