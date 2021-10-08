@@ -57,4 +57,9 @@ struct StockBasicView: View {
                     for snapshot in theStocks
                     {
                         if snapshot.symbol == stockSnapshot.symbol {
-                            self.stockSnaps
+                            self.stockSnapshot = snapshot
+                            print("stock price is \(snapshot.regularMarketPrice)")
+                        }
+                    }
+                case .failure(let error):
+          
