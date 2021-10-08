@@ -73,4 +73,9 @@ struct StockBasicView: View {
 }
 
 
-st
+struct StockBasicView_Previews: PreviewProvider {
+    static var previews: some View {
+        StockBasicView(stockSnapshot: StockSnapshot())
+        
+    }
+}
