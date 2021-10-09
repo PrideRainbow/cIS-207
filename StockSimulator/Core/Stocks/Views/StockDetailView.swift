@@ -214,3 +214,43 @@ extension StockDetailView {
             .font(.title)
             .bold()
             .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    var websiteLinkView: some View {
+        ZStack(alignment: .leading) {
+            if let summary = vm.quoteSummary, let assetProfile = summary.assetProfile, let urlString = assetProfile.website, let url = URL(string: urlString) {
+                Link(destination: url) {
+                    Text("Website: \(urlString)")
+                        .font(.headline)
+                        .foregroundColor(Color.blue)
+                        .padding()
+                }
+            }
+        }
+    }
+    
+    var stockRecommendationsSliderView: some View {
+        ScrollView(.horizontal)
+        {
+            HStack(spacing: 10) {
+                ForEach(vm.stockRecommendations) { rec in
+
+                    NavigationLink(destination: StockDetailView(symbol: rec.symbol)) {
+                        VStack(alignment: .center) {
+                            Text(rec.symbol)
+                                .font(.headline)
+                                .foregroundColor(Color.white)
+                            Text("\(rec.score.asDecimalWith6Decimals())")
+                                .font(.body)
+                                .foregroundColor(Color.white)
+                        }
+                        .padding(4)
+                        .background(Color.theme.buttonColor)
+                        .cornerRadius(8)
+                    }
+                }
+            }
+        }
+    }
+}
