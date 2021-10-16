@@ -9,4 +9,9 @@ import SwiftUI
 
 struct StockRow: View {
     
-    v
+    var stock: Stock
+    
+    var body: some View {
+        HStack (alignment: .firstTextBaseline){
+            VStack(alignment: .leading){
+                Text(stock.symbol ?? "Unknown")
