@@ -15,3 +15,8 @@ struct StockRow: View {
         HStack (alignment: .firstTextBaseline){
             VStack(alignment: .leading){
                 Text(stock.symbol ?? "Unknown")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text(stock.wrappedDisplayName)
+                    .font(.body)
+                    .foregroundColor
