@@ -30,4 +30,12 @@ struct StockRow: View {
                     
                     Text(stock.regularMarketChangePercentFormatted)
                 }
-      
+                .foregroundColor(stock.regularMarketChange >= 0 ? Color.theme.green : Color.theme.red)
+                .font(.headline)
+            }
+
+            
+            
+        }
+        
+  
