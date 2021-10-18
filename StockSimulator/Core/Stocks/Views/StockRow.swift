@@ -19,4 +19,10 @@ struct StockRow: View {
                     .fontWeight(.bold)
                 Text(stock.wrappedDisplayName)
                     .font(.body)
-                    .foregroundColor
+                    .foregroundColor(.secondary)
+            }
+            Spacer()
+            VStack {
+                Text(String(format: "$%.2f", stock.regularMarketPrice))
+                                .font(.title)
+                H
