@@ -25,4 +25,9 @@ struct StockRow: View {
             VStack {
                 Text(String(format: "$%.2f", stock.regularMarketPrice))
                                 .font(.title)
-                H
+                HStack {
+                    Text(stock.regularMarketChangeFormatted)
+                    
+                    Text(stock.regularMarketChangePercentFormatted)
+                }
+      
