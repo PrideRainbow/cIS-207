@@ -38,4 +38,13 @@ struct StockRow: View {
             
         }
         
-  
+        
+    }
+}
+
+struct StockRow_Previews: PreviewProvider {
+    static var previews: some View {
+
+        StockRow(stock: Stock(context: dev.dataController.container.viewContext))
+    }
+}
