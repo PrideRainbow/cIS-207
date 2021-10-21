@@ -23,4 +23,12 @@ struct StockSearchView: View {
     @State private var isTradePresented = false
     
     // will allow us to dismiss
-    @Environment(\.presentationMode) var presentation
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State private var showingErrorAlert = false
+    @State private var errorMessage = ""
+    
+    init(watchlist: Watchlist)
+    {
+        self.watchlist = watchlist
+//        s
