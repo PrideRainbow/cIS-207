@@ -18,4 +18,9 @@ struct StockSearchView: View {
     
     @State var searchSymbol: String = ""
 //    @State var foundStock: Bool = false
-//
+//    @State var stockSnapshots: [StockSnapshot] = []
+    
+    @State private var isTradePresented = false
+    
+    // will allow us to dismiss
+    @Environment(\.presentationMode) var presentation
