@@ -11,4 +11,11 @@ struct StockSearchView: View {
     
     @ObservedObject var vm = StocksViewModel()
     
-    @Enviro
+    @Environment(\.managedObjectContext) var moc // CoreData
+    
+    var watchlist: Watchlist?
+    var account: Account?
+    
+    @State var searchSymbol: String = ""
+//    @State var foundStock: Bool = false
+//
