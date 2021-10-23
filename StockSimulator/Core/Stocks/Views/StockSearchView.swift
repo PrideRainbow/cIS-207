@@ -31,4 +31,15 @@ struct StockSearchView: View {
     init(watchlist: Watchlist)
     {
         self.watchlist = watchlist
-//        s
+//        stockSnapshot = []
+    }
+    
+    init(theAccount: Account)
+    {
+        account = theAccount
+    }
+    
+    var body: some View {
+        VStack {
+            HStack {
+                TextField("Enter Stock 
