@@ -48,4 +48,8 @@ struct StockSearchView: View {
                     Text("Search")
                     
                 }
-  
+                
+            }
+            .padding()
+            .alert(isPresented: $showingErrorAlert) {
+                Alert(title: Text("Error"), message: Text("\(errorMessage)
