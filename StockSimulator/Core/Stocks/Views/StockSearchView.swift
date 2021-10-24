@@ -42,4 +42,10 @@ struct StockSearchView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Enter Stock 
+                TextField("Enter Stock Symbol", text: $searchSymbol)
+                    .autocapitalization(.allCharacters)
+                Button(action: getStockData) {
+                    Text("Search")
+                    
+                }
+  
