@@ -52,4 +52,8 @@ struct StockSearchView: View {
             }
             .padding()
             .alert(isPresented: $showingErrorAlert) {
-                Alert(title: Text("Error"), message: Text("\(errorMessage)
+                Alert(title: Text("Error"), message: Text("\(errorMessage)"), primaryButton: .default(Text("OK"), action: nil), secondaryButton: .cancel())
+            }
+                List {
+                    ForEach(vm.stockSnapshots)
+                    {
