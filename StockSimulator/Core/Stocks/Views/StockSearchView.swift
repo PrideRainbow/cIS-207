@@ -57,3 +57,8 @@ struct StockSearchView: View {
                 List {
                     ForEach(vm.stockSnapshots)
                     {
+                        stockSnapshot in
+                        StockBasicView(stockSnapshot: stockSnapshot)
+                        if watchlist != nil
+                        {
+ 
