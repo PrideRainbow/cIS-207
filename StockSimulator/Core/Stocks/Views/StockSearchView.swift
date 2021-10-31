@@ -64,4 +64,8 @@ struct StockSearchView: View {
                             Button(action: {
                                 
                                 saveToWatchlistCoreData(snapshot: stockSnapshot)
-               
+                                
+                            }) {
+                                Text("Add to WatchList")
+                                    .foregroundColor(Color.blue)
+                            
