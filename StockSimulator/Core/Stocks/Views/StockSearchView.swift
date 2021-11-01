@@ -73,4 +73,9 @@ struct StockSearchView: View {
                         if let theAccount = account
                         {
                             Button(action: {
-                                isTradePresented
+                                isTradePresented.toggle()
+                            }) {
+                                Text("Trade")
+                                    .foregroundColor(Color.blue)
+                            }
+               
