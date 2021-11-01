@@ -78,4 +78,7 @@ struct StockSearchView: View {
                                 Text("Trade")
                                     .foregroundColor(Color.blue)
                             }
-               
+                            .sheet(isPresented: $isTradePresented){
+                                List {
+                                TradeFormView(account: theAccount, stockSnapshot: stockSnapshot)
+           
