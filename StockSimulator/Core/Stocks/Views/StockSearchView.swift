@@ -68,4 +68,9 @@ struct StockSearchView: View {
                             }) {
                                 Text("Add to WatchList")
                                     .foregroundColor(Color.blue)
-                            
+                            }
+                        }
+                        if let theAccount = account
+                        {
+                            Button(action: {
+                                isTradePresented
