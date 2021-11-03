@@ -81,4 +81,11 @@ struct StockSearchView: View {
                             .sheet(isPresented: $isTradePresented){
                                 List {
                                 TradeFormView(account: theAccount, stockSnapshot: stockSnapshot)
-           
+                                }
+                            }
+                        }
+                    }
+                }
+                .listStyle(PlainListStyle())
+
+            Spac
