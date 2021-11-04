@@ -99,4 +99,8 @@ struct StockSearchView: View {
         vm.loadStocks(searchSymbols: searchSymbol)
     }
     
-  
+    func saveToWatchlistCoreData(snapshot: StockSnapshot)
+    {
+//        vm.updateWatchlist(snapshot: snapshot, watchlist: watchlist)
+//        // save stock to coredata...
+        let newSt
