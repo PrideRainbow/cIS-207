@@ -88,4 +88,15 @@ struct StockSearchView: View {
                 }
                 .listStyle(PlainListStyle())
 
-            Spac
+            Spacer()
+        }
+        .padding()
+    }
+    
+    func getStockData()
+    {
+        searchSymbol = searchSymbol.replacingOccurrences(of: " ", with: "")
+        vm.loadStocks(searchSymbols: searchSymbol)
+    }
+    
+  
