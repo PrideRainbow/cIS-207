@@ -103,4 +103,8 @@ struct StockSearchView: View {
     {
 //        vm.updateWatchlist(snapshot: snapshot, watchlist: watchlist)
 //        // save stock to coredata...
-        let newSt
+        let newStock = Stock(context: moc)
+        newStock.updateValuesFromStockSnapshot(snapshot: snapshot)
+
+        // make relationship between stock and the watchlist
+        if let theWatchlist = watchlis
