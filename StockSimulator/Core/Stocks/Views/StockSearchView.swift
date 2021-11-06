@@ -126,4 +126,8 @@ struct StockSearchView: View {
 
 struct StockSearchView_Previews: PreviewProvider {
     static var previews: some View {
-//        StockSearchView(watchlis
+//        StockSearchView(watchlist: Watchlist(context: dev.dataController.container.viewContext))
+        StockSearchView(watchlist: Watchlist())
+            .environment(\.managedObjectContext, dev.dataController.container.viewContext)
+    }
+}
