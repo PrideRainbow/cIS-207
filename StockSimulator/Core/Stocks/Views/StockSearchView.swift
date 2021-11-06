@@ -107,4 +107,8 @@ struct StockSearchView: View {
         newStock.updateValuesFromStockSnapshot(snapshot: snapshot)
 
         // make relationship between stock and the watchlist
-        if let theWatchlist = watchlis
+        if let theWatchlist = watchlist, let theStocks = theWatchlist.stocks?.allObjects as? [Stock]
+        {
+            let allSymbols = theStocks.map({ $0.wrappedSymbol })
+            if !allSymbols.contains(newStock.wrappedSymbol) {
+     
