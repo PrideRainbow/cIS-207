@@ -111,4 +111,10 @@ struct StockSearchView: View {
         {
             let allSymbols = theStocks.map({ $0.wrappedSymbol })
             if !allSymbols.contains(newStock.wrappedSymbol) {
-     
+                newStock.addToWatchlists(theWatchlist)
+                theWatchlist.addToStocks(newStock)
+            }
+
+            if moc.hasChanges {
+                try? moc.save() // save to CoreData
+            
