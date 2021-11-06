@@ -117,4 +117,13 @@ struct StockSearchView: View {
 
             if moc.hasChanges {
                 try? moc.save() // save to CoreData
-            
+            }
+        }
+        presentationMode.wrappedValue.dismiss()
+    }
+    
+}
+
+struct StockSearchView_Previews: PreviewProvider {
+    static var previews: some View {
+//        StockSearchView(watchlis
