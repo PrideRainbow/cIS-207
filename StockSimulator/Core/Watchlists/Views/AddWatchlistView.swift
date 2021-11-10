@@ -22,4 +22,9 @@ struct AddWatchlistView: View {
                 HStack {
                     Text("Name:")
                     TextField("Enter Watchlist Name", text: $name)
-                  
+                        .autocapitalization(.words)
+//                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+            }
+            Button(action: {
+//                vm
