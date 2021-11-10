@@ -31,4 +31,10 @@ struct AddWatchlistView: View {
                 // add the WatchList
                 let newWatchlist = Watchlist(context: moc)
                 newWatchlist.id = UUID()
-             
+                newWatchlist.name = name
+                newWatchlist.created = Date()
+
+                if moc.hasChanges {
+                    try? moc.save()
+                }
+                pr
