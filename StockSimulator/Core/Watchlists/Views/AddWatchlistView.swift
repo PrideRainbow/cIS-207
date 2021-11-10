@@ -14,4 +14,12 @@ struct AddWatchlistView: View {
 //    @EnvironmentObject var vm : StocksViewModel
 
     // will allow us to dismiss
-    @Environment(\.presentationMode) var pre
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        Form {
+            Section{
+                HStack {
+                    Text("Name:")
+                    TextField("Enter Watchlist Name", text: $name)
+                  
