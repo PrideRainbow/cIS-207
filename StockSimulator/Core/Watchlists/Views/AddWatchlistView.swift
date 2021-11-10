@@ -27,4 +27,8 @@ struct AddWatchlistView: View {
                 }
             }
             Button(action: {
-//                vm
+//                vm.addWatchlist(name: name)
+                // add the WatchList
+                let newWatchlist = Watchlist(context: moc)
+                newWatchlist.id = UUID()
+             
