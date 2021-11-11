@@ -51,4 +51,7 @@ struct AddWatchlistView: View {
 struct AddWatchlistView_Previews: PreviewProvider {
     static var previews: some View {
         AddWatchlistView(name: "")
-            .envir
+            .environment(\.managedObjectContext, dev.dataController.container.viewContext)
+//            .environmentObject(dev.stockVM)
+    }
+}
