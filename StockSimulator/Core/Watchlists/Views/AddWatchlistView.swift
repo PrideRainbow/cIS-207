@@ -43,4 +43,12 @@ struct AddWatchlistView: View {
             }){
                 Text("Save")
             }
-            .disabled(
+            .disabled(name.isEmpty)
+        }
+    }
+}
+
+struct AddWatchlistView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddWatchlistView(name: "")
+            .envir
