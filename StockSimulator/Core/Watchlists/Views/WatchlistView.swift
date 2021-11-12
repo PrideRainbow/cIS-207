@@ -82,3 +82,76 @@ struct WatchlistView: View {
             .navigationTitle("\(watchlist.name ?? "Watchlist")")
             .navigationViewStyle(.stack)
             
+        
+            .onAppear(perform: loadCurrentStockInfo)
+        }
+    }
+    
+    func loadCurrentStockInfo()
+    {
+//        print("onAppear called")
+        var searchString = ""
+        for s in stocks
+        {
+            searchString += s.wrappedSymbol+","
+        }
+//        vm.updateStockPrices(searchSymbols: searchString, stocks: stocks)
+        let apiCaller = APICaller.shared
+        apiCaller.getQuoteData(searchSymbols: searchString) {
+            connectionResult in
+            switch connectionResult {
+                case .success(let theStocks):
+                    // link the stocks to the current stock prices, update the values,
+                    for snapshot in theStocks
+                    {
+                        if let stockCoreData = stocks.first(where: {$0.symbol == snapshot.symbol}) {
+                            stockCoreData.updateValuesFromStockSnapshot(snapshot: snapshot)
+
+                            print("updated values for \(stockCoreData.wrappedSymbol)")
+                        }
+                    }
+                DispatchQueue.main.async {
+                    try? moc.save()
+                }
+                   
+                case .failure(let error):
+                    print(error)
+                    errorMessage = error
+                    if stocks.count > 0 {
+                        showingErrorAlert = true
+                    }
+                default:
+                    print("ConnectionResult is not success or failure")
+            }
+        }
+    }
+    
+    func delete(at offsets: IndexSet) {
+        
+        for index in offsets {
+            let stock = stocks[index]
+            moc.delete(stock)
+        }
+        try? moc.save()
+    }
+    
+}
+
+struct WatchlistView_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = dev.dataController.container.viewContext
+        //Test data
+
+        
+        return
+            NavigationView {
+                WatchlistView(watchlist: dev.sampleWatchlist)
+                    .environment(\.managedObjectContext, context)
+                    .navigationViewStyle(.stack)
+            }
+        
+        
+//            .environmentObject(dev.stockVM)
+        
+    }
+}
