@@ -7,4 +7,9 @@
 
 import SwiftUI
 
-struct W
+struct WatchlistsView: View {
+    @Environment(\.managedObjectContext) var moc // CoreData
+    
+    @Environment(\.editMode) private var editMode
+    
+//    @EnvironmentObject var vm: StocksViewM
