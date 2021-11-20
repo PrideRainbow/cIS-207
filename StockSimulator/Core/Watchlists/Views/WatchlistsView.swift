@@ -12,4 +12,7 @@ struct WatchlistsView: View {
     
     @Environment(\.editMode) private var editMode
     
-//    @EnvironmentObject var vm: StocksViewM
+//    @EnvironmentObject var vm: StocksViewModel
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Watchlist.created, ascending: false)], animation: Animation.default) var watchlists: FetchedResults<Watchlist>
+    
+    @State va
