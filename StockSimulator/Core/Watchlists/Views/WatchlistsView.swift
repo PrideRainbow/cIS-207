@@ -25,4 +25,10 @@ struct WatchlistsView: View {
                     NavigationLink(destination: WatchlistView(watchlist: watchlist)) {
                         Text(watchlist.wrappedName)
                     }
-         
+                    
+                }
+                .onDelete(perform: delete)
+            }
+            .listStyle(.plain)
+            .toolbar {
+                ToolbarItem(placement: .navig
