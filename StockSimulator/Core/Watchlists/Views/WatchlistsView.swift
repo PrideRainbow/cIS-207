@@ -15,4 +15,10 @@ struct WatchlistsView: View {
 //    @EnvironmentObject var vm: StocksViewModel
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Watchlist.created, ascending: false)], animation: Animation.default) var watchlists: FetchedResults<Watchlist>
     
-    @State va
+    @State var isAddWatchlistPresented = false
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(watchlists) {
+                    watchlist in
