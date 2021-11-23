@@ -37,4 +37,9 @@ struct WatchlistsView: View {
                     }) {
                         Image(systemName: "plus")
                     }
-    
+                    .sheet(isPresented: $isAddWatchlistPresented) {
+                        AddWatchlistView(name: "")
+                    }
+                }
+                ToolbarItem {
+                    EditBu
