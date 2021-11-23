@@ -31,4 +31,10 @@ struct WatchlistsView: View {
             }
             .listStyle(.plain)
             .toolbar {
-                ToolbarItem(placement: .navig
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isAddWatchlistPresented.toggle()
+                    }) {
+                        Image(systemName: "plus")
+                    }
+    
