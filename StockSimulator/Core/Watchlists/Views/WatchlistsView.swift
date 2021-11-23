@@ -42,4 +42,13 @@ struct WatchlistsView: View {
                     }
                 }
                 ToolbarItem {
-                    EditBu
+                    EditButton()
+                }
+            }
+            .navigationTitle("Watchlists")
+
+
+        }
+        .navigationViewStyle(.stack)
+       
+//        .navigationViewStyle(StackNavigationViewStyle())
