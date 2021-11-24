@@ -52,3 +52,10 @@ struct WatchlistsView: View {
         .navigationViewStyle(.stack)
        
 //        .navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    
+    func delete(at offsets: IndexSet) {
+        for index in offsets {
+            let watchlist = watchlists[index]
+//            vm.deleteWatchlist(watchlist: 
