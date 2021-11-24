@@ -58,4 +58,12 @@ struct WatchlistsView: View {
     func delete(at offsets: IndexSet) {
         for index in offsets {
             let watchlist = watchlists[index]
-//            vm.deleteWatchlist(watchlist: 
+//            vm.deleteWatchlist(watchlist: watchlist)
+            moc.delete(watchlist)
+        }
+        try? moc.save()
+    }
+}
+
+struct WatchlistsView_Previews: PreviewProvider {
+    static var previews: some Vie
