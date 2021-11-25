@@ -75,3 +75,5 @@ struct WatchlistsView_Previews: PreviewProvider {
 //            .environmentObject(dev.stockVM)
 
         
+    }
+}
