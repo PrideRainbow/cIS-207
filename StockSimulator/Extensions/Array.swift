@@ -12,4 +12,9 @@ import SwiftUI
 extension Array where Element == Double {
     // Return the elements of the sequence Normalized
     var normalized: [Double] {
-     
+        if let min = self.min(), let max = self.max() {
+            return self.map { ($0 - min) / ( max - min) }
+        }
+        else {
+            // we do not have a minimum and maximum
+            return []
