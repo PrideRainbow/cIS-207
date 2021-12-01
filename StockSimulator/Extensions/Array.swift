@@ -18,3 +18,24 @@ extension Array where Element == Double {
         else {
             // we do not have a minimum and maximum
             return []
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// This is used to get only unique values in an array
+extension Sequence where Iterator.Element: Hashable {
+    func unique() -> [Iterator.Element] {
+        va
