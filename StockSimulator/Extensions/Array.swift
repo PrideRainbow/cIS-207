@@ -38,4 +38,8 @@ extension Array where Element == Double {
 // This is used to get only unique values in an array
 extension Sequence where Iterator.Element: Hashable {
     func unique() -> [Iterator.Element] {
-        va
+        var seen: Set<Iterator.Element> = []
+        return filter { seen.insert($0).inserted }
+    }
+}
+
