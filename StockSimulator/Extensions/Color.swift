@@ -21,4 +21,11 @@ struct ColorTheme {
     let background = Color("BackgroundColor")
     let green = Color("GreenColor")
     let red = Color("RedColor")
-    let secondaryText = Color("SecondaryTextC
+    let secondaryText = Color("SecondaryTextColor")
+    let buttonColor = Color("ButtonColor")
+    let yellow = Color("YellowColor")
+    
+}
+
+struct ColorTheme2 {
+    let accent = Color(#colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha
