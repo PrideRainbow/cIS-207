@@ -28,4 +28,6 @@ struct ColorTheme {
 }
 
 struct ColorTheme2 {
-    let accent = Color(#colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha
+    let accent = Color(#colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha: 1))
+    let background = Color(#colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1))
+    let green = Color(#colorLiteral(red: 0, green: 0.5603182912, blue: 0, alpha: 1
