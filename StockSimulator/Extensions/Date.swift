@@ -13,4 +13,11 @@ extension Date
     
     // convert a time since 1970 into a date to be displayed
 //    init()
-    private var sh
+    private var shortFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter
+    }
+    
+    private var shortDateAndTimeFormatter: DateFormatter {
+        
