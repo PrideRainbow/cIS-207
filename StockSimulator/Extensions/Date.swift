@@ -41,4 +41,8 @@ extension Date
         return formatter
     }
     
-    func asMediumDateStri
+    func asMediumDateString() -> String {
+        return mediumFormatter.string(from: self)
+    }
+    
+}
