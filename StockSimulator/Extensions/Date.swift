@@ -27,4 +27,11 @@ extension Date
     }
     
     
-    func asSho
+    func asShortDateString() -> String {
+        return shortFormatter.string(from: self)
+    }
+    
+    func asShortDateAndTimeString() -> String {
+        return shortDateAndTimeFormatter.string(from: self)
+    }
+  
