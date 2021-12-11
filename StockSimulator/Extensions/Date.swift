@@ -34,4 +34,11 @@ extension Date
     func asShortDateAndTimeString() -> String {
         return shortDateAndTimeFormatter.string(from: self)
     }
-  
+    
+    private var mediumFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
+    }
+    
+    func asMediumDateStri
