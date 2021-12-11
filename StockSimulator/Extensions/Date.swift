@@ -20,4 +20,11 @@ extension Date
     }
     
     private var shortDateAndTimeFormatter: DateFormatter {
-        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    }
+    
+    
+    func asSho
