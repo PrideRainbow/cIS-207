@@ -334,3 +334,195 @@ class DeveloperPreview {
 //            "market": "us24_market",
 //            "marketState": "REGULAR",
 //            "quoteType": "FUTURE",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "-0.22",
+//              "raw": -0.2199974
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "-0.58%",
+//              "raw": -0.5781798
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "38.05",
+//              "raw": 38.05
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "37.83",
+//              "raw": 37.83
+//            },
+//            "regularMarketTime": {
+//              "fmt": "6:00PM EDT",
+//              "raw": 1599688818
+//            },
+//            "shortName": "Crude Oil",
+//            "sourceInterval": 30,
+//            "symbol": "CL=F",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "contractSymbol": false,
+//            "exchange": "CMX",
+//            "exchangeDataDelayedBy": 30,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 967608000000,
+//            "fullExchangeName": "COMEX",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "headSymbol": true,
+//            "headSymbolAsString": "GC=F",
+//            "language": "en-US",
+//            "market": "us24_market",
+//            "marketState": "REGULAR",
+//            "quoteType": "FUTURE",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "-0.70",
+//              "raw": -0.70007324
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "-0.04%",
+//              "raw": -0.035811204
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "1,954.90",
+//              "raw": 1954.9
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "1,954.20",
+//              "raw": 1954.2
+//            },
+//            "regularMarketTime": {
+//              "fmt": "6:00PM EDT",
+//              "raw": 1599688818
+//            },
+//            "shortName": "Gold",
+//            "sourceInterval": 15,
+//            "symbol": "GC=F",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "contractSymbol": false,
+//            "exchange": "CMX",
+//            "exchangeDataDelayedBy": 30,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 967608000000,
+//            "fullExchangeName": "COMEX",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "headSymbol": true,
+//            "headSymbolAsString": "SI=F",
+//            "language": "en-US",
+//            "market": "us24_market",
+//            "marketState": "REGULAR",
+//            "quoteType": "FUTURE",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "0.10",
+//              "raw": 0.10199928
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "0.38%",
+//              "raw": 0.37661737
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "27.08",
+//              "raw": 27.083
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "27.18",
+//              "raw": 27.185
+//            },
+//            "regularMarketTime": {
+//              "fmt": "6:00PM EDT",
+//              "raw": 1599688819
+//            },
+//            "shortName": "Silver",
+//            "sourceInterval": 15,
+//            "symbol": "SI=F",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "currency": "USD",
+//            "exchange": "CCY",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "Europe/London",
+//            "exchangeTimezoneShortName": "BST",
+//            "firstTradeDateMilliseconds": 1070236800000,
+//            "fullExchangeName": "CCY",
+//            "gmtOffSetMilliseconds": 3600000,
+//            "language": "en-US",
+//            "market": "ccy_market",
+//            "marketState": "REGULAR",
+//            "priceHint": 4,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "CURRENCY",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "0.0032",
+//              "raw": 0.0031987429
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "0.27%",
+//              "raw": 0.2716066
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "1.1777",
+//              "raw": 1.1777176
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "1.1809",
+//              "raw": 1.1809163
+//            },
+//            "regularMarketTime": {
+//              "fmt": "11:09PM BST",
+//              "raw": 1599689363
+//            },
+//            "shortName": "EUR/USD",
+//            "sourceInterval": 15,
+//            "symbol": "EURUSD=X",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "NYB",
+//            "exchangeDataDelayedBy": 30,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": -252356400000,
+//            "fullExchangeName": "NYBOT",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "longName": "Treasury Yield 10 Years",
+//            "market": "us24_market",
+//            "marketState": "REGULAR",
+//            "priceHint": 4,
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "0.0190",
+//              "raw": 0.018999994
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "2.78%",
+//              "raw": 2.777777
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "0.6840",
+//              "raw": 0.684
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "0.7030",
+//              "raw": 0.703
+//            },
+//            "regularMarketTime": {
+//              "fmt": "2:59PM EDT",
+//              "raw": 1599677994
+//            },
+//            "shortName": "10-Yr Bond",
+//            "sourceInterval": 30,
+//            "symbol": "^TNX",
+//            "tradeable": false,
