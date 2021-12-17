@@ -526,3 +526,189 @@ class DeveloperPreview {
 //            "sourceInterval": 30,
 //            "symbol": "^TNX",
 //            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "WCB",
+//            "exchangeDataDelayedBy": 20,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 631290600000,
+//            "fullExchangeName": "Chicago Options",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "-2.65",
+//              "raw": -2.6499996
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "-8.42%",
+//              "raw": -8.423394
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "31.46",
+//              "raw": 31.46
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "28.81",
+//              "raw": 28.81
+//            },
+//            "regularMarketTime": {
+//              "fmt": "4:14PM EDT",
+//              "raw": 1599682489
+//            },
+//            "shortName": "Vix",
+//            "sourceInterval": 15,
+//            "symbol": "^VIX",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "currency": "USD",
+//            "exchange": "CCY",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "Europe/London",
+//            "exchangeTimezoneShortName": "BST",
+//            "firstTradeDateMilliseconds": 1070236800000,
+//            "fullExchangeName": "CCY",
+//            "gmtOffSetMilliseconds": 3600000,
+//            "language": "en-US",
+//            "market": "ccy_market",
+//            "marketState": "REGULAR",
+//            "priceHint": 4,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "CURRENCY",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "0.0029",
+//              "raw": 0.0029371977
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "0.23%",
+//              "raw": 0.22632584
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "1.2978",
+//              "raw": 1.2977574
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "1.3007",
+//              "raw": 1.3006946
+//            },
+//            "regularMarketTime": {
+//              "fmt": "11:09PM BST",
+//              "raw": 1599689363
+//            },
+//            "shortName": "GBP/USD",
+//            "sourceInterval": 15,
+//            "symbol": "GBPUSD=X",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "currency": "JPY",
+//            "exchange": "CCY",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "Europe/London",
+//            "exchangeTimezoneShortName": "BST",
+//            "firstTradeDateMilliseconds": 846633600000,
+//            "fullExchangeName": "CCY",
+//            "gmtOffSetMilliseconds": 3600000,
+//            "language": "en-US",
+//            "market": "ccy_market",
+//            "marketState": "REGULAR",
+//            "priceHint": 4,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "CURRENCY",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "0.2060",
+//              "raw": 0.20599365
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "0.19%",
+//              "raw": 0.19442166
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "105.9520",
+//              "raw": 105.952
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "106.1580",
+//              "raw": 106.158
+//            },
+//            "regularMarketTime": {
+//              "fmt": "11:10PM BST",
+//              "raw": 1599689420
+//            },
+//            "shortName": "USD/JPY",
+//            "sourceInterval": 15,
+//            "symbol": "JPY=X",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "CCC",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "Europe/London",
+//            "exchangeTimezoneShortName": "BST",
+//            "firstTradeDateMilliseconds": 1410908400000,
+//            "fullExchangeName": "CCC",
+//            "gmtOffSetMilliseconds": 3600000,
+//            "language": "en-US",
+//            "market": "ccc_market",
+//            "marketState": "REGULAR",
+//            "quoteSourceName": "CryptoCompare",
+//            "quoteType": "CRYPTOCURRENCY",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "141.08",
+//              "raw": 141.07715
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "1.39%",
+//              "raw": 1.3925841
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "10,130.60",
+//              "raw": 10130.602
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "10,271.68",
+//              "raw": 10271.679
+//            },
+//            "regularMarketTime": {
+//              "fmt": "11:08PM BST",
+//              "raw": 1599689310
+//            },
+//            "sourceInterval": 15,
+//            "symbol": "BTC-USD",
+//            "tradeable": true,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "NIM",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 1546266600000,
+//            "fullExchangeName": "Nasdaq GIDS",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "6.75",
+//              "raw": 6.754898
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "3.11%",
