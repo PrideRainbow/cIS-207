@@ -142,3 +142,195 @@ class DeveloperPreview {
 ////        stock.displayName = "ABC STOCK"
 ////        stock.regularMarketPrice = 21.34
 ////        stock.regularMarketChange = 1.05
+////        stock.regularMarketChangePercent = 0.12
+//
+//        return stock
+//    }
+    
+    
+    
+    
+//    Sample Market Summary Response:
+//
+//    {
+//      "marketSummaryResponse": {
+//        "error": null,
+//        "result": [
+//          {
+//            "exchange": "SNP",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": -1325583000000,
+//            "fullExchangeName": "SNP",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "67.12",
+//              "raw": 67.11987
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "2.01%",
+//              "raw": 2.0144987
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "3,331.84",
+//              "raw": 3331.84
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "3,398.96",
+//              "raw": 3398.96
+//            },
+//            "regularMarketTime": {
+//              "fmt": "5:12PM EDT",
+//              "raw": 1599685935
+//            },
+//            "shortName": "S&P 500",
+//            "sourceInterval": 15,
+//            "symbol": "^GSPC",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "DJI",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 475857000000,
+//            "fullExchangeName": "DJI",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "439.58",
+//              "raw": 439.58008
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "1.60%",
+//              "raw": 1.5984213
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "27,500.89",
+//              "raw": 27500.89
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "27,940.47",
+//              "raw": 27940.47
+//            },
+//            "regularMarketTime": {
+//              "fmt": "5:12PM EDT",
+//              "raw": 1599685935
+//            },
+//            "shortName": "Dow 30",
+//            "sourceInterval": 120,
+//            "symbol": "^DJI",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "NIM",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 34612200000,
+//            "fullExchangeName": "Nasdaq GIDS",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteSourceName": "Delayed Quote",
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "293.87",
+//              "raw": 293.87402
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "2.71%",
+//              "raw": 2.709093
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "10,847.70",
+//              "raw": 10847.7
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "11,141.56",
+//              "raw": 11141.564
+//            },
+//            "regularMarketTime": {
+//              "fmt": "5:15PM EDT",
+//              "raw": 1599686159
+//            },
+//            "shortName": "Nasdaq",
+//            "sourceInterval": 15,
+//            "symbol": "^IXIC",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "WCB",
+//            "exchangeDataDelayedBy": 20,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 558279000000,
+//            "fullExchangeName": "Chicago Options",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "language": "en-US",
+//            "market": "us_market",
+//            "marketState": "POST",
+//            "priceHint": 2,
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "21.89",
+//              "raw": 21.888916
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "1.45%",
+//              "raw": 1.4548081
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "1,504.59",
+//              "raw": 1504.5913
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "1,526.48",
+//              "raw": 1526.4802
+//            },
+//            "regularMarketTime": {
+//              "fmt": "4:30PM EDT",
+//              "raw": 1599683408
+//            },
+//            "shortName": "Russell 2000",
+//            "sourceInterval": 15,
+//            "symbol": "^RUT",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "contractSymbol": false,
+//            "exchange": "NYM",
+//            "exchangeDataDelayedBy": 30,
+//            "exchangeTimezoneName": "America/New_York",
+//            "exchangeTimezoneShortName": "EDT",
+//            "firstTradeDateMilliseconds": 967003200000,
+//            "fullExchangeName": "NY Mercantile",
+//            "gmtOffSetMilliseconds": -14400000,
+//            "headSymbol": true,
+//            "headSymbolAsString": "CL=F",
+//            "language": "en-US",
+//            "market": "us24_market",
+//            "marketState": "REGULAR",
+//            "quoteType": "FUTURE",
