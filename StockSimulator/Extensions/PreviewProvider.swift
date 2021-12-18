@@ -712,3 +712,108 @@ class DeveloperPreview {
 //            },
 //            "regularMarketChangePercent": {
 //              "fmt": "3.11%",
+//              "raw": 3.105599
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "217.51",
+//              "raw": 217.507
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "224.26",
+//              "raw": 224.262
+//            },
+//            "regularMarketTime": {
+//              "fmt": "5:57PM EDT",
+//              "raw": 1599688629
+//            },
+//            "shortName": "CMC Crypto 200",
+//            "sourceInterval": 15,
+//            "symbol": "^CMC200",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "FGI",
+//            "exchangeDataDelayedBy": 15,
+//            "exchangeTimezoneName": "Europe/London",
+//            "exchangeTimezoneShortName": "BST",
+//            "firstTradeDateMilliseconds": 441964800000,
+//            "fullExchangeName": "FTSE Index",
+//            "gmtOffSetMilliseconds": 3600000,
+//            "language": "en-US",
+//            "market": "gb_market",
+//            "marketState": "POSTPOST",
+//            "priceHint": 2,
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "82.54",
+//              "raw": 82.54004
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "1.39%",
+//              "raw": 1.3918359
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "5,930.30",
+//              "raw": 5930.3
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "6,012.84",
+//              "raw": 6012.84
+//            },
+//            "regularMarketTime": {
+//              "fmt": "4:35PM BST",
+//              "raw": 1599665729
+//            },
+//            "shortName": "FTSE 100",
+//            "sourceInterval": 15,
+//            "symbol": "^FTSE",
+//            "tradeable": false,
+//            "triggerable": false
+//          },
+//          {
+//            "exchange": "OSA",
+//            "exchangeDataDelayedBy": 0,
+//            "exchangeTimezoneName": "Asia/Tokyo",
+//            "exchangeTimezoneShortName": "JST",
+//            "firstTradeDateMilliseconds": -157420800000,
+//            "fullExchangeName": "Osaka",
+//            "gmtOffSetMilliseconds": 32400000,
+//            "language": "en-US",
+//            "market": "jp_market",
+//            "marketState": "PREPRE",
+//            "priceHint": 2,
+//            "quoteType": "INDEX",
+//            "region": "US",
+//            "regularMarketChange": {
+//              "fmt": "-241.59",
+//              "raw": -241.5918
+//            },
+//            "regularMarketChangePercent": {
+//              "fmt": "-1.04%",
+//              "raw": -1.0380272
+//            },
+//            "regularMarketPreviousClose": {
+//              "fmt": "23,274.13",
+//              "raw": 23274.13
+//            },
+//            "regularMarketPrice": {
+//              "fmt": "23,032.54",
+//              "raw": 23032.54
+//            },
+//            "regularMarketTime": {
+//              "fmt": "3:15PM JST",
+//              "raw": 1599632102
+//            },
+//            "shortName": "Nikkei 225",
+//            "sourceInterval": 20,
+//            "symbol": "^N225",
+//            "tradeable": false,
+//            "triggerable": false
+//          }
+//        ]
+//      }
+//    }
+
+}
