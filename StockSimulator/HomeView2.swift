@@ -15,4 +15,11 @@ struct HomeView2: View {
                 
                 } label: {
                     Image(systemName: "slider.vertical.3")
-                        .font(.titl
+                        .font(.title2)
+                }
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Image("walter")
+               
