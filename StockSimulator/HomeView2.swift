@@ -10,4 +10,9 @@ import SwiftUI
 struct HomeView2: View {
     var body: some View {
         VStack {
-   
+            HStack {
+                Button {
+                
+                } label: {
+                    Image(systemName: "slider.vertical.3")
+                        .font(.titl
