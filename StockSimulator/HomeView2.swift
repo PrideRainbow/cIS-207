@@ -29,4 +29,9 @@ struct HomeView2: View {
                 }
             }
             .padding()
-          
+            .foregroundColor(.black)
+            VStack(spacing: 10) {
+                Text("Total Balance")
+                    .fontWeight(.bold)
+                Text("$ 51 200")
+                  
