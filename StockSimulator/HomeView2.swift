@@ -22,4 +22,11 @@ struct HomeView2: View {
                     
                 } label: {
                     Image("walter")
-               
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:45, height: 45)
+                        .clipShape(Circle())
+                }
+            }
+            .padding()
+          
