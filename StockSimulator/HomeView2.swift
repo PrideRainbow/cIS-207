@@ -34,4 +34,11 @@ struct HomeView2: View {
                 Text("Total Balance")
                     .fontWeight(.bold)
                 Text("$ 51 200")
-                  
+                    .font(.system(size: 38, weight: .bold))
+            }
+            .padding(.top, 20)
+            Button {
+                
+            } label: {
+                HStack(spacing: 5) {
+                    
