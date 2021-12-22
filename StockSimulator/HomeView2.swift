@@ -41,4 +41,9 @@ struct HomeView2: View {
                 
             } label: {
                 HStack(spacing: 5) {
-                    
+                    Text("Income")
+                    Image(systemName: "chevron.down")
+                }
+                .font(.caption.bold())
+                .padding(.vertical, 10)
+                .padding(.horizo
