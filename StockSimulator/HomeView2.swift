@@ -54,4 +54,9 @@ struct HomeView2: View {
             }
             // GraphView
             LineGraphView(data: samplePlot)
-                .fram
+                .frame(height: 220)
+                .padding(.top, 25)
+            Text("Shortcuts")
+                .font(.title.bold())
+                .frame(maxWidth: .infinity, alignment: .leading)
+               
