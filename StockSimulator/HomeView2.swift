@@ -50,4 +50,8 @@ struct HomeView2: View {
                 .background(.white, in: Capsule())
                 .foregroundColor(.black)
                 .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 5)
-                .shadow(co
+                .shadow(color: .black.opacity(0.03), radius: 5, x: -5, y: -5)
+            }
+            // GraphView
+            LineGraphView(data: samplePlot)
+                .fram
