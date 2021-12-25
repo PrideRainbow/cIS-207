@@ -46,4 +46,8 @@ struct HomeView2: View {
                 }
                 .font(.caption.bold())
                 .padding(.vertical, 10)
-                .padding(.horizo
+                .padding(.horizontal)
+                .background(.white, in: Capsule())
+                .foregroundColor(.black)
+                .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 5)
+                .shadow(co
