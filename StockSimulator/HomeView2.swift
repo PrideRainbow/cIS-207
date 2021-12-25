@@ -59,4 +59,8 @@ struct HomeView2: View {
             Text("Shortcuts")
                 .font(.title.bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
-               
+                .padding()
+                .padding(.top)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    CardView(image: "CWBuildsLogo", title:
