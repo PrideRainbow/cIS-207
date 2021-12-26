@@ -65,4 +65,9 @@ struct HomeView2: View {
                 HStack(spacing: 20) {
                     CardView(image: "CWBuildsLogo", title: "CWBuilds", price: "$ 26", color: Color.theme.green)
                     CardView(image: "logo", title: "Stock SImulator", price: "$ 2600", color: Color.theme.green)
-              
+                    CardView(image: "yahoologo", title: "Yahoo", price: "$ 120", color: Color.theme.green)
+                }
+                .padding()
+            }
+        }
+        .frame
