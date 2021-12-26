@@ -70,4 +70,9 @@ struct HomeView2: View {
                 .padding()
             }
         }
-        .frame
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.theme.background)
+    }
+    
+    // card view
+    @ViewBuilder func CardView(image: String, title: String, price: String,
