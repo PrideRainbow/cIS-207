@@ -75,4 +75,9 @@ struct HomeView2: View {
     }
     
     // card view
-    @ViewBuilder func CardView(image: String, title: String, price: String,
+    @ViewBuilder func CardView(image: String, title: String, price: String, color: Color) -> some View {
+        VStack(spacing: 15) {
+            Image(image)
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(co
