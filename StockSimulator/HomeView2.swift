@@ -80,4 +80,9 @@ struct HomeView2: View {
             Image(image)
                 .resizable()
                 .renderingMode(.template)
-                .aspectRatio(co
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.white)
+                .frame(width: 35, height: 35)
+                .padding()
+                .background(color, in: Circle())
+    
