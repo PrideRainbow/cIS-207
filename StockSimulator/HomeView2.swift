@@ -85,4 +85,10 @@ struct HomeView2: View {
                 .frame(width: 35, height: 35)
                 .padding()
                 .background(color, in: Circle())
-    
+            Text(title)
+                .font(.title3.bold())
+            Text(price)
+                .fontWeight(.semibold)
+                .foregroundColor(.gray)
+        }
+        .pa
