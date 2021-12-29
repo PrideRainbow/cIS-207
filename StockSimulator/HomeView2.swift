@@ -91,4 +91,7 @@ struct HomeView2: View {
                 .fontWeight(.semibold)
                 .foregroundColor(.gray)
         }
-        .pa
+        .padding(.vertical)
+        .padding(.horizontal, 25)
+        .background(.white, in: RoundedRectangle(cornerRadius: 15))
+        .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 
