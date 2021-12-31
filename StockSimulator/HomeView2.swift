@@ -94,4 +94,16 @@ struct HomeView2: View {
         .padding(.vertical)
         .padding(.horizontal, 25)
         .background(.white, in: RoundedRectangle(cornerRadius: 15))
-        .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 
+        .shadow(color: .black.opacity(0.05), radius: 5, x: 5, y: 5)
+        .shadow(color: .black.opacity(0.03), radius: 5, x: -5, y: -5)
+    }
+}
+
+struct HomeView2_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView2()
+    }
+}
+
+
+let samplePlot
