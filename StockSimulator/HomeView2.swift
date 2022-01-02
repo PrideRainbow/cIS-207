@@ -106,4 +106,6 @@ struct HomeView2_Previews: PreviewProvider {
 }
 
 
-let samplePlot
+let samplePlot: [CGFloat] = [
+989, 1200, 750, 790, 950, 1200, 600, 500, 600, 890, 1203, 1400, 900, 1250, 1600, 1200
+]
