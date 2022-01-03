@@ -84,3 +84,75 @@ struct LineGraphView: View {
                         .frame(width: 22, height: 22)
                         .overlay(
                             Circle()
+                                .fill(.white)
+                                .frame(width: 10, height: 10)
+                        )
+                    Rectangle()
+                        .fill(Color.theme.green)
+                        .frame(width: 1, height: 55)
+                    
+                    
+                }
+                // Fixed Frame
+                // For Gesture Calculation...
+                    .frame(width: 80, height: 170)
+                    // 170 / 2 = 185 - 15 => circle ring size
+                    .opacity(showPlot ? 1 : 0)
+                    .offset(y: 70)
+                    .offset(offset),
+//                    .opacity(showPlot ? 1 : 0)
+                alignment: .bottomLeading
+            )
+            .contentShape(Rectangle())
+            .gesture(DragGesture().onChanged({
+                value in
+                withAnimation{
+                    showPlot = true
+                }
+                let translation = value.location.x - 40
+                
+                // getting index...
+                let index = max(min(Int((translation / width).rounded() + 1), data.count - 1), 0)
+                
+                currentPlot = "$ \(data[index])"
+                self.translation = translation
+                // removing half width
+                offset = CGSize(width: points[index].x - 40, height: points[index].y - height)
+                
+            }).onEnded({ value in
+                withAnimation {
+                    showPlot = false
+                }
+            }))
+        }
+        .overlay(
+            VStack(alignment: .leading) {
+                let max = data.max() ?? 0
+                
+                Text("$ \(Int(max))")
+                    .font(.caption.bold())
+                Spacer()
+                Text("$ 0")
+                    .font(.caption.bold())
+            }
+                .frame(maxWidth: .infinity, alignment: .leading)
+        )
+        .padding(.horizontal, 10)
+        
+    }
+    
+    @ViewBuilder func fillBG() -> some View {
+        LinearGradient(colors: [
+            Color.theme.green.opacity(0.3),
+            Color.theme.green.opacity(0.2),
+            Color.theme.green.opacity(0.1)] + Array(repeating: Color.theme.red.opacity(0.1), count: 4) + Array(repeating: Color.clear, count: 2)
+        , startPoint: .top, endPoint: .bottom)
+    }
+}
+
+struct LineGraphView_Previews: PreviewProvider {
+    static var previews: some View {
+//        LineGraphView()
+        HomeView2()
+    }
+}
