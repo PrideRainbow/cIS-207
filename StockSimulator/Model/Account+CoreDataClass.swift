@@ -6,4 +6,15 @@
 //
 //
 
-import Fo
+import Foundation
+import CoreData
+
+
+public class Account: NSManagedObject {
+    
+    //    @Published var assets: [Asset] = []
+    
+    func loadAssets() -> [Asset]
+    {
+        var theAssets = [Asset]()
+        if let theTr
