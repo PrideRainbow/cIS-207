@@ -17,4 +17,7 @@ public class Account: NSManagedObject {
     func loadAssets() -> [Asset]
     {
         var theAssets = [Asset]()
-        if let theTr
+        if let theTransactionsSet = transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction]
+        {
+            for t in theTransactions {
+                // see if I already have 
