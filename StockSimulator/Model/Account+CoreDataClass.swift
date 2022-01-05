@@ -23,4 +23,8 @@ public class Account: NSManagedObject {
                 // see if I already have asset in the assets
                 if let foundAsset = theAssets.first(where: {$0.stock.wrappedSymbol == t.stock?.wrappedSymbol}) {
                     foundAsset.transactions.append(t)
-               
+                }
+                else {
+                    // make a new asset and add it to theAssets
+                    if let theStock = t.stock {
+                        let newAsset = Asset(transacti
