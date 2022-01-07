@@ -35,4 +35,8 @@ public class Account: NSManagedObject {
         }
         return theAssets
     }
-    var assets: [As
+    var assets: [Asset] {
+        var theAssets = [Asset]()
+        if let theTransactionsSet = transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction]
+        {
+            fo
