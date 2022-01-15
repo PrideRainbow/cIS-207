@@ -61,4 +61,12 @@ public class Account: NSManagedObject {
     //    var assets: [Asset] {
     //        get {
     //            return loadAccountAssets()
-    //     
+    //        }
+    //        set {
+    ////            self.assets = loadAccountAssets()
+    //        }
+    //    }
+        
+    //    func loadAccountAssets() -> [Asset]
+    //    {
+    ////        print("loadin
