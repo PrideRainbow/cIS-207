@@ -69,4 +69,7 @@ public class Account: NSManagedObject {
         
     //    func loadAccountAssets() -> [Asset]
     //    {
-    ////        print("loadin
+    ////        print("loading account assets")
+    //        var theAssets = [Asset]()
+    //        if let theTransactionsSet = transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction]
+    //        {
