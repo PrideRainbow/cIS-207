@@ -49,4 +49,16 @@ public class Account: NSManagedObject {
                     if let theStock = t.stock {
                         let newAsset = Asset(transactions: [t], stock: theStock)
                         theAssets.append(newAsset)
-                    
+                    }
+                }
+            }
+        }
+        return theAssets
+    }
+        
+        
+        
+    //    var assets: [Asset] {
+    //        get {
+    //            return loadAccountAssets()
+    //     
