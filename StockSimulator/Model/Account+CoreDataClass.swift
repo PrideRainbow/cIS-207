@@ -79,4 +79,6 @@ public class Account: NSManagedObject {
     //                    foundAsset.transactions.append(t)
     //                }
     //                else {
-    //            
+    //                    // make a new asset and add it to theAssets
+    //                    if let theStock = t.stock {
+    //                        let newAsset = Asset(transactions: [t], stock: theStock)
