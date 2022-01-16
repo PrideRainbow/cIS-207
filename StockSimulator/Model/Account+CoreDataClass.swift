@@ -73,3 +73,6 @@ public class Account: NSManagedObject {
     //        var theAssets = [Asset]()
     //        if let theTransactionsSet = transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction]
     //        {
+    //            for t in theTransactions {
+    //                // see if I already have asset in the assets
+    //                if let foundAsset = theAssets.first(where: 
