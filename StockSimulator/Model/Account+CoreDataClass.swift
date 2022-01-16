@@ -75,4 +75,8 @@ public class Account: NSManagedObject {
     //        {
     //            for t in theTransactions {
     //                // see if I already have asset in the assets
-    //                if let foundAsset = theAssets.first(where: 
+    //                if let foundAsset = theAssets.first(where: {$0.stock.wrappedSymbol == t.stock?.wrappedSymbol}) {
+    //                    foundAsset.transactions.append(t)
+    //                }
+    //                else {
+    //            
