@@ -88,4 +88,13 @@ public class Account: NSManagedObject {
     //            }
     //        }
     //        return theAssets
-  
+    //    }
+}
+
+
+    
+
+
+
+
+
