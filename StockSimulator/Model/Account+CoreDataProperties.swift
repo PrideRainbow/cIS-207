@@ -38,4 +38,13 @@ extension Account {
     
     var currentValue: Double {
         var total = cash
-        if let theTransactionsSet = self.transactions, let theTransactions = Array(theTran
+        if let theTransactionsSet = self.transactions, let theTransactions = Array(theTransactionsSet) as? [Transaction] {
+            for t in theTransactions {
+                total += t.currentValue
+            }
+            
+        }
+        return total
+    }
+    
+    
