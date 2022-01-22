@@ -21,4 +21,15 @@ extension Account {
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
     @NSManaged public var notes: String?
-    @NSManaged p
+    @NSManaged public var startingValue: Double
+    @NSManaged public var transactions: NSSet?
+
+}
+
+extension Account {
+    
+    var wrappedName: String {
+        name ?? "No Name"
+    }
+    
+    var wrappedNotes: Str
