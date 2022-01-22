@@ -32,4 +32,10 @@ extension Account {
         name ?? "No Name"
     }
     
-    var wrappedNotes: Str
+    var wrappedNotes: String {
+        notes ?? "Add Notes..."
+    }
+    
+    var currentValue: Double {
+        var total = cash
+        if let theTransactionsSet = self.transactions, let theTransactions = Array(theTran
