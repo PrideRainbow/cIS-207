@@ -47,4 +47,8 @@ extension Account {
         return total
     }
     
-    
+    var percentChange:String {
+        if currentValue >= startingValue
+        {
+            let growth = (currentValue / startingValue - 1) * 100
+            return String(format: "+%.1f", growth)
