@@ -63,4 +63,10 @@ extension Account {
 }
 
 
-// MARK: Gen
+// MARK: Generated accessors for transactions
+extension Account {
+
+    @objc(addTransactionsObject:)
+    @NSManaged public func addToTransactions(_ value: Transaction)
+
+    @objc(removeTransactionsObj
