@@ -12,4 +12,12 @@ class Asset: Identifiable, ObservableObject
 {
     @Published var transactions: [Transaction]
     @Published var id: UUID
-    @Publi
+    @Published var stock: Stock
+    
+    var totalShares: Double {
+        
+        var total = 0.0
+        for transaction in transactions {
+            if transaction.isClosed == false
+            {
+          
