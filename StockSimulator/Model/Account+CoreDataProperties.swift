@@ -76,4 +76,11 @@ extension Account {
     @NSManaged public func addToTransactions(_ values: NSSet)
 
     @objc(removeTransactions:)
-  
+    @NSManaged public func removeFromTransactions(_ values: NSSet)
+
+}
+
+
+extension Account : Identifiable {
+
+}
