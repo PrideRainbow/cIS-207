@@ -29,3 +29,13 @@ class Asset: Identifiable, ObservableObject
     var isClosed: Bool {
         for t in transactions {
             if t.isClosed == false {
+                return false
+            }
+        }
+        return true
+    }
+    
+    var averagePurchasePrice: Double {
+        
+        var sum = 0.0
+        for transaction in transacti
