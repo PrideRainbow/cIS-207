@@ -20,4 +20,12 @@ class Asset: Identifiable, ObservableObject
         for transaction in transactions {
             if transaction.isClosed == false
             {
-          
+                total += transaction.numShares
+            }
+        }
+        return total
+    }
+    
+    var isClosed: Bool {
+        for t in transactions {
+            if t.isClosed == false {
