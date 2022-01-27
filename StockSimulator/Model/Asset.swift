@@ -46,4 +46,13 @@ class Asset: Identifiable, ObservableObject
         }
         return sum / totalShares
     }
-   
+    
+    var totalValue: Double {
+        return totalShares * stock.regularMarketPrice
+    }
+    
+    var costBasis: Double {
+        return averagePurchasePrice * totalShares
+    }
+    
+    var 
