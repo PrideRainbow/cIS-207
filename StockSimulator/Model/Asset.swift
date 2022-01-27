@@ -38,4 +38,12 @@ class Asset: Identifiable, ObservableObject
     var averagePurchasePrice: Double {
         
         var sum = 0.0
-        for transaction in transacti
+        for transaction in transactions {
+            if transaction.isClosed == false
+            {
+                sum += transaction.costBasis
+            }
+        }
+        return sum / totalShares
+    }
+   
