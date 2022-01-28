@@ -58,4 +58,11 @@ class Asset: Identifiable, ObservableObject
     var percentChange: Double {
         
 //        print("\(stock.symbol) percent change = \(percentChange) and totalValue = \(totalValue), cost basis = \(costBasis)")
-        if tota
+        if totalValue > costBasis
+        {
+            return 100 * (totalValue / costBasis - 1)
+        }
+        else {
+            return 100 * (1 - totalValue / costBasis)
+        }
+ 
