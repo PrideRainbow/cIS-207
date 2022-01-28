@@ -55,4 +55,7 @@ class Asset: Identifiable, ObservableObject
         return averagePurchasePrice * totalShares
     }
     
-    var 
+    var percentChange: Double {
+        
+//        print("\(stock.symbol) percent change = \(percentChange) and totalValue = \(totalValue), cost basis = \(costBasis)")
+        if tota
