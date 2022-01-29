@@ -85,4 +85,8 @@ class Asset: Identifiable, ObservableObject
     
     func updateValue()
     {
-     
+        APICaller.shared.getQuoteData(searchSymbols: stock.wrappedSymbol, completion: { result in
+        
+            switch result {
+            case .success(let snapshots):
+                if let s
