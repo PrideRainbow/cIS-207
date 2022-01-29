@@ -73,4 +73,16 @@ class Asset: Identifiable, ObservableObject
     
     var amountChange: Double {
         return totalValue - costBasis
+    }
     
+    init(transactions: [Transaction], stock: Stock)
+    {
+        self.id = UUID()
+        self.transactions = transactions
+        self.stock = stock
+    }
+    
+    
+    func updateValue()
+    {
+     
