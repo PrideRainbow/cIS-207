@@ -65,4 +65,12 @@ class Asset: Identifiable, ObservableObject
         else {
             return 100 * (1 - totalValue / costBasis)
         }
- 
+    }
+    
+    var amountChange24h: Double {
+        return stock.regularMarketChange * totalShares
+    }
+    
+    var amountChange: Double {
+        return totalValue - costBasis
+    
