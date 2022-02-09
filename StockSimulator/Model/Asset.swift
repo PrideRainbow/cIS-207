@@ -92,4 +92,15 @@ class Asset: Identifiable, ObservableObject
                 if let stockSnapshot = snapshots.first(where: { $0.symbol == self.stock.wrappedSymbol })
                 {
                     self.stock.updateValuesFromStockSnapshot(snapshot: stockSnapshot)
+                }
+            default:
+                print("Error updating asset value")
+                
+            }
+        })
+    }
     
+    
+    
+}
+
