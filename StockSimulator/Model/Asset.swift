@@ -89,4 +89,7 @@ class Asset: Identifiable, ObservableObject
         
             switch result {
             case .success(let snapshots):
-                if let s
+                if let stockSnapshot = snapshots.first(where: { $0.symbol == self.stock.wrappedSymbol })
+                {
+                    self.stock.updateValuesFromStockSnapshot(snapshot: stockSnapshot)
+    
