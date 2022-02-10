@@ -27,4 +27,12 @@ struct MetaData: Codable {
     
     var currentTradingPeriod: CurrentTradingPeriod?
     
-//    va
+//    var post: CurrentTradingPeriod?
+//    var pre: CurrentTradingPeriod?
+//    var regular: CurrentTradingPeriod?
+    
+    init()
+    {
+        chartPreviousClose = 164.85
+        currency = "USD"
+        dataGranular
