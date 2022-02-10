@@ -19,4 +19,12 @@ struct MetaData: Codable {
     var instrumentType: String
     var priceHint: Int
     var range: String
-    var regu
+    var regularMarketPrice: Double
+    var regularMarketTime: Double
+    var symbol: String
+    var timezone: String
+    var validRanges: [String]
+    
+    var currentTradingPeriod: CurrentTradingPeriod?
+    
+//    va
