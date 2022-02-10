@@ -12,4 +12,11 @@ struct MetaData: Codable {
     var chartPreviousClose: Double
     var currency: String
     var dataGranularity: String
-    var exchangeName: 
+    var exchangeName: String
+    var exchangeTimezoneName: String
+    var firstTradeDate: Double
+    var gmtoffset: Int
+    var instrumentType: String
+    var priceHint: Int
+    var range: String
+    var regu
