@@ -35,4 +35,10 @@ struct MetaData: Codable {
     {
         chartPreviousClose = 164.85
         currency = "USD"
-        dataGranular
+        dataGranularity = "1d"
+        exchangeName = "NY"
+        exchangeTimezoneName = "GMT"
+        firstTradeDate = 345479400
+        gmtoffset = -14400
+        instrumentType = "EQUITY"
+        priceHint = 2
