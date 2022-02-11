@@ -42,3 +42,11 @@ struct MetaData: Codable {
         gmtoffset = -14400
         instrumentType = "EQUITY"
         priceHint = 2
+        range = "1m"
+        regularMarketPrice = 177.77
+        regularMarketTime = 1648670404
+        symbol = "AAPL"
+        timezone = "GMT"
+        validRanges = ["1d",
+                       "5d",
+            
