@@ -60,4 +60,12 @@ struct MetaData: Codable {
                        "max"]
         
 //        post = CurrentTradingPeriod(end: 0, gmtoffset: 0, start: 0, timezone: "GMT")
-//        pre = CurrentTradingPeriod(end: 0, gmtoffset: 0,
+//        pre = CurrentTradingPeriod(end: 0, gmtoffset: 0, start: 0, timezone: "GMT")
+//        regular = CurrentTradingPeriod(end: 0, gmtoffset: 0, start: 0, timezone: "GMT")
+    }
+}
+
+struct ChartData: Codable {
+    
+    var adjclose: [Double?]
+ 
