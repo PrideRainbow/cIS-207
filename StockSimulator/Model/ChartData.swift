@@ -68,4 +68,10 @@ struct MetaData: Codable {
 struct ChartData: Codable {
     
     var adjclose: [Double?]
- 
+    var close: [Double?] // sometimes null comes through with the data
+    var high: [Double?]
+    var low: [Double?]
+    var open: [Double?]
+    var volume: [Int?]
+    var timestamp: [Int]
+    var eve
