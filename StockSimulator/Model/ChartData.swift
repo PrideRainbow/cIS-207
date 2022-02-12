@@ -56,4 +56,8 @@ struct MetaData: Codable {
                        "2y",
                        "5y",
                        "10y",
-                      
+                       "ytd",
+                       "max"]
+        
+//        post = CurrentTradingPeriod(end: 0, gmtoffset: 0, start: 0, timezone: "GMT")
+//        pre = CurrentTradingPeriod(end: 0, gmtoffset: 0,
