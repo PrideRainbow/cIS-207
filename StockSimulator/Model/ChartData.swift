@@ -81,4 +81,14 @@ struct ChartData: Codable {
         for i in close {
             if let val = i
             {
-                result.append(va
+                result.append(val)
+            }
+        }
+        return result
+    }
+    
+    var wrappedadjclose: [Double] {
+        var result = [Double]()
+        for i in adjclose {
+            if let val = i
+      
