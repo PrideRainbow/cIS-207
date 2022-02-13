@@ -74,4 +74,11 @@ struct ChartData: Codable {
     var open: [Double?]
     var volume: [Int?]
     var timestamp: [Int]
-    var eve
+    var events: Events?
+    
+    var wrappedClose: [Double] {
+        var result = [Double]()
+        for i in close {
+            if let val = i
+            {
+                result.append(va
