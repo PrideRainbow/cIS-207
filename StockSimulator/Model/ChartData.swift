@@ -112,4 +112,15 @@ struct ChartData: Codable {
     var wrappedlow: [Double] {
         var result = [Double]()
         for i in low {
-            if let val
+            if let val = i
+            {
+                result.append(val)
+            }
+        }
+        return result
+    }
+    
+    var wrappedopen: [Double] {
+        var result = [Double]()
+        for i in open {
+       
