@@ -149,4 +149,12 @@ struct ChartData: Codable {
             return open[location]
         }
         else {
-        
+            return nil
+        }
+    }
+    
+    var metaData: MetaData?
+    
+    var errorMessage: String?
+    
+    // this is sample 1 month data for AAPL on 3/30/22 // this is mockData
