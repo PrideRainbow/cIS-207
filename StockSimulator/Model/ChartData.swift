@@ -158,3 +158,9 @@ struct ChartData: Codable {
     var errorMessage: String?
     
     // this is sample 1 month data for AAPL on 3/30/22 // this is mockData
+    init()
+    {
+        print("init() called on chartData it is MockData")
+        adjclose = [165.1199951171875,
+                    163.1999969482422,
+                    166.559997
