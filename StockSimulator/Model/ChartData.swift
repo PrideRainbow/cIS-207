@@ -336,3 +336,9 @@ struct ChartData: Codable {
         close = []
         high = []
         low = []
+        open = []
+        volume = []
+        timestamp = []
+        if emptyData == false {
+            adjclose = [165.1199951171875,
+                        163.199996948
