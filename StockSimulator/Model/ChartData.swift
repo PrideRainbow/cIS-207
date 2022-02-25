@@ -327,4 +327,12 @@ struct ChartData: Codable {
         
         
     }
-  
+    
+    init (emptyData: Bool)
+    {
+        print("init(emptyData) called on chartData")
+        
+        adjclose = []
+        close = []
+        high = []
+        low = []
