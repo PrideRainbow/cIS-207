@@ -499,4 +499,14 @@ struct ChartData: Codable {
                          1648128600,
                          1648215000,
                          1648474200,
-                         164
+                         1648560600,
+                         1648670404]
+            
+            metaData = MetaData()
+        }
+//        if emptyData == false
+//        {
+//            self.init()
+//
+//        }
+/
