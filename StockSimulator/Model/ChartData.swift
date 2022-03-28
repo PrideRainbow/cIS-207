@@ -509,4 +509,11 @@ struct ChartData: Codable {
 //            self.init()
 //
 //        }
-/
+//        else {
+//            adjclose = []
+//            close = []
+//            high = []
+//            low = []
+//            open = []
+//            volume = []
+//            timestamp =
