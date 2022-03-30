@@ -516,4 +516,16 @@ struct ChartData: Codable {
 //            low = []
 //            open = []
 //            volume = []
-//            timestamp =
+//            timestamp = []
+//        }
+        
+    }
+    
+    init(results: [String: Any])
+    {
+        adjclose = []
+        close = []
+        high = []
+        low = []
+        open = []
+        volume = [
