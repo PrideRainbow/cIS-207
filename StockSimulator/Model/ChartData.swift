@@ -528,4 +528,10 @@ struct ChartData: Codable {
         high = []
         low = []
         open = []
-        volume = [
+        volume = []
+        timestamp = []
+        
+        if let chart = results["chart"] as? [String:Any], let result = chart["result"] as? [[String:Any]]
+        {
+            if result.count > 0
+     
