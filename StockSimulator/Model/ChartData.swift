@@ -539,4 +539,7 @@ struct ChartData: Codable {
                 self.timestamp = result[0]["timestamp"] as? [Int] ?? [Int]()
 //                print(timestamp)
                 
-                if let theEvents 
+                if let theEvents = result[0]["events"] as? [String:Any] {
+//                    print(theEvents)
+                    do {
+                        let json = try JSONSerialization.data(withJSONObject: th
