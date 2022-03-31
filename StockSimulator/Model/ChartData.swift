@@ -534,4 +534,9 @@ struct ChartData: Codable {
         if let chart = results["chart"] as? [String:Any], let result = chart["result"] as? [[String:Any]]
         {
             if result.count > 0
-     
+            {
+//                print(result[0])
+                self.timestamp = result[0]["timestamp"] as? [Int] ?? [Int]()
+//                print(timestamp)
+                
+                if let theEvents 
