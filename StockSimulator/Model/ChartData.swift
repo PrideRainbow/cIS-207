@@ -542,4 +542,8 @@ struct ChartData: Codable {
                 if let theEvents = result[0]["events"] as? [String:Any] {
 //                    print(theEvents)
                     do {
-                        let json = try JSONSerialization.data(withJSONObject: th
+                        let json = try JSONSerialization.data(withJSONObject: theEvents)
+                        events = try JSONDecoder().decode(Events.self, from: json)
+//                        print("Found events for Stock")
+//                        print(events)
+       
