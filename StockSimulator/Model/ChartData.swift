@@ -546,4 +546,8 @@ struct ChartData: Codable {
                         events = try JSONDecoder().decode(Events.self, from: json)
 //                        print("Found events for Stock")
 //                        print(events)
-       
+                    } catch {
+                        print(error)
+                    }
+                }
+                if let indicators = result[0]["indicators"] as? [String: Any], le
