@@ -555,4 +555,7 @@ struct ChartData: Codable {
 //                    print(quote)
                     if quote.count > 0
                     {
-//                 
+//                        print("quote[0] is \(quote[0])")
+                        self.close = quote[0]["close"] as? [Double?] ?? [1,nil,2]
+//                        print(close)
+                        self.open = q
