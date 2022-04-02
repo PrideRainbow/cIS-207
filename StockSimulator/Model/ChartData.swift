@@ -550,4 +550,9 @@ struct ChartData: Codable {
                         print(error)
                     }
                 }
-                if let indicators = result[0]["indicators"] as? [String: Any], le
+                if let indicators = result[0]["indicators"] as? [String: Any], let quote = indicators["quote"] as? [[String: Any]] {
+                    
+//                    print(quote)
+                    if quote.count > 0
+                    {
+//                 
