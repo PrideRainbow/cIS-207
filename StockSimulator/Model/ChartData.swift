@@ -561,4 +561,7 @@ struct ChartData: Codable {
                         self.open = quote[0]["open"] as? [Double?] ?? [Double]()
 //                        print(open)
                         self.low = quote[0]["low"] as? [Double?] ?? [Double]()
-//                   
+//                        print(low)
+                        self.high = quote[0]["high"] as? [Double?] ?? [Double]()
+//                        print(high)
+                        self.volume = quote[0][
