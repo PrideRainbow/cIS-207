@@ -564,4 +564,8 @@ struct ChartData: Codable {
 //                        print(low)
                         self.high = quote[0]["high"] as? [Double?] ?? [Double]()
 //                        print(high)
-                        self.volume = quote[0][
+                        self.volume = quote[0]["volume"] as? [Int?] ?? [Int]()
+//                        print(volume)
+                    }
+                    if let adjClose2 = indicators["adjclose"] as? [[String: Any]] {
+                 
