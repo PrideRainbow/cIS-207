@@ -568,4 +568,8 @@ struct ChartData: Codable {
 //                        print(volume)
                     }
                     if let adjClose2 = indicators["adjclose"] as? [[String: Any]] {
-                 
+                    
+                        if adjClose2.count > 0
+                        {
+                            self.adjclose = adjClose2[0]["adjclose"] as? [Double] ?? [Double]()
+    // 
