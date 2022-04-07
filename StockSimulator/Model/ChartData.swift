@@ -572,4 +572,9 @@ struct ChartData: Codable {
                         if adjClose2.count > 0
                         {
                             self.adjclose = adjClose2[0]["adjclose"] as? [Double] ?? [Double]()
-    // 
+    //                        print(adjclose)
+                        }
+                    }
+                    
+                }
+                if let meta = result[0
