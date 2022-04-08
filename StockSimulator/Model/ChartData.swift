@@ -577,4 +577,7 @@ struct ChartData: Codable {
                     }
                     
                 }
-                if let meta = result[0
+                if let meta = result[0]["meta"] as? [String:Any] {
+                    do {
+                        let json = try JSONSerialization.data(withJSONObject: meta)
+                        metaData = try JSONDec
