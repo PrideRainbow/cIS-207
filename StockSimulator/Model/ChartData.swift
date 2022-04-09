@@ -580,4 +580,12 @@ struct ChartData: Codable {
                 if let meta = result[0]["meta"] as? [String:Any] {
                     do {
                         let json = try JSONSerialization.data(withJSONObject: meta)
-                        metaData = try JSONDec
+                        metaData = try JSONDecoder().decode(MetaData.self, from: json)
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+        }
+        else {
+            
