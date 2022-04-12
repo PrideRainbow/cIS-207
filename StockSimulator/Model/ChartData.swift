@@ -598,4 +598,12 @@ struct ChartData: Codable {
     }
     
 
-  
+    
+    // MARK: - Events
+    struct Events: Codable {
+        let dividends: [String: Dividend]?
+        let splits: [String: Split]?
+    }
+
+    // MARK: - Dividend
+    struct Dividend: Codable {
