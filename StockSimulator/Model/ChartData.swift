@@ -588,4 +588,14 @@ struct ChartData: Codable {
             }
         }
         else {
+            errorMessage = results["message"] as? String ?? "Error Found Parsing ChartData"
+            print(errorMessage ?? "Error")
+            print(results)
             
+        }
+
+
+    }
+    
+
+  
