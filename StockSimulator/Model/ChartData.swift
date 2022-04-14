@@ -607,3 +607,9 @@ struct ChartData: Codable {
 
     // MARK: - Dividend
     struct Dividend: Codable {
+        let amount: Double
+        let date: Int
+        
+        var dateFormated: String {
+            return Date(timeIntervalSince1970: TimeInterval(date)).asShortDateString()
+ 
