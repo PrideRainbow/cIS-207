@@ -612,4 +612,12 @@ struct ChartData: Codable {
         
         var dateFormated: String {
             return Date(timeIntervalSince1970: TimeInterval(date)).asShortDateString()
- 
+        }
+    }
+
+    // MARK: - Split
+    struct Split: Codable {
+        let date, numerator, denominator: Int
+        let splitRatio: String
+        
+        var dateForma
