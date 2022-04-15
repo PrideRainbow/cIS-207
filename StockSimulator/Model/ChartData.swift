@@ -620,4 +620,14 @@ struct ChartData: Codable {
         let date, numerator, denominator: Int
         let splitRatio: String
         
-        var dateForma
+        var dateFormated: String {
+            return Date(timeIntervalSince1970: TimeInterval(date)).asShortDateString()
+        }
+    }
+
+}
+
+
+struct CurrentTradingPeriod: Codable {
+    var post: TimeData
+    var pre: TimeDat
