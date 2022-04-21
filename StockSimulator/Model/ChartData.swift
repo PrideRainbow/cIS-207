@@ -630,4 +630,12 @@ struct ChartData: Codable {
 
 struct CurrentTradingPeriod: Codable {
     var post: TimeData
-    var pre: TimeDat
+    var pre: TimeData
+    var regular: TimeData
+    
+    struct TimeData: Codable
+    {
+        var end: Double
+        var gmtoffset: Int
+        var start: Double
+        var timezone:
