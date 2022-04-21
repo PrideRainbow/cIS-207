@@ -638,4 +638,7 @@ struct CurrentTradingPeriod: Codable {
         var end: Double
         var gmtoffset: Int
         var start: Double
-        var timezone:
+        var timezone: String
+    }
+}
+
