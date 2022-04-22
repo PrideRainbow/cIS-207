@@ -1,0 +1,2 @@
+//
+//  Dividend+CoreDataPropert
