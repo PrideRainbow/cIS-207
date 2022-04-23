@@ -12,4 +12,10 @@ import CoreData
 
 extension Dividend {
 
-    @nonobjc public class func fetchRequest() -> NSFet
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Dividend> {
+        return NSFetchRequest<Dividend>(entityName: "Dividend")
+    }
+
+    @NSManaged public var amount: Double
+    @NSManaged public var appliedToHolding: Bool
+  
