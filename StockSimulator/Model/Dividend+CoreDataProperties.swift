@@ -22,4 +22,10 @@ extension Dividend {
     @NSManaged public var dateOfRecord: Int32
     @NSManaged public var id: UUID?
     @NSManaged public var stockPriceAtDate: Double
-    @NSManaged public var transaction: T
+    @NSManaged public var transaction: Transaction?
+    
+    var wrappedDate: Date {
+        return Date(timeIntervalSince1970: Double(date))
+    }
+    
+    func updateDividendValuesFromChartDataDividend(dividend: ChartData.D
