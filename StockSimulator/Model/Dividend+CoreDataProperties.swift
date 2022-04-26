@@ -28,4 +28,9 @@ extension Dividend {
         return Date(timeIntervalSince1970: Double(date))
     }
     
-    func updateDividendValuesFromChartDataDividend(dividend: ChartData.D
+    func updateDividendValuesFromChartDataDividend(dividend: ChartData.Dividend, dateOfRecord: String, stockPriceAtDate: Double) {
+
+        self.amount = dividend.amount
+        self.appliedToHolding = false
+        self.date = Int32(dividend.date)
+        self.dateOfRecord = 
