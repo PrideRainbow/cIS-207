@@ -33,4 +33,13 @@ extension Dividend {
         self.amount = dividend.amount
         self.appliedToHolding = false
         self.date = Int32(dividend.date)
-        self.dateOfRecord = 
+        self.dateOfRecord = Int32(dateOfRecord) ?? Int32(dividend.date)
+        self.id = UUID()
+        self.stockPriceAtDate = stockPriceAtDate
+    }
+
+}
+
+extension Dividend : Identifiable {
+
+}
