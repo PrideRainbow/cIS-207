@@ -15,4 +15,11 @@ import SwiftUI
 
 
 // MARK: - Welcome
-struct C
+struct CompleteMarketSummary: Codable {
+    let marketSummaryResponse: MarketSummaryResponse
+}
+
+// MARK: - MarketSummaryResponse
+struct MarketSummaryResponse: Codable {
+    let error: JSONNull?
+    let result: [MarketSum
