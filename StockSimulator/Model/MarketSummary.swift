@@ -22,4 +22,12 @@ struct CompleteMarketSummary: Codable {
 // MARK: - MarketSummaryResponse
 struct MarketSummaryResponse: Codable {
     let error: JSONNull?
-    let result: [MarketSum
+    let result: [MarketSummary]
+}
+
+// MARK: - Result
+struct MarketSummary: Codable {
+    let exchange: String
+    let exchangeDataDelayedBy: Int
+    let exchangeTimezoneName: String?
+    let exchangeTimezoneShortName:
