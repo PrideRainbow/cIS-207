@@ -35,4 +35,9 @@ struct MarketSummary: Codable {
 //    let exchangeTimezoneShortName: ExchangeTimezoneShortName?
     let firstTradeDateMilliseconds: Int
     let fullExchangeName: String
- 
+    let gmtOffSetMilliseconds: Int
+    let language: Language
+    let market, marketState: String
+    let priceHint: Int?
+    let quoteSourceName: String?
+    let quoteType: St
