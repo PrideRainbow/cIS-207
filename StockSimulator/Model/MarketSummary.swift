@@ -40,4 +40,8 @@ struct MarketSummary: Codable {
     let market, marketState: String
     let priceHint: Int?
     let quoteSourceName: String?
-    let quoteType: St
+    let quoteType: String
+    let region: Region
+    let regularMarketChange, regularMarketChangePercent, regularMarketPreviousClose, regularMarketPrice: RegularMarket
+    let regularMarketTime: RegularMarket
+    let sh
