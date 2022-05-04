@@ -44,4 +44,10 @@ struct MarketSummary: Codable {
     let region: Region
     let regularMarketChange, regularMarketChangePercent, regularMarketPreviousClose, regularMarketPrice: RegularMarket
     let regularMarketTime: RegularMarket
-    let sh
+    let shortName: String?
+    let sourceInterval: Int
+    let symbol: String
+    let tradeable, triggerable: Bool
+    let contractSymbol, headSymbol: Bool?
+    let headSymbolAsString, currency, longName: String?
+//    var id = 
