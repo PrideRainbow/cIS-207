@@ -60,3 +60,8 @@ struct MarketSummary: Codable {
             return fullExchangeName
         }
     }
+    
+    // this will be filled with Sample MarketData
+    //            "exchange": "SNP",
+    //            "exchangeDataDelayedBy": 0,
+    //            "exchangeTimezoneNa
