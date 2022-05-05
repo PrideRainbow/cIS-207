@@ -50,4 +50,13 @@ struct MarketSummary: Codable {
     let tradeable, triggerable: Bool
     let contractSymbol, headSymbol: Bool?
     let headSymbolAsString, currency, longName: String?
-//    var id = 
+//    var id = UUID()
+    
+    var wrappedName: String {
+        if let name = shortName
+        {
+            return name
+        } else {
+            return fullExchangeName
+        }
+    }
