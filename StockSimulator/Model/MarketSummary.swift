@@ -64,4 +64,8 @@ struct MarketSummary: Codable {
     // this will be filled with Sample MarketData
     //            "exchange": "SNP",
     //            "exchangeDataDelayedBy": 0,
-    //            "exchangeTimezoneNa
+    //            "exchangeTimezoneName": "America/New_York",
+    //            "exchangeTimezoneShortName": "EDT",
+    //            "firstTradeDateMilliseconds": -1325583000000,
+    //            "fullExchangeName": "SNP",
+    //  
