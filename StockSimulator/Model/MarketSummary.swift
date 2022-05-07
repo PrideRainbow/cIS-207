@@ -68,4 +68,8 @@ struct MarketSummary: Codable {
     //            "exchangeTimezoneShortName": "EDT",
     //            "firstTradeDateMilliseconds": -1325583000000,
     //            "fullExchangeName": "SNP",
-    //  
+    //            "gmtOffSetMilliseconds": -14400000,
+    //            "language": "en-US",
+    //            "market": "us_market",
+    //            "marketState": "POST",
+    //            "pric
