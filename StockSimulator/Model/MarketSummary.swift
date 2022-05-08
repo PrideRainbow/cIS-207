@@ -72,4 +72,8 @@ struct MarketSummary: Codable {
     //            "language": "en-US",
     //            "market": "us_market",
     //            "marketState": "POST",
-    //            "pric
+    //            "priceHint": 2,
+    //            "quoteSourceName": "Delayed Quote",
+    //            "quoteType": "INDEX",
+    //            "region": "US",
+    //            "regularMarketChang
