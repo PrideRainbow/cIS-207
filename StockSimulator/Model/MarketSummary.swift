@@ -76,4 +76,10 @@ struct MarketSummary: Codable {
     //            "quoteSourceName": "Delayed Quote",
     //            "quoteType": "INDEX",
     //            "region": "US",
-    //            "regularMarketChang
+    //            "regularMarketChange": {
+    //              "fmt": "67.12",
+    //              "raw": 67.11987
+    //            },
+    //            "regularMarketChangePercent": {
+    //              "fmt": "2.01%",
+    //              "raw": 2.014
