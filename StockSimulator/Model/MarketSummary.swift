@@ -88,4 +88,10 @@ struct MarketSummary: Codable {
     //              "fmt": "3,331.84",
     //              "raw": 3331.84
     //            },
-    //            "regularMarket
+    //            "regularMarketPrice": {
+    //              "fmt": "3,398.96",
+    //              "raw": 3398.96
+    //            },
+    //            "regularMarketTime": {
+    //              "fmt": "5:12PM EDT",
+    /
