@@ -82,4 +82,10 @@ struct MarketSummary: Codable {
     //            },
     //            "regularMarketChangePercent": {
     //              "fmt": "2.01%",
-    //              "raw": 2.014
+    //              "raw": 2.0144987
+    //            },
+    //            "regularMarketPreviousClose": {
+    //              "fmt": "3,331.84",
+    //              "raw": 3331.84
+    //            },
+    //            "regularMarket
