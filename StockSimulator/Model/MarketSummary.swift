@@ -94,4 +94,9 @@ struct MarketSummary: Codable {
     //            },
     //            "regularMarketTime": {
     //              "fmt": "5:12PM EDT",
-    /
+    //              "raw": 1599685935
+    //            },
+    //            "shortName": "S&P 500",
+    //            "sourceInterval": 15,
+    //            "symbol": "^GSPC",
+ 
