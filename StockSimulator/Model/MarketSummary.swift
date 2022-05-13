@@ -99,4 +99,10 @@ struct MarketSummary: Codable {
     //            "shortName": "S&P 500",
     //            "sourceInterval": 15,
     //            "symbol": "^GSPC",
- 
+    //            "tradeable": false,
+    //            "triggerable": false
+    init()
+    {
+        exchange = "SNP"
+        exchangeDataDelayedBy = 0
+        exchangeTimezoneName = "Amer
