@@ -105,4 +105,9 @@ struct MarketSummary: Codable {
     {
         exchange = "SNP"
         exchangeDataDelayedBy = 0
-        exchangeTimezoneName = "Amer
+        exchangeTimezoneName = "America/New_York"
+        exchangeTimezoneShortName = "EDT"
+        firstTradeDateMilliseconds = -1325583000000
+        fullExchangeName = "SNP"
+        gmtOffSetMilliseconds = -14400000
+        l
