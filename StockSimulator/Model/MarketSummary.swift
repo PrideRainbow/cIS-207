@@ -110,4 +110,11 @@ struct MarketSummary: Codable {
         firstTradeDateMilliseconds = -1325583000000
         fullExchangeName = "SNP"
         gmtOffSetMilliseconds = -14400000
-        l
+        language = Language.enUS
+        market = "us_market"
+        marketState = "POST"
+        priceHint = 2
+        quoteSourceName = "Delayed Quote"
+        quoteType = "INDEX"
+        region = Region.us
+  
