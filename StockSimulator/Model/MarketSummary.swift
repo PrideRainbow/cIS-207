@@ -117,4 +117,6 @@ struct MarketSummary: Codable {
         quoteSourceName = "Delayed Quote"
         quoteType = "INDEX"
         region = Region.us
-  
+        regularMarketChange = RegularMarket(fmt: "67.12", raw: 67.11987)
+        regularMarketChangePercent = RegularMarket(fmt: "2.01%", raw: 2.0144987)
+        regularMarketPreviousClose = RegularMarket(fmt: "3,331.84", raw
