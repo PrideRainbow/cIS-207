@@ -122,4 +122,11 @@ struct MarketSummary: Codable {
         regularMarketPreviousClose = RegularMarket(fmt: "3,331.84", raw: 3331.84)
         regularMarketPrice = RegularMarket(fmt: "3,398.96", raw: 3398.96)
         regularMarketTime = RegularMarket(fmt: "5:12PM EDT", raw: 1599685935)
-        shortName =
+        shortName = "S&P 500"
+        sourceInterval = 15
+        symbol = "^GSPC"
+        tradeable = false
+        triggerable = false
+        contractSymbol = false
+        headSymbol = false
+        headSymbolAsSt
