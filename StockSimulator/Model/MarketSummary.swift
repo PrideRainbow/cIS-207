@@ -119,4 +119,7 @@ struct MarketSummary: Codable {
         region = Region.us
         regularMarketChange = RegularMarket(fmt: "67.12", raw: 67.11987)
         regularMarketChangePercent = RegularMarket(fmt: "2.01%", raw: 2.0144987)
-        regularMarketPreviousClose = RegularMarket(fmt: "3,331.84", raw
+        regularMarketPreviousClose = RegularMarket(fmt: "3,331.84", raw: 3331.84)
+        regularMarketPrice = RegularMarket(fmt: "3,398.96", raw: 3398.96)
+        regularMarketTime = RegularMarket(fmt: "5:12PM EDT", raw: 1599685935)
+        shortName =
