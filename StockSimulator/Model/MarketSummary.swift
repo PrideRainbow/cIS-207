@@ -129,4 +129,16 @@ struct MarketSummary: Codable {
         triggerable = false
         contractSymbol = false
         headSymbol = false
-        headSymbolAsSt
+        headSymbolAsString = ""
+        currency = ""
+        longName = ""
+//        id = UUID()
+    }
+    
+    
+//    var id = UUID().uuidString
+    
+    
+//    init(from decoder:Decoder) throws {
+//        id = UUID()
+//         
