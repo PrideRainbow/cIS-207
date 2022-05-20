@@ -143,4 +143,6 @@ struct MarketSummary: Codable {
 //        id = UUID()
 //            let values = try decoder.container(keyedBy: CodingKeys.self)
 //            exchange = try values.decode(String.self, forKey: .exchange)
-//            exchangeDataDelayedBy = try values.decode(Int.self, forK
+//            exchangeDataDelayedBy = try values.decode(Int.self, forKey: .exchangeDataDelayedBy)
+//            exchangeTimezoneName = try? values.decode(String.self, forKey: .exchangeTimezoneName)
+//            exchangeTimezoneShortName = try? values.decode(S
