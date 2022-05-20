@@ -141,4 +141,6 @@ struct MarketSummary: Codable {
     
 //    init(from decoder:Decoder) throws {
 //        id = UUID()
-//         
+//            let values = try decoder.container(keyedBy: CodingKeys.self)
+//            exchange = try values.decode(String.self, forKey: .exchange)
+//            exchangeDataDelayedBy = try values.decode(Int.self, forK
