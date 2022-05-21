@@ -145,4 +145,6 @@ struct MarketSummary: Codable {
 //            exchange = try values.decode(String.self, forKey: .exchange)
 //            exchangeDataDelayedBy = try values.decode(Int.self, forKey: .exchangeDataDelayedBy)
 //            exchangeTimezoneName = try? values.decode(String.self, forKey: .exchangeTimezoneName)
-//            exchangeTimezoneShortName = try? values.decode(S
+//            exchangeTimezoneShortName = try? values.decode(String.self, forKey: .exchangeTimezoneShortName)
+//            firstTradeDateMilliseconds = try values.decode(Int.self, forKey: .firstTradeDateMilliseconds)
+//            fullE
