@@ -152,4 +152,6 @@ struct MarketSummary: Codable {
 //            language = try values.decode(Language.self, forKey: .language)
 //            market = try values.decode(String.self, forKey: .market)
 //            marketState = try values.decode(String.self, forKey: .marketState)
-//   
+//            priceHint = try values.decode(Int.self, forKey: .priceHint)
+//            quoteSourceName = try? values.decode(String.self, forKey: .quoteSourceName)
+//            quoteType = try values.decode(Strin
