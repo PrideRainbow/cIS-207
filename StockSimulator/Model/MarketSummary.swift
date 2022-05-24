@@ -157,4 +157,5 @@ struct MarketSummary: Codable {
 //            quoteType = try values.decode(String.self, forKey: .quoteType)
 //            region = try values.decode(Region.self, forKey: .region)
 //            regularMarketChange = try values.decode(RegularMarket.self, forKey: .regularMarketChange)
-//          
+//            regularMarketChangePercent = try values.decode(RegularMarket.self, forKey: .regularMarketChangePercent)
+//            regularMarketPreviousClose = try values.decode(RegularMarket.self, forKey: .regular
