@@ -160,4 +160,6 @@ struct MarketSummary: Codable {
 //            regularMarketChangePercent = try values.decode(RegularMarket.self, forKey: .regularMarketChangePercent)
 //            regularMarketPreviousClose = try values.decode(RegularMarket.self, forKey: .regularMarketPreviousClose)
 //            regularMarketPrice = try values.decode(RegularMarket.self, forKey: .regularMarketPrice)
-//            regularMarketTime = try values.decode(Re
+//            regularMarketTime = try values.decode(RegularMarket.self, forKey: .regularMarketTime)
+//            shortName = try? values.decode(String.self, forKey: .shortName)
+//            sourceInterval = try values.decode(Int.
