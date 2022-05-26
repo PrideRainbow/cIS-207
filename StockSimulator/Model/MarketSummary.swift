@@ -158,4 +158,6 @@ struct MarketSummary: Codable {
 //            region = try values.decode(Region.self, forKey: .region)
 //            regularMarketChange = try values.decode(RegularMarket.self, forKey: .regularMarketChange)
 //            regularMarketChangePercent = try values.decode(RegularMarket.self, forKey: .regularMarketChangePercent)
-//            regularMarketPreviousClose = try values.decode(RegularMarket.self, forKey: .regular
+//            regularMarketPreviousClose = try values.decode(RegularMarket.self, forKey: .regularMarketPreviousClose)
+//            regularMarketPrice = try values.decode(RegularMarket.self, forKey: .regularMarketPrice)
+//            regularMarketTime = try values.decode(Re
