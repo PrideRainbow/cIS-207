@@ -165,3 +165,6 @@ struct MarketSummary: Codable {
 //            sourceInterval = try values.decode(Int.self, forKey: .sourceInterval)
 //            symbol = try values.decode(String.self, forKey: .symbol)
 //            tradeable = try values.decode(Bool.self, forKey: .tradeable)
+//            triggerable = try values.decode(Bool.self, forKey: .triggerable)
+//            contractSymbol = try? values.decode(Bool.self, forKey: .contractSymbol)
+//            headSymbol = try?
