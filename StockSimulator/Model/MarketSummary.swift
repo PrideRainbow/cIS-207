@@ -169,4 +169,11 @@ struct MarketSummary: Codable {
 //            contractSymbol = try? values.decode(Bool.self, forKey: .contractSymbol)
 //            headSymbol = try? values.decode(Bool.self, forKey: .headSymbol)
 //            headSymbolAsString = try? values.decode(String.self, forKey: .headSymbolAsString)
-//            currency = try? values.decode(String.
+//            currency = try? values.decode(String.self, forKey: .currency)
+//            longName = try? values.decode(String.self, forKey: .longName)
+//    }
+
+}
+
+enum ExchangeTimezoneName: String, Codable {
+    case americaNewYork = "America
