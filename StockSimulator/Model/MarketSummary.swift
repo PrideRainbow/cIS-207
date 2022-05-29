@@ -176,4 +176,13 @@ struct MarketSummary: Codable {
 }
 
 enum ExchangeTimezoneName: String, Codable {
-    case americaNewYork = "America
+    case americaNewYork = "America/New_York"
+    case asiaTokyo = "Asia/Tokyo"
+    case europeLondon = "Europe/London"
+}
+
+enum ExchangeTimezoneShortName: String, Codable {
+    case bst = "BST"
+    case edt = "EDT"
+    case jst = "JST"
+}
