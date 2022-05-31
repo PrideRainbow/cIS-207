@@ -186,3 +186,15 @@ enum ExchangeTimezoneShortName: String, Codable {
     case edt = "EDT"
     case jst = "JST"
 }
+
+enum Language: String, Codable {
+    case enUS = "en-US"
+}
+
+enum Region: String, Codable {
+    case us = "US"
+}
+
+// MARK: - RegularMarket
+struct RegularMarket: Codable {
+    let f
