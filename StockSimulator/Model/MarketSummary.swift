@@ -197,4 +197,13 @@ enum Region: String, Codable {
 
 // MARK: - RegularMarket
 struct RegularMarket: Codable {
-    let f
+    let fmt: String
+    let raw: Double
+}
+
+// MARK: - Encode/decode helpers
+
+class JSONNull: Codable{
+//class JSONNull: Codable, Hashable {
+
+    public static func == (lhs: JSONNull, rhs: JSO
