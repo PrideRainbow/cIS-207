@@ -206,4 +206,15 @@ struct RegularMarket: Codable {
 class JSONNull: Codable{
 //class JSONNull: Codable, Hashable {
 
-    public static func == (lhs: JSONNull, rhs: JSO
+    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
+        return true
+    }
+
+//    public var hashValue: Int {
+//        return 0
+//    }
+
+    public init() {}
+
+    public required init(from decoder: Decoder) throws {
+ 
