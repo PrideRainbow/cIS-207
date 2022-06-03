@@ -217,4 +217,6 @@ class JSONNull: Codable{
     public init() {}
 
     public required init(from decoder: Decoder) throws {
- 
+        let container = try decoder.singleValueContainer()
+        if !container.decodeNil() {
+            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath
