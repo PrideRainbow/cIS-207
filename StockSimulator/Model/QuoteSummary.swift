@@ -159,3 +159,126 @@ struct DefaultKeyStatistics: Codable {
 //             morningStarRiskRating,
 //             mostRecentQuarter,
 //             netIncomeToCommon,
+//             nextFiscalYearEnd,
+             pegRatio,
+//             priceHint,
+             priceToBook,
+//             priceToSalesTrailing12Months,
+             profitMargins,
+//             revenueQuarterlyGrowth,
+             sharesOutstanding,
+//             sharesPercentSharesOut,
+             sharesShort,
+//             sharesShortPreviousMonthDate,
+             sharesShortPriorMonth,
+//             shortPercentOfFloat,
+//             shortRatio,
+//             threeYearAverageReturn,
+//             totalAssets,
+             trailingEps
+//             yield,
+//             ytdReturn
+    }
+}
+
+//// MARK: - AnnualHoldingsTurnover
+//struct AnnualHoldingsTurnover: Codable {
+//    let fmt: String?
+//    let longFmt: String?
+//    let raw: Int?
+//}
+
+// MARK: - The52_WeekChange
+struct The52_WeekChange: Codable {
+    let fmt: String?
+    let raw: Double?
+}
+
+// MARK: - Earnings
+struct Earnings: Codable {
+    let maxAge: Int
+    let earningsChart: EarningsChart
+    let financialsChart: FinancialsChart
+    let financialCurrency: String
+    
+    // computed property to figure out the EPS, earnings, and revenue
+    var earningsModels: [EarningsModel] {
+        var result = [EarningsModel]()
+        
+        for q in earningsChart.quarterly {
+            let title = q.date
+            let actual = q.actual.raw
+            let estimate = q.estimate.raw
+            
+            let model = EarningsModel(title: title, actual: actual, estimate: estimate)
+            result.append(model)
+        }
+        
+        if let nextEstimate = earningsChart.currentQuarterEstimate {
+            let title = "\(earningsChart.currentQuarterEstimateDate ?? "")\(earningsChart.currentQuarterEstimateYear ?? 0)"
+            let estimate = nextEstimate.raw
+            let model = EarningsModel(title: title, estimate: estimate)
+            result.append(model)
+        }
+        return result
+    }
+}
+
+// MARK: - EarningsChart
+struct EarningsChart: Codable {
+    let quarterly: [EarningsChartQuarterly]
+    let currentQuarterEstimate: The52_WeekChange? // this was causing the data not to load for PYPL, so I made it optional... It loads great now for PYPL 8/27/22
+    let currentQuarterEstimateDate: String?
+    let currentQuarterEstimateYear: Int?
+    let earningsDate: [The52_WeekChange?]
+}
+
+// MARK: - EarningsChartQuarterly
+struct EarningsChartQuarterly: Codable {
+    let date: String
+    let actual, estimate: The52_WeekChange
+}
+
+// MARK: - FinancialsChart
+struct FinancialsChart: Codable {
+    let yearly: [Yearly]
+    let quarterly: [FinancialsChartQuarterly]
+}
+
+// MARK: - FinancialsChartQuarterly
+struct FinancialsChartQuarterly: Codable {
+    let date: String
+    let revenue, earnings: EnterpriseValue
+}
+
+// MARK: - Yearly
+struct Yearly: Codable {
+    let date: Int
+    let revenue, earnings: EnterpriseValue
+}
+
+
+
+
+// I built this struct to dsiply earnings, revenue, and more all together based on a date
+struct EarningsModel: Identifiable {
+    
+    let id = UUID().uuidString
+    let title: String
+    let actual: Double?
+    let estimate: Double?
+
+    
+    init(title: String, actual: Double? = nil, estimate: Double? = nil)
+    {
+        self.title = title
+        self.actual = actual
+        self.estimate = estimate
+
+    }
+    
+}
+
+
+
+

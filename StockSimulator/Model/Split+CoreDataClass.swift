@@ -1,0 +1,5 @@
+//
+//  Split+CoreDataClass.swift
+//  StockSimulator
+//
+//
