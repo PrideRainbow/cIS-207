@@ -20,4 +20,9 @@ struct StatisticModel: Identifiable {
     {
         self.title = title
         self.value = value
-        self.percentageChange = p
+        self.percentageChange = percentageChange
+        self.isPercentChange = isPercentChange
+    }
+    
+}
+
