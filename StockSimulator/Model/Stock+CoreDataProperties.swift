@@ -6,3 +6,11 @@
 //
 //
 
+import Foundation
+import CoreData
+
+
+extension Stock {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Stock> {
+        return NSFetchRequest<Stock>(entit
