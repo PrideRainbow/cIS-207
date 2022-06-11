@@ -13,4 +13,10 @@ import CoreData
 extension Stock {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Stock> {
-        return NSFetchRequest<Stock>(entit
+        return NSFetchRequest<Stock>(entityName: "Stock")
+    }
+
+    @NSManaged public var ask: Double
+    @NSManaged public var askSize: Int32
+    @NSManaged public var averageAnalystRating: String?
+    @NSManaged public var average
