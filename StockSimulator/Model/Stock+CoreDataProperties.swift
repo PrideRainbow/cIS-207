@@ -19,4 +19,8 @@ extension Stock {
     @NSManaged public var ask: Double
     @NSManaged public var askSize: Int32
     @NSManaged public var averageAnalystRating: String?
-    @NSManaged public var average
+    @NSManaged public var averageDailyVolume3Month: Int64
+    @NSManaged public var averageDailyVolume10Day: Int64
+    @NSManaged public var bid: Double
+    @NSManaged public var bidSize: Int32
+    @NSManaged public var bookValue
