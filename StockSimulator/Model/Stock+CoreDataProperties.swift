@@ -23,4 +23,9 @@ extension Stock {
     @NSManaged public var averageDailyVolume10Day: Int64
     @NSManaged public var bid: Double
     @NSManaged public var bidSize: Int32
-    @NSManaged public var bookValue
+    @NSManaged public var bookValue: Double
+    @NSManaged public var currency: String?
+    @NSManaged public var displayName: String?
+    @NSManaged public var dividendDate: Int32
+    @NSManaged public var earningsTimestamp: Int32
+    @NSMana
