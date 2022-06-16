@@ -32,4 +32,7 @@ extension Stock {
     @NSManaged public var epsForward: Double
     @NSManaged public var epsTrailingTwelveMonths: Double
     @NSManaged public var fiftyDayAverage: Double
-    @NSMa
+    @NSManaged public var fiftyDayAverageChange: Double
+    @NSManaged public var fiftyDayAverageChangePercent: Double
+    @NSManaged public var fiftyTwoWeekHigh: Double
+    @NSManaged public var fift
