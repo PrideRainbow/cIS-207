@@ -28,4 +28,8 @@ extension Stock {
     @NSManaged public var displayName: String?
     @NSManaged public var dividendDate: Int32
     @NSManaged public var earningsTimestamp: Int32
-    @NSMana
+    @NSManaged public var epsCurrentYear: Double
+    @NSManaged public var epsForward: Double
+    @NSManaged public var epsTrailingTwelveMonths: Double
+    @NSManaged public var fiftyDayAverage: Double
+    @NSMa
