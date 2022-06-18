@@ -35,4 +35,7 @@ extension Stock {
     @NSManaged public var fiftyDayAverageChange: Double
     @NSManaged public var fiftyDayAverageChangePercent: Double
     @NSManaged public var fiftyTwoWeekHigh: Double
-    @NSManaged public var fift
+    @NSManaged public var fiftyTwoWeekHighChange: Double
+    @NSManaged public var fiftyTwoWeekHighChangePercent: Double
+    @NSManaged public var fiftyTwoWeekLow: Double
+    @NSManaged public var fiftyTwoWeekLow
