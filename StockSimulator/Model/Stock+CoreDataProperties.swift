@@ -38,4 +38,8 @@ extension Stock {
     @NSManaged public var fiftyTwoWeekHighChange: Double
     @NSManaged public var fiftyTwoWeekHighChangePercent: Double
     @NSManaged public var fiftyTwoWeekLow: Double
-    @NSManaged public var fiftyTwoWeekLow
+    @NSManaged public var fiftyTwoWeekLowChange: Double
+    @NSManaged public var fiftyTwoWeekRange: String?
+    @NSManaged public var financialCurrency: String?
+    @NSManaged public var forwardPE: Double
+    @NSManaged 
