@@ -42,4 +42,8 @@ extension Stock {
     @NSManaged public var fiftyTwoWeekRange: String?
     @NSManaged public var financialCurrency: String?
     @NSManaged public var forwardPE: Double
-    @NSManaged 
+    @NSManaged public var fullExchangeName: String?
+    @NSManaged public var id: UUID?
+    @NSManaged public var language: String?
+    @NSManaged public var longName: String?
+    @NSManaged public var market: S
