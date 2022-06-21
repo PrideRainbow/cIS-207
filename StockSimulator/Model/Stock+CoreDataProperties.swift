@@ -46,4 +46,8 @@ extension Stock {
     @NSManaged public var id: UUID?
     @NSManaged public var language: String?
     @NSManaged public var longName: String?
-    @NSManaged public var market: S
+    @NSManaged public var market: String?
+    @NSManaged public var marketCap: Int64
+    @NSManaged public var postMarketChange: Double
+    @NSManaged public var postMarketChangePercent: Double
+    @NSManaged public var postMarketPrice: Doubl
