@@ -50,4 +50,8 @@ extension Stock {
     @NSManaged public var marketCap: Int64
     @NSManaged public var postMarketChange: Double
     @NSManaged public var postMarketChangePercent: Double
-    @NSManaged public var postMarketPrice: Doubl
+    @NSManaged public var postMarketPrice: Double
+    @NSManaged public var postMarketTime: Int32
+    @NSManaged public var priceEpsCurrentYear: Double
+    @NSManaged public var priceHint: Int32
+    @NSManaged public var priceToBook: D
