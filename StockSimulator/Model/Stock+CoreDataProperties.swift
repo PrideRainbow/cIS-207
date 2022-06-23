@@ -54,4 +54,8 @@ extension Stock {
     @NSManaged public var postMarketTime: Int32
     @NSManaged public var priceEpsCurrentYear: Double
     @NSManaged public var priceHint: Int32
-    @NSManaged public var priceToBook: D
+    @NSManaged public var priceToBook: Double
+    @NSManaged public var quoteType: String?
+    @NSManaged public var regularMarketChange: Double
+    @NSManaged public var regularMarketChangePercent: Double
+    @NSManaged
