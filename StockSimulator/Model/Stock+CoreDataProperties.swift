@@ -58,4 +58,7 @@ extension Stock {
     @NSManaged public var quoteType: String?
     @NSManaged public var regularMarketChange: Double
     @NSManaged public var regularMarketChangePercent: Double
-    @NSManaged
+    @NSManaged public var regularMarketDayHigh: Double
+    @NSManaged public var regularMarketDayLow: Double
+    @NSManaged public var regularMarketDayRange: String?
+    @NSManaged public var regularMarketOpen: D
