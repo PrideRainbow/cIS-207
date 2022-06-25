@@ -61,4 +61,8 @@ extension Stock {
     @NSManaged public var regularMarketDayHigh: Double
     @NSManaged public var regularMarketDayLow: Double
     @NSManaged public var regularMarketDayRange: String?
-    @NSManaged public var regularMarketOpen: D
+    @NSManaged public var regularMarketOpen: Double
+    @NSManaged public var regularMarketPreviousClose: Double
+    @NSManaged public var regularMarketPrice: Double
+    @NSManaged public var regularMarketTime: Int32
+    @NSManaged public var regularMarketVolu
