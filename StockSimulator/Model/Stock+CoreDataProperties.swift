@@ -70,4 +70,7 @@ extension Stock {
     @NSManaged public var shortName: String?
     @NSManaged public var symbol: String?
     @NSManaged public var timeStamp: Date?
-    @NSMana
+    @NSManaged public var tradeable: Bool
+    @NSManaged public var trailingAnnualDividendRate: Double
+    @NSManaged public var trailingAnnualDividendYield: Double
+    @NSManaged public var trailingPE: Do
