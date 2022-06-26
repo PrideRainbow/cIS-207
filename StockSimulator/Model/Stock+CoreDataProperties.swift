@@ -65,4 +65,9 @@ extension Stock {
     @NSManaged public var regularMarketPreviousClose: Double
     @NSManaged public var regularMarketPrice: Double
     @NSManaged public var regularMarketTime: Int32
-    @NSManaged public var regularMarketVolu
+    @NSManaged public var regularMarketVolume: Int64
+    @NSManaged public var sharesOutstanding: Int64
+    @NSManaged public var shortName: String?
+    @NSManaged public var symbol: String?
+    @NSManaged public var timeStamp: Date?
+    @NSMana
