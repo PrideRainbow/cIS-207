@@ -77,4 +77,8 @@ extension Stock {
     @NSManaged public var twoHundredDayAverage: Double
     @NSManaged public var twoHundredDayAverageChange: Double
     @NSManaged public var twoHundredDayAverageChangePercent: Double
-    @NSM
+    @NSManaged public var circulatingSupply: Int64
+    @NSManaged public var lastMarket: String?
+    @NSManaged public var volume24Hr: Int64
+    @NSManaged public var volumeAllCurrencies: Int64
+    @NSManaged public var
