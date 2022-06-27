@@ -73,4 +73,8 @@ extension Stock {
     @NSManaged public var tradeable: Bool
     @NSManaged public var trailingAnnualDividendRate: Double
     @NSManaged public var trailingAnnualDividendYield: Double
-    @NSManaged public var trailingPE: Do
+    @NSManaged public var trailingPE: Double
+    @NSManaged public var twoHundredDayAverage: Double
+    @NSManaged public var twoHundredDayAverageChange: Double
+    @NSManaged public var twoHundredDayAverageChangePercent: Double
+    @NSM
