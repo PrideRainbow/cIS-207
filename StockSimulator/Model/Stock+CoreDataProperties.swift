@@ -81,4 +81,8 @@ extension Stock {
     @NSManaged public var lastMarket: String?
     @NSManaged public var volume24Hr: Int64
     @NSManaged public var volumeAllCurrencies: Int64
-    @NSManaged public var
+    @NSManaged public var fromCurrency: String?
+    @NSManaged public var toCurrency: String?
+    @NSManaged public var coinMarketCapLink: String?
+    @NSManaged public var startDate: Int32
+    @NSManaged pu
