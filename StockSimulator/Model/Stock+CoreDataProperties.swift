@@ -85,4 +85,12 @@ extension Stock {
     @NSManaged public var toCurrency: String?
     @NSManaged public var coinMarketCapLink: String?
     @NSManaged public var startDate: Int32
-    @NSManaged pu
+    @NSManaged public var coinImageURL: String?
+    @NSManaged public var logoURL: String?
+    @NSManaged public var transactions: NSSet?
+    @NSManaged public var watchlists: NSSet?
+
+}
+
+extension Stock {
+    v
