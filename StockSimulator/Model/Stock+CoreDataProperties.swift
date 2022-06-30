@@ -93,4 +93,12 @@ extension Stock {
 }
 
 extension Stock {
-    v
+    var wrappedSymbol: String {
+        symbol ?? "Unknown"
+    }
+    
+    var wrappedDisplayName: String {
+        if let disp = displayName {
+            return disp
+        }
+        else if let short =
