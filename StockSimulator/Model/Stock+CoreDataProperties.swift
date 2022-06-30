@@ -101,4 +101,14 @@ extension Stock {
         if let disp = displayName {
             return disp
         }
-        else if let short =
+        else if let short = shortName {
+            return short
+        }
+        else if let long = longName {
+            return long
+        }
+        else
+        {
+            return "Unknown"
+        }
+    }
