@@ -112,3 +112,10 @@ extension Stock {
             return "Unknown"
         }
     }
+    
+    var regularMarketChangeFormatted: String {
+        if regularMarketChange < 0 {
+            let value = regularMarketChange * -1
+            return String(format: "-$%.2f", value)
+        }
+        e
