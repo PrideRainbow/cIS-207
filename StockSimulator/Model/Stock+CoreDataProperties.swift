@@ -118,4 +118,11 @@ extension Stock {
             let value = regularMarketChange * -1
             return String(format: "-$%.2f", value)
         }
-        e
+        else {
+            return String(format: "+$%.2f", regularMarketChange)
+        }
+        
+    }
+    
+    var regularMarketChangePercentFormatted: String {
+        if regularMarketChan
