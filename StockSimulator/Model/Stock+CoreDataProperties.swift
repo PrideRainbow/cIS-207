@@ -130,4 +130,12 @@ extension Stock {
             return String(format: "-%.2f", value) + "%"
         }
         else {
-            return String(format: "+%.2f", r
+            return String(format: "+%.2f", regularMarketChangePercent) + "%"
+        }
+        
+    }
+    
+    func updateValuesFromStockSnapshot(snapshot: StockSnapshot)
+    {
+        self.quoteType = snapshot.quoteType
+        s
