@@ -138,4 +138,8 @@ extension Stock {
     func updateValuesFromStockSnapshot(snapshot: StockSnapshot)
     {
         self.quoteType = snapshot.quoteType
-        s
+        self.displayName = snapshot.displayName
+        self.currency = snapshot.currency
+        self.symbol = snapshot.symbol
+        self.language = snapshot.language
+        self
