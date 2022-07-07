@@ -142,4 +142,8 @@ extension Stock {
         self.currency = snapshot.currency
         self.symbol = snapshot.symbol
         self.language = snapshot.language
-        self
+        self.ask = snapshot.ask ?? 0
+        self.bid = snapshot.bid ?? 0
+        self.market = snapshot.market
+        self.regularMarketDayLow = snapshot.regularMarketDayLow
+        self.regularMarket
