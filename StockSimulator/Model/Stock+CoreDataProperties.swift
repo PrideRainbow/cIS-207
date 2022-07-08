@@ -146,4 +146,8 @@ extension Stock {
         self.bid = snapshot.bid ?? 0
         self.market = snapshot.market
         self.regularMarketDayLow = snapshot.regularMarketDayLow
-        self.regularMarket
+        self.regularMarketDayHigh = snapshot.regularMarketDayHigh
+        self.regularMarketPrice = snapshot.regularMarketPrice
+        self.id = snapshot.id
+        self.timeStamp = Date()
+        self.regularMarketChange = snapshot.r
