@@ -155,4 +155,8 @@ extension Stock {
         self.shortName = snapshot.shortName
         self.longName = snapshot.longName
         
- 
+        dividendDate = Int32(snapshot.dividendDate ?? 0)
+        tradeable = snapshot.tradeable
+        earningsTimestamp = Int32(snapshot.earningsTimestamp ?? 0)
+
+        trailingAnnualDividendRa
