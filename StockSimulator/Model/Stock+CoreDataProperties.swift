@@ -150,4 +150,9 @@ extension Stock {
         self.regularMarketPrice = snapshot.regularMarketPrice
         self.id = snapshot.id
         self.timeStamp = Date()
-        self.regularMarketChange = snapshot.r
+        self.regularMarketChange = snapshot.regularMarketChange
+        self.regularMarketChangePercent = snapshot.regularMarketChangePercent
+        self.shortName = snapshot.shortName
+        self.longName = snapshot.longName
+        
+ 
