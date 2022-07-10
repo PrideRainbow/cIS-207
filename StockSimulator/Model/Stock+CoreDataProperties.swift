@@ -159,4 +159,8 @@ extension Stock {
         tradeable = snapshot.tradeable
         earningsTimestamp = Int32(snapshot.earningsTimestamp ?? 0)
 
-        trailingAnnualDividendRa
+        trailingAnnualDividendRate = snapshot.trailingAnnualDividendRate ?? 0
+
+        trailingPE = snapshot.trailingPE ?? 0
+        trailingAnnualDividendYield = snapshot.trailingAnnualDividendYield ?? 0
+        epsTrailingTwel
