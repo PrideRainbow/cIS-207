@@ -163,4 +163,9 @@ extension Stock {
 
         trailingPE = snapshot.trailingPE ?? 0
         trailingAnnualDividendYield = snapshot.trailingAnnualDividendYield ?? 0
-        epsTrailingTwel
+        epsTrailingTwelveMonths = snapshot.epsTrailingTwelveMonths ?? 0
+        epsForward = snapshot.epsForward ?? 0
+        epsCurrentYear = snapshot.epsCurrentYear ?? 0
+        priceEpsCurrentYear = snapshot.priceEpsCurrentYear ?? 0
+
+ 
