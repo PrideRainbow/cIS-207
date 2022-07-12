@@ -171,4 +171,7 @@ extension Stock {
         sharesOutstanding = Int64(snapshot.sharesOutstanding ?? 0)
         bookValue = snapshot.bookValue ?? 0
         fiftyDayAverage = snapshot.fiftyDayAverage ?? 0
-        fiftyDayAverageChange = 
+        fiftyDayAverageChange = snapshot.fiftyDayAverageChange ?? 0
+        fiftyDayAverageChangePercent = snapshot.fiftyDayAverageChangePercent ?? 0
+        twoHundredDayAverage = snapshot.twoHundredDayAverage
+        twoHundredDa
