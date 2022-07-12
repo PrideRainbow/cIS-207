@@ -168,4 +168,7 @@ extension Stock {
         epsCurrentYear = snapshot.epsCurrentYear ?? 0
         priceEpsCurrentYear = snapshot.priceEpsCurrentYear ?? 0
 
- 
+        sharesOutstanding = Int64(snapshot.sharesOutstanding ?? 0)
+        bookValue = snapshot.bookValue ?? 0
+        fiftyDayAverage = snapshot.fiftyDayAverage ?? 0
+        fiftyDayAverageChange = 
