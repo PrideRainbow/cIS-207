@@ -174,4 +174,7 @@ extension Stock {
         fiftyDayAverageChange = snapshot.fiftyDayAverageChange ?? 0
         fiftyDayAverageChangePercent = snapshot.fiftyDayAverageChangePercent ?? 0
         twoHundredDayAverage = snapshot.twoHundredDayAverage
-        twoHundredDa
+        twoHundredDayAverageChange = snapshot.twoHundredDayAverageChange
+        twoHundredDayAverageChangePercent = snapshot.twoHundredDayAverageChangePercent
+        marketCap = Int64(snapshot.marketCap ?? 0)
+        forwardPE
