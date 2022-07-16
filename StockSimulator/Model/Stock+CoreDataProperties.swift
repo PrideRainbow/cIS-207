@@ -177,4 +177,8 @@ extension Stock {
         twoHundredDayAverageChange = snapshot.twoHundredDayAverageChange
         twoHundredDayAverageChangePercent = snapshot.twoHundredDayAverageChangePercent
         marketCap = Int64(snapshot.marketCap ?? 0)
-        forwardPE
+        forwardPE = snapshot.forwardPE ?? 0
+        priceToBook = snapshot.priceToBook ?? 0
+        averageAnalystRating = snapshot.averageAnalystRating
+        priceHint = Int32(snapshot.priceHint)
+   
