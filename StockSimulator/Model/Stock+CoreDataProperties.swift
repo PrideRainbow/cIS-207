@@ -183,4 +183,7 @@ extension Stock {
         priceHint = Int32(snapshot.priceHint)
         postMarketChangePercent = snapshot.postMarketChangePercent ?? 0
         postMarketTime = Int32(snapshot.postMarketTime ?? 0)
-        postMarketPrice = snapshot.postMarketPr
+        postMarketPrice = snapshot.postMarketPrice ?? 0
+        postMarketChange = snapshot.postMarketChange ?? 0
+        regularMarketTime = Int32(snapshot.regularMarketTime)
+        regularMarketDayRange = snapshot.regularMarketDayRang
