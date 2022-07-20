@@ -181,4 +181,6 @@ extension Stock {
         priceToBook = snapshot.priceToBook ?? 0
         averageAnalystRating = snapshot.averageAnalystRating
         priceHint = Int32(snapshot.priceHint)
-   
+        postMarketChangePercent = snapshot.postMarketChangePercent ?? 0
+        postMarketTime = Int32(snapshot.postMarketTime ?? 0)
+        postMarketPrice = snapshot.postMarketPr
