@@ -186,4 +186,8 @@ extension Stock {
         postMarketPrice = snapshot.postMarketPrice ?? 0
         postMarketChange = snapshot.postMarketChange ?? 0
         regularMarketTime = Int32(snapshot.regularMarketTime)
-        regularMarketDayRange = snapshot.regularMarketDayRang
+        regularMarketDayRange = snapshot.regularMarketDayRange
+
+        regularMarketVolume = Int64(snapshot.regularMarketVolume)
+        regularMarketPreviousClose = snapshot.regularMarketPreviousClose
+        bidSize = Int32(snapshot.bidSiz
