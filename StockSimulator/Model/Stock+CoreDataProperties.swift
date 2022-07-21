@@ -190,4 +190,8 @@ extension Stock {
 
         regularMarketVolume = Int64(snapshot.regularMarketVolume)
         regularMarketPreviousClose = snapshot.regularMarketPreviousClose
-        bidSize = Int32(snapshot.bidSiz
+        bidSize = Int32(snapshot.bidSize ?? 0)
+        askSize = Int32(snapshot.askSize ?? 0)
+        fullExchangeName = snapshot.fullExchangeName
+        financialCurrency = snapshot.financialCurrency
+        regularMarketOpen = sn
