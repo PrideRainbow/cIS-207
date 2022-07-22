@@ -194,4 +194,7 @@ extension Stock {
         askSize = Int32(snapshot.askSize ?? 0)
         fullExchangeName = snapshot.fullExchangeName
         financialCurrency = snapshot.financialCurrency
-        regularMarketOpen = sn
+        regularMarketOpen = snapshot.regularMarketOpen
+        averageDailyVolume3Month = Int64(snapshot.averageDailyVolume3Month)
+        averageDailyVolume10Day = Int64(snapshot.averageDailyVolume10Day)
+        fif
