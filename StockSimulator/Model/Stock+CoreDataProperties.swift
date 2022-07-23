@@ -197,4 +197,7 @@ extension Stock {
         regularMarketOpen = snapshot.regularMarketOpen
         averageDailyVolume3Month = Int64(snapshot.averageDailyVolume3Month)
         averageDailyVolume10Day = Int64(snapshot.averageDailyVolume10Day)
-        fif
+        fiftyTwoWeekLowChange = snapshot.fiftyTwoWeekLowChange
+        fiftyTwoWeekRange = snapshot.fiftyTwoWeekRange
+        fiftyTwoWeekHighChange = snapshot.fiftyTwoWeekHighChange
+        fifty
