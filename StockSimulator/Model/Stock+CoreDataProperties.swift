@@ -200,4 +200,8 @@ extension Stock {
         fiftyTwoWeekLowChange = snapshot.fiftyTwoWeekLowChange
         fiftyTwoWeekRange = snapshot.fiftyTwoWeekRange
         fiftyTwoWeekHighChange = snapshot.fiftyTwoWeekHighChange
-        fifty
+        fiftyTwoWeekHighChangePercent = snapshot.fiftyTwoWeekHighChangePercent
+        fiftyTwoWeekLow = snapshot.fiftyTwoWeekLow
+        fiftyTwoWeekHigh = snapshot.fiftyTwoWeekHigh
+
+        // Cry
