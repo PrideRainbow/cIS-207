@@ -204,4 +204,8 @@ extension Stock {
         fiftyTwoWeekLow = snapshot.fiftyTwoWeekLow
         fiftyTwoWeekHigh = snapshot.fiftyTwoWeekHigh
 
-        // Cry
+        // Crypto Stuff
+        circulatingSupply = Int64(snapshot.circulatingSupply ?? 0)
+        lastMarket = snapshot.lastMarket
+        volume24Hr = Int64(snapshot.volume24Hr ?? 0)
+        volumeAllCurrencies = Int64(
