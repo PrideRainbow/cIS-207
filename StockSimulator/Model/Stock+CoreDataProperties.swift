@@ -208,4 +208,8 @@ extension Stock {
         circulatingSupply = Int64(snapshot.circulatingSupply ?? 0)
         lastMarket = snapshot.lastMarket
         volume24Hr = Int64(snapshot.volume24Hr ?? 0)
-        volumeAllCurrencies = Int64(
+        volumeAllCurrencies = Int64(snapshot.volumeAllCurrencies ?? 0)
+        fromCurrency = snapshot.fromCurrency
+        toCurrency = snapshot.toCurrency
+        coinMarketCapLink = snapshot.coinMarketCapLink
+        startDat
