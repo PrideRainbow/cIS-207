@@ -212,4 +212,13 @@ extension Stock {
         fromCurrency = snapshot.fromCurrency
         toCurrency = snapshot.toCurrency
         coinMarketCapLink = snapshot.coinMarketCapLink
-        startDat
+        startDate = Int32(snapshot.startDate ?? 0)
+        coinImageURL = snapshot.coinImageURL
+        logoURL = snapshot.logoURL
+    }
+
+}
+
+
+// MARK: Generated accessors for transactions
+ex
