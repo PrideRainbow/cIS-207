@@ -227,4 +227,9 @@ extension Stock {
     @NSManaged public func addToTransactions(_ value: Transaction)
 
     @objc(removeTransactionsObject:)
-    @NS
+    @NSManaged public func removeFromTransactions(_ value: Transaction)
+
+    @objc(addTransactions:)
+    @NSManaged public func addToTransactions(_ values: NSSet)
+
+    @objc(removeTransactions:
