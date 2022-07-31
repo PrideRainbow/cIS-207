@@ -221,4 +221,10 @@ extension Stock {
 
 
 // MARK: Generated accessors for transactions
-ex
+extension Stock {
+
+    @objc(addTransactionsObject:)
+    @NSManaged public func addToTransactions(_ value: Transaction)
+
+    @objc(removeTransactionsObject:)
+    @NS
