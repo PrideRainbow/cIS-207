@@ -241,4 +241,10 @@ extension Stock {
 extension Stock {
 
     @objc(addWatchlistsObject:)
-    @NSManaged public func add
+    @NSManaged public func addToWatchlists(_ value: Watchlist)
+
+    @objc(removeWatchlistsObject:)
+    @NSManaged public func removeFromWatchlists(_ value: Watchlist)
+
+    @objc(addWatchlists:)
+    @NSManaged public func addToWatchlists(_ val
