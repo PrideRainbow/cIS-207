@@ -232,4 +232,13 @@ extension Stock {
     @objc(addTransactions:)
     @NSManaged public func addToTransactions(_ values: NSSet)
 
-    @objc(removeTransactions:
+    @objc(removeTransactions:)
+    @NSManaged public func removeFromTransactions(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for watchlists
+extension Stock {
+
+    @objc(addWatchlistsObject:)
+    @NSManaged public func add
