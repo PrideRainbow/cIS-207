@@ -247,4 +247,13 @@ extension Stock {
     @NSManaged public func removeFromWatchlists(_ value: Watchlist)
 
     @objc(addWatchlists:)
-    @NSManaged public func addToWatchlists(_ val
+    @NSManaged public func addToWatchlists(_ values: NSSet)
+
+    @objc(removeWatchlists:)
+    @NSManaged public func removeFromWatchlists(_ values: NSSet)
+
+}
+
+extension Stock : Identifiable {
+
+}
