@@ -58,3 +58,22 @@ struct RecommendedSymbol: Codable, Identifiable {
              "score": 0.162863
            },
            {
+             "symbol": "V",
+             "score": 0.15888
+           },
+           {
+             "symbol": "SHOP",
+             "score": 0.158117
+           },
+           {
+             "symbol": "CRM",
+             "score": 0.154448
+           }
+         ]
+       }
+     ],
+     "error": null
+   }
+ }
+ 
+ */
