@@ -168,3 +168,192 @@ struct StockSnapshot: Codable, Identifiable
         epsCurrentYear = try? values.decode(Double.self, forKey: .epsCurrentYear)
         priceEpsCurrentYear = try? values.decode(Double.self, forKey: .priceEpsCurrentYear)
         sharesOutstanding = try? values.decode(Int.self, forKey: .sharesOutstanding)
+        bookValue = try? values.decode(Double.self, forKey: .bookValue)
+        fiftyDayAverage = try? values.decode(Double.self, forKey: .fiftyDayAverage)
+        fiftyDayAverageChange = try? values.decode(Double.self, forKey: .fiftyDayAverageChange)
+        fiftyDayAverageChangePercent = try? values.decode(Double.self, forKey: .fiftyDayAverageChangePercent)
+        twoHundredDayAverage = try values.decode(Double.self, forKey: .twoHundredDayAverage)
+        twoHundredDayAverageChange = try values.decode(Double.self, forKey: .twoHundredDayAverageChange)
+        twoHundredDayAverageChangePercent = try values.decode(Double.self, forKey: .twoHundredDayAverageChangePercent)
+        marketCap = try? values.decode(Int.self, forKey: .marketCap)
+        forwardPE = try? values.decode(Double.self, forKey: .forwardPE)
+        priceToBook = try? values.decode(Double.self, forKey: .priceToBook)
+        
+        averageAnalystRating = try? values.decode(String.self, forKey: .averageAnalystRating)
+        priceHint = try values.decode(Int.self, forKey: .priceHint)
+        postMarketChangePercent = try? values.decode(Double.self, forKey: .postMarketChangePercent)
+        postMarketTime = try? values.decode(Int.self, forKey: .postMarketTime)
+        postMarketPrice = try? values.decode(Double.self, forKey: .postMarketPrice)
+        postMarketChange = try? values.decode(Double.self, forKey: .postMarketChange)
+        regularMarketTime = try values.decode(Int.self, forKey: .regularMarketTime)
+        regularMarketDayRange = try values.decode(String.self, forKey: .regularMarketDayRange)
+        regularMarketVolume = try values.decode(Int.self, forKey: .regularMarketVolume)
+        regularMarketPreviousClose = try values.decode(Double.self, forKey: .regularMarketPreviousClose)
+        bidSize = try? values.decode(Int.self, forKey: .bidSize)
+        askSize = try? values.decode(Int.self, forKey: .askSize)
+        fullExchangeName = try? values.decode(String.self, forKey: .fullExchangeName)
+        financialCurrency = try? values.decode(String.self, forKey: .financialCurrency)
+        regularMarketOpen = try values.decode(Double.self, forKey: .regularMarketOpen)
+        averageDailyVolume3Month = try values.decode(Int.self, forKey: .averageDailyVolume3Month)
+        averageDailyVolume10Day = try values.decode(Int.self, forKey: .averageDailyVolume10Day)
+        fiftyTwoWeekLowChange = try values.decode(Double.self, forKey: .fiftyTwoWeekLowChange)
+        fiftyTwoWeekRange = try values.decode(String.self, forKey: .fiftyTwoWeekRange)
+        fiftyTwoWeekHighChange = try values.decode(Double.self, forKey: .fiftyTwoWeekHighChange)
+        fiftyTwoWeekHighChangePercent = try values.decode(Double.self, forKey: .fiftyTwoWeekHighChangePercent)
+        fiftyTwoWeekLow = try values.decode(Double.self, forKey: .fiftyTwoWeekLow)
+        fiftyTwoWeekHigh = try values.decode(Double.self, forKey: .fiftyTwoWeekHigh)
+        
+        circulatingSupply = try? values.decode(Int.self, forKey: .circulatingSupply)
+        lastMarket = try? values.decode(String.self, forKey: .lastMarket)
+        volume24Hr = try? values.decode(Int.self, forKey: .volume24Hr)
+        volumeAllCurrencies = try? values.decode(Int.self, forKey: .volumeAllCurrencies)
+        fromCurrency = try? values.decode(String.self, forKey: .fromCurrency)
+        toCurrency = try? values.decode(String.self, forKey: .toCurrency)
+        coinMarketCapLink = try? values.decode(String.self, forKey: .coinMarketCapLink)
+        startDate = try? values.decode(Int.self, forKey: .startDate)
+        coinImageURL = try? values.decode(String.self, forKey: .coinImageURL)
+        logoURL = try? values.decode(String.self, forKey: .logoURL)
+        
+        
+        id = UUID()
+
+    }
+
+    init(stock: Stock)
+    {
+        self.quoteType = stock.quoteType ?? "Unknown"
+        self.displayName = stock.wrappedDisplayName
+        self.currency = stock.currency ?? "Unknown"
+        self.symbol = stock.wrappedSymbol
+        self.language = stock.language ?? "Unknown"
+        self.ask = stock.ask
+        self.bid = stock.bid
+        self.market = stock.market ?? "Unknown"
+        self.regularMarketDayHigh = stock.regularMarketDayHigh
+        self.regularMarketDayLow = stock.regularMarketDayLow
+        self.regularMarketPrice = stock.regularMarketPrice
+        self.regularMarketChange = stock.regularMarketChange
+        self.regularMarketChangePercent = stock.regularMarketChangePercent
+        self.longName = stock.longName
+        self.shortName = stock.shortName
+        
+        tradeable = stock.tradeable
+        earningsTimestamp = Int(stock.earningsTimestamp)
+        trailingAnnualDividendRate = stock.trailingAnnualDividendRate
+        trailingPE = stock.trailingPE
+        trailingAnnualDividendYield = stock.trailingAnnualDividendYield
+        epsTrailingTwelveMonths = stock.epsTrailingTwelveMonths
+        epsForward = stock.epsForward
+        epsCurrentYear = stock.epsCurrentYear
+        priceEpsCurrentYear = stock.priceEpsCurrentYear
+        sharesOutstanding = Int(stock.sharesOutstanding)
+        bookValue = stock.bookValue
+        fiftyDayAverage = stock.fiftyDayAverage
+        fiftyDayAverageChange = stock.fiftyDayAverageChange
+        fiftyDayAverageChangePercent = stock.fiftyDayAverageChangePercent
+        twoHundredDayAverage = stock.twoHundredDayAverage
+        twoHundredDayAverageChange = stock.twoHundredDayAverageChange
+        twoHundredDayAverageChangePercent = stock.twoHundredDayAverageChangePercent
+        marketCap = Int(stock.marketCap)
+        forwardPE = stock.forwardPE
+        priceToBook = stock.priceToBook
+        averageAnalystRating = stock.averageAnalystRating
+        priceHint = Int(stock.priceHint)
+        postMarketChangePercent = stock.postMarketChangePercent
+        postMarketTime = Int(stock.postMarketTime)
+        postMarketPrice = stock.postMarketPrice
+        postMarketChange = stock.postMarketChange
+        regularMarketTime = Int(stock.regularMarketTime)
+        regularMarketDayRange = stock.regularMarketDayRange ?? "n/a"
+        regularMarketVolume = Int(stock.regularMarketVolume)
+        regularMarketPreviousClose = stock.regularMarketPreviousClose
+        bidSize = Int(stock.bidSize)
+        askSize = Int(stock.askSize)
+        fullExchangeName = stock.fullExchangeName
+        financialCurrency = stock.financialCurrency
+        regularMarketOpen = stock.regularMarketOpen
+        averageDailyVolume3Month = Int(stock.averageDailyVolume3Month)
+        averageDailyVolume10Day = Int(stock.averageDailyVolume10Day)
+        fiftyTwoWeekLowChange = stock.fiftyTwoWeekLowChange
+        fiftyTwoWeekRange = stock.fiftyTwoWeekRange ?? "n/a"
+        fiftyTwoWeekHighChange = stock.fiftyTwoWeekHighChange
+        fiftyTwoWeekHighChangePercent = stock.fiftyTwoWeekHighChangePercent
+        fiftyTwoWeekLow = stock.fiftyTwoWeekLow
+        fiftyTwoWeekHigh = stock.fiftyTwoWeekHigh
+        dividendDate = Int(stock.dividendDate)
+        
+        circulatingSupply = Int(stock.circulatingSupply)
+        lastMarket = stock.lastMarket
+        volume24Hr = Int(stock.volume24Hr)
+        volumeAllCurrencies = Int(stock.volumeAllCurrencies)
+        fromCurrency = stock.fromCurrency
+        toCurrency = stock.toCurrency
+        coinMarketCapLink = stock.coinMarketCapLink
+        startDate = Int(stock.startDate)
+        coinImageURL = stock.coinImageURL
+        logoURL = stock.logoURL
+        
+        
+    }
+
+
+    // This is used to make up sample data to test...
+    init()
+    {
+//    quoteType: "EQUITY", displayName: "Apple", currency: "USD", symbol: "AAPL", language: "en-US", ask: 168.24, bid: 168.41, market: "us_market", regularMarketDayHigh: 173.08, regularMarketDayLow: 168.04, regularMarketPrice: 168.64)
+        // sample stock...
+        self.quoteType = "EQUITY"
+        self.displayName = "Apple"
+        self.currency = "USD"
+        self.symbol = "AAPL"
+        self.language = "en-US"
+        self.ask = 168.24
+        self.bid = 168.41
+        self.market = "us_market"
+        self.regularMarketDayHigh = 173.08
+        self.regularMarketDayLow = 168.04
+        self.regularMarketPrice = 168.64
+        self.regularMarketChange = 1.25
+        self.regularMarketChangePercent = 0.03
+        self.shortName = "Apple"
+        self.longName = "Apple, Inc."
+        
+        dividendDate = 1652313600
+        tradeable = false
+        earningsTimestamp = 1659038400
+        trailingAnnualDividendRate = 0.88
+        trailingPE = 25.055285
+        trailingAnnualDividendYield = 0.005664628
+        epsTrailingTwelveMonths = 6.15
+        
+        epsForward = 6.51
+        epsCurrentYear = 6.13
+        priceEpsCurrentYear = 25.13703
+        
+        sharesOutstanding = 16185199616
+        bookValue = 4.158
+        fiftyDayAverage = 143.2188
+        fiftyDayAverageChange = 10.871201
+        fiftyDayAverageChangePercent = 0.07590624
+        twoHundredDayAverage = 158.59525
+        twoHundredDayAverageChange = -4.505249
+        twoHundredDayAverageChangePercent = -0.028407214
+        marketCap = 2493977460736
+        forwardPE = 23.669737
+        priceToBook = 37.05868
+        
+        averageAnalystRating = "1.9 - Buy"
+        priceHint = 2
+        postMarketChangePercent = -0.103838
+        postMarketTime = 1658534393
+        postMarketPrice = 153.93
+        postMarketChange = -0.160004
+        regularMarketTime = 1658520003
+        regularMarketDayRange = "153.4101 - 156.28"
+        regularMarketVolume = 66675408
+        regularMarketPreviousClose = 155.35
+        bidSize = 11
+        askSize = 8
+        fullExchangeName = "NasdaqGS"
+        financialCurrency = "USD"
+        regularMarketOpen = 155.39
