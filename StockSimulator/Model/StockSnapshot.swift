@@ -357,3 +357,202 @@ struct StockSnapshot: Codable, Identifiable
         fullExchangeName = "NasdaqGS"
         financialCurrency = "USD"
         regularMarketOpen = 155.39
+        averageDailyVolume3Month = 93032838
+        averageDailyVolume10Day = 72702620
+        fiftyTwoWeekLowChange = 25.050003
+        fiftyTwoWeekRange = "129.04 - 182.94"
+        fiftyTwoWeekHighChange = -28.850006
+        fiftyTwoWeekHighChangePercent = -0.15770201
+        fiftyTwoWeekLow = 129.04
+        fiftyTwoWeekHigh = 182.94
+        
+        circulatingSupply = 19105088
+        lastMarket = "CoinMarketCap"
+        volume24Hr = 25998045184
+        volumeAllCurrencies = 25998045184
+        fromCurrency = "BTC"
+        toCurrency = "USD=X"
+        coinMarketCapLink = "https://coinmarketcap.com/currencies/bitcoin"
+        startDate = 1367107200
+        coinImageURL = "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+        logoURL = "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+    }
+
+}
+
+
+// MARK: - Encode/decode helpers
+
+//class JSONNull: Codable, Hashable {
+//class JSONNull: Codable {
+//
+//    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
+//        return true
+//    }
+//
+////    public var hashValue: Int {
+////        return 0
+////    }
+//
+//    public init() {}
+//
+//    public required init(from decoder: Decoder) throws {
+//        let container = try decoder.singleValueContainer()
+//        if !container.decodeNil() {
+//            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
+//        }
+//    }
+//
+//    public func encode(to encoder: Encoder) throws {
+//        var container = encoder.singleValueContainer()
+//        try container.encodeNil()
+//    }
+//}
+
+/* MARK: Sample Crypto Response */
+/*
+ "language": "en-US",
+        "region": "US",
+        "quoteType": "CRYPTOCURRENCY",
+        "typeDisp": "Cryptocurrency",
+        "quoteSourceName": "CoinMarketCap",
+        "triggerable": true,
+        "customPriceAlertConfidence": "HIGH",
+        "currency": "USD",
+        "firstTradeDateMilliseconds": 1410912000000,
+        "fiftyTwoWeekLowChangePercent": 0.22418037,
+        "fiftyTwoWeekRange": "17708.623 - 68789.625",
+        "fiftyTwoWeekHighChange": -47111.08,
+        "fiftyTwoWeekHighChangePercent": -0.6848573,
+        "fiftyTwoWeekLow": 17708.623,
+        "fiftyTwoWeekHigh": 68789.625,
+        "fiftyDayAverage": 22011.48,
+        "fiftyDayAverageChange": -332.93164,
+        "fiftyDayAverageChangePercent": -0.015125363,
+        "marketState": "REGULAR",
+        "exchange": "CCC",
+        "shortName": "Bitcoin USD",
+        "messageBoardId": "finmb_BTC_CCC",
+        "exchangeTimezoneName": "UTC",
+        "exchangeTimezoneShortName": "UTC",
+        "gmtOffSetMilliseconds": 0,
+        "market": "ccc_market",
+        "esgPopulated": false,
+        "twoHundredDayAverage": 34544.03,
+        "twoHundredDayAverageChange": -12865.482,
+        "twoHundredDayAverageChangePercent": -0.3724372,
+        "marketCap": 414170578944,
+        "sourceInterval": 15,
+        "exchangeDataDelayedBy": 0,
+        "pageViewGrowthWeekly": 0.08143376,
+        "tradeable": false,
+        "priceHint": 2,
+        "circulatingSupply": 19105088,
+        "lastMarket": "CoinMarketCap",
+        "volume24Hr": 25998045184,
+        "volumeAllCurrencies": 25998045184,
+        "fromCurrency": "BTC",
+        "toCurrency": "USD=X",
+        "coinMarketCapLink": "https://coinmarketcap.com/currencies/bitcoin",
+        "regularMarketChange": 733.40234,
+        "regularMarketChangePercent": 3.5015354,
+        "regularMarketTime": 1658944560,
+        "regularMarketPrice": 21678.549,
+        "regularMarketDayHigh": 21687.785,
+        "regularMarketDayRange": "21070.807 - 21687.785",
+        "regularMarketDayLow": 21070.807,
+        "regularMarketVolume": 25998045184,
+        "regularMarketPreviousClose": 21227.094,
+        "fullExchangeName": "CCC",
+        "regularMarketOpen": 21227.094,
+        "averageDailyVolume3Month": 32070365589,
+        "averageDailyVolume10Day": 33143912705,
+        "startDate": 1367107200,
+        "coinImageUrl": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+        "logoUrl": "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+        "fiftyTwoWeekLowChange": 3969.9258,
+        "symbol": "BTC-USD"
+ */
+
+/* MARK: Sample Stock Response */
+/*
+ {
+   "quoteResponse": {
+     "result": [
+       {
+         "language": "en-US",
+         "region": "US",
+         "quoteType": "EQUITY",
+         "typeDisp": "Equity",
+         "quoteSourceName": "Nasdaq Real Time Price",
+         "triggerable": true,
+         "customPriceAlertConfidence": "HIGH",
+         "currency": "USD",
+         "firstTradeDateMilliseconds": 345479400000,
+         "fiftyTwoWeekLowChangePercent": 0.1967607,
+         "fiftyTwoWeekRange": "129.04 - 182.94",
+         "fiftyTwoWeekHighChange": -28.51001,
+         "fiftyTwoWeekHighChangePercent": -0.1558435,
+         "fiftyTwoWeekLow": 129.04,
+         "fiftyTwoWeekHigh": 182.94,
+         "dividendDate": 1652313600,
+         "earningsTimestamp": 1659038400,
+         "earningsTimestampStart": 1659038400,
+         "earningsTimestampEnd": 1659038400,
+         "trailingAnnualDividendRate": 0.88,
+         "trailingPE": 25.110567,
+         "trailingAnnualDividendYield": 0.005804749,
+         "epsTrailingTwelveMonths": 6.15,
+         "epsForward": 6.5,
+         "epsCurrentYear": 6.13,
+         "priceEpsCurrentYear": 25.192493,
+         "sharesOutstanding": 16185199616,
+         "bookValue": 4.158,
+         "fiftyDayAverage": 143.5286,
+         "fiftyDayAverageChange": 10.901398,
+         "fiftyDayAverageChangePercent": 0.07595279,
+         "marketState": "REGULAR",
+         "exchange": "NMS",
+         "shortName": "Apple Inc.",
+         "longName": "Apple Inc.",
+         "messageBoardId": "finmb_24937",
+         "exchangeTimezoneName": "America/New_York",
+         "exchangeTimezoneShortName": "EDT",
+         "gmtOffSetMilliseconds": -14400000,
+         "market": "us_market",
+         "esgPopulated": false,
+         "twoHundredDayAverage": 158.69154,
+         "twoHundredDayAverageChange": -4.261551,
+         "twoHundredDayAverageChangePercent": -0.026854305,
+         "marketCap": 2499480387584,
+         "forwardPE": 23.758461,
+         "priceToBook": 37.14045,
+         "sourceInterval": 15,
+         "exchangeDataDelayedBy": 0,
+         "pageViewGrowthWeekly": -0.0075652064,
+         "averageAnalystRating": "1.9 - Buy",
+         "tradeable": false,
+         "priceHint": 2,
+         "regularMarketChange": 2.8299866,
+         "regularMarketChangePercent": 1.8667457,
+         "regularMarketTime": 1658944647,
+         "regularMarketPrice": 154.43,
+         "regularMarketDayHigh": 155.21,
+         "regularMarketDayRange": "152.18 - 155.21",
+         "regularMarketDayLow": 152.18,
+         "regularMarketVolume": 35560129,
+         "regularMarketPreviousClose": 151.6,
+         "bid": 154.45,
+         "ask": 154.47,
+         "bidSize": 18,
+         "askSize": 9,
+         "fullExchangeName": "NasdaqGS",
+         "financialCurrency": "USD",
+         "regularMarketOpen": 152.58,
+         "averageDailyVolume3Month": 91750000,
+         "averageDailyVolume10Day": 69474260,
+         "fiftyTwoWeekLowChange": 25.39,
+         "displayName": "Apple",
+         "symbol": "AAPL"
+       },
+ */
