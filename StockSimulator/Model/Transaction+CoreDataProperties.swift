@@ -21,4 +21,8 @@ extension Transaction {
     @NSManaged public var id: UUID?
     @NSManaged public var isClosed: Bool
     @NSManaged public var numShares: Double
-    @NSManaged public var purchas
+    @NSManaged public var purchasePrice: Double
+    @NSManaged public var sellDate: Date?
+    @NSManaged public var sellPrice: Double
+    @NSManaged public var totalProceeds: Double
+    @NSManaged public var eventType: String? // T
