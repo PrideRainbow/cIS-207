@@ -32,4 +32,10 @@ extension Transaction {
     @NSManaged public var splits: NSSet?
     
     //    // Cost basis is when we buy
-    //    var 
+    //    var costBasis: Double {
+    //        return numShares * purchasePrice
+    //    }
+    //
+    //    // total proceeds are when we sell
+    //    var totalProceeds: Double {
+    //        return numSha
