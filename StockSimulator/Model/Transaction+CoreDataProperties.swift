@@ -26,4 +26,10 @@ extension Transaction {
     @NSManaged public var sellPrice: Double
     @NSManaged public var totalProceeds: Double
     @NSManaged public var eventType: String? // This will be used to determine, if we have a dividend payment, splits, etc. // might not need because each transaction has a buy and a sell. Also when you apply a dividend, you are applying
-    @NSManaged pub
+    @NSManaged public var account: Account?
+    @NSManaged public var stock: Stock?
+    @NSManaged public var dividends: NSSet?
+    @NSManaged public var splits: NSSet?
+    
+    //    // Cost basis is when we buy
+    //    var 
