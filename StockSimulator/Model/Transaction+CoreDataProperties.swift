@@ -38,4 +38,13 @@ extension Transaction {
     //
     //    // total proceeds are when we sell
     //    var totalProceeds: Double {
-    //        return numSha
+    //        return numShares * sellPrice
+    //    }
+    
+    // might not need eventtype.
+    var wrappedEventType: String {
+        return eventType ?? "UnKnown"
+    }
+    
+//    var toString: String {
+//        var result = 
