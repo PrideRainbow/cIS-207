@@ -47,4 +47,10 @@ extension Transaction {
     }
     
 //    var toString: String {
-//        var result = "\(wrappedEventType): \(numShares) of \(stock?.wrappedSymbol ?? "UnKnown") at price $\(purchasePrice) on date \(buyDate?.asShortDateString() ?? Date().asShortDateSt
+//        var result = "\(wrappedEventType): \(numShares) of \(stock?.wrappedSymbol ?? "UnKnown") at price $\(purchasePrice) on date \(buyDate?.asShortDateString() ?? Date().asShortDateString())"
+//        
+//        if let sellDate = sellDate {
+//            result += "\nSold on date \(sellDate) at price $\(sellPrice)"
+//        }
+//        return result
+//    }
