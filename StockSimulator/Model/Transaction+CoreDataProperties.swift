@@ -47,4 +47,4 @@ extension Transaction {
     }
     
 //    var toString: String {
-//        var result = 
+//        var result = "\(wrappedEventType): \(numShares) of \(stock?.wrappedSymbol ?? "UnKnown") at price $\(purchasePrice) on date \(buyDate?.asShortDateString() ?? Date().asShortDateSt
