@@ -54,3 +54,12 @@ extension Transaction {
 //        }
 //        return result
 //    }
+    
+    var wrappedBuyDate: Date {
+        return self.buyDate ?? Date()
+    }
+    
+        
+    var currentValue: Double {
+        if isClosed == false {
+            if let theStock = 
