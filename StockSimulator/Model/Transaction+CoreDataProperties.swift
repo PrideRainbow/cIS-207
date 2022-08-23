@@ -62,4 +62,20 @@ extension Transaction {
         
     var currentValue: Double {
         if isClosed == false {
-            if let theStock = 
+            if let theStock = stock {
+                return theStock.regularMarketPrice * numShares
+            }
+        }
+        return 0.0
+    }
+        
+    func closeTransaction(sellPrice: Double)
+    {
+        self.sellDate = Date()
+        self.isClosed = true
+        self.sellPrice = sellPrice
+        self.totalProceeds = self.numShares * sellPrice
+        self.eventType = "\(wrappedEventType)/SELL"
+    }
+    
+    fun
