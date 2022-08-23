@@ -78,4 +78,8 @@ extension Transaction {
         self.eventType = "\(wrappedEventType)/SELL"
     }
     
-    fun
+    func copyTransaction(from transaction: Transaction)
+    {
+        // do not copy UUID... Each transaction should be unique...
+        self.purchasePrice = transaction.purchasePrice
+        self.buyDate = transact
