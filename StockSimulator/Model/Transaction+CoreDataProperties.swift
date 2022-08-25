@@ -82,4 +82,8 @@ extension Transaction {
     {
         // do not copy UUID... Each transaction should be unique...
         self.purchasePrice = transaction.purchasePrice
-        self.buyDate = transact
+        self.buyDate = transaction.buyDate
+        self.numShares = transaction.numShares
+        self.isClosed = transaction.isClosed
+        self.sellDate = transaction.sellDate
+        self.sellP
