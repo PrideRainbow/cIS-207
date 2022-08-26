@@ -86,4 +86,8 @@ extension Transaction {
         self.numShares = transaction.numShares
         self.isClosed = transaction.isClosed
         self.sellDate = transaction.sellDate
-        self.sellP
+        self.sellPrice = transaction.sellPrice
+        self.stock = transaction.stock
+        self.account = transaction.account
+        self.eventType = transaction.eventType
+        s
