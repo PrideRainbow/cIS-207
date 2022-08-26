@@ -90,4 +90,10 @@ extension Transaction {
         self.stock = transaction.stock
         self.account = transaction.account
         self.eventType = transaction.eventType
-        s
+        self.splits = transaction.splits
+        self.dividends = transaction.dividends
+        self.costBasis = transaction.costBasis
+        self.totalProceeds = transaction.totalProceeds
+    }
+    
+   
