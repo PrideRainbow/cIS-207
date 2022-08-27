@@ -96,4 +96,9 @@ extension Transaction {
         self.totalProceeds = transaction.totalProceeds
     }
     
-   
+    func updateValuesFromBuy(account: Account, purchasePrice:Double, numShares: Double, buyDate: Date)
+    {
+        self.account = account
+        self.id = UUID()
+        self.buyDate = buyDate
+        self.purchasePrice = purchasePri
