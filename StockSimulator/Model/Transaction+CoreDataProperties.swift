@@ -101,4 +101,9 @@ extension Transaction {
         self.account = account
         self.id = UUID()
         self.buyDate = buyDate
-        self.purchasePrice = purchasePri
+        self.purchasePrice = purchasePrice
+        self.numShares = numShares
+        self.isClosed = false
+        self.costBasis = purchasePrice * numShares
+        self.eventType = "BUY"
+//        self.totalProceeds = 0 // this 
