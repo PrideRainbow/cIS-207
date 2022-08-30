@@ -117,4 +117,10 @@ extension Transaction {
     @objc(addDividendsObject:)
     @NSManaged public func addToDividends(_ value: Dividend)
 
-    @obj
+    @objc(removeDividendsObject:)
+    @NSManaged public func removeFromDividends(_ value: Dividend)
+
+    @objc(addDividends:)
+    @NSManaged public func addToDividends(_ values: NSSet)
+
+    @objc(remo
