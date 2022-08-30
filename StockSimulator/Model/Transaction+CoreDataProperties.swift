@@ -106,4 +106,15 @@ extension Transaction {
         self.isClosed = false
         self.costBasis = purchasePrice * numShares
         self.eventType = "BUY"
-//        self.totalProceeds = 0 // this 
+//        self.totalProceeds = 0 // this should happen by default
+    }
+
+}
+
+// MARK: Generated accessors for dividends
+extension Transaction {
+
+    @objc(addDividendsObject:)
+    @NSManaged public func addToDividends(_ value: Dividend)
+
+    @obj
