@@ -123,4 +123,13 @@ extension Transaction {
     @objc(addDividends:)
     @NSManaged public func addToDividends(_ values: NSSet)
 
-    @objc(remo
+    @objc(removeDividends:)
+    @NSManaged public func removeFromDividends(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for splits
+extension Transaction {
+
+    @objc(addSplitsObject:)
+    @NSManaged public func addToSpli
