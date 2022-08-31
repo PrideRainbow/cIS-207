@@ -132,4 +132,12 @@ extension Transaction {
 extension Transaction {
 
     @objc(addSplitsObject:)
-    @NSManaged public func addToSpli
+    @NSManaged public func addToSplits(_ value: Split)
+
+    @objc(removeSplitsObject:)
+    @NSManaged public func removeFromSplits(_ value: Split)
+
+    @objc(addSplits:)
+    @NSManaged public func addToSplits(_ values: NSSet)
+
+    @objc(r
