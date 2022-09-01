@@ -140,4 +140,15 @@ extension Transaction {
     @objc(addSplits:)
     @NSManaged public func addToSplits(_ values: NSSet)
 
-    @objc(r
+    @objc(removeSplits:)
+    @NSManaged public func removeFromSplits(_ values: NSSet)
+
+}
+
+extension Transaction : Identifiable {
+
+}
+
+// MARK: Dividends and Splits methods
+extension Transaction {
+    // MARK: T
