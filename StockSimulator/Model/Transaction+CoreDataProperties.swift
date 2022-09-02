@@ -151,4 +151,4 @@ extension Transaction : Identifiable {
 
 // MARK: Dividends and Splits methods
 extension Transaction {
-    // MARK: This will check if Dividend from ChartData is valid before adding it to the transaction's list of dividends and applying it. Be careful of making sure that the Dividend time frame is after t
+    // MARK: This will check if Dividend from ChartData is valid before adding it to the transaction's list of dividends and applying it. Be careful of making sure that the Dividend time frame is after the buy date and != to. This could cause recursion, because if you pay a dividend on a date and you check for = to then you will apply the dividend over and over again to the dividend's trans
