@@ -157,4 +157,7 @@ extension Transaction {
         if isDividendValid(dividend: dividend, dateOfRecord: dateOfRecord) {
             print("Found a valid dividend for \(self.stock?.symbol ?? "No Name"): ")
             print(dividend)
-            print("Da
+            print("Date of Record: \(dateOfRecord)")
+            // make a new Dividend Object
+            let d = Dividend(context: context)
+            let price = stockPriceAtDividend ?? (stock?.regularMar
