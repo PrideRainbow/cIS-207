@@ -160,4 +160,8 @@ extension Transaction {
             print("Date of Record: \(dateOfRecord)")
             // make a new Dividend Object
             let d = Dividend(context: context)
-            let price = stockPriceAtDividend ?? (stock?.regularMar
+            let price = stockPriceAtDividend ?? (stock?.regularMarketPrice ?? purchasePrice)
+            d.updateDividendValuesFromChartDataDividend(dividend: dividend, dateOfRecord: dateOfRecord, stockPriceAtDate: price)
+            self.addToDividends(d)
+            
+   
