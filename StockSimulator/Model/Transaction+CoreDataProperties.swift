@@ -164,4 +164,8 @@ extension Transaction {
             d.updateDividendValuesFromChartDataDividend(dividend: dividend, dateOfRecord: dateOfRecord, stockPriceAtDate: price)
             self.addToDividends(d)
             
-   
+            // this will create a newTransaction
+            self.applyDividend(dividend: d, chartDividend: dividend, context: context)
+        }
+        else {
+//            print("Dividend \(dividend) i
