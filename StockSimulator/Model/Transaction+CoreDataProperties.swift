@@ -168,4 +168,9 @@ extension Transaction {
             self.applyDividend(dividend: d, chartDividend: dividend, context: context)
         }
         else {
-//            print("Dividend \(dividend) i
+//            print("Dividend \(dividend) is not valid to add to transaction." )
+        }
+    }
+    
+    // MARK: This will apply a dividend to the transaction and make a new transaction of the dividend
+    private func applyDividend(dividend: Dividend, chartD
