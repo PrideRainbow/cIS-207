@@ -178,4 +178,6 @@ extension Transaction {
         if dividend.appliedToHolding == false{
             dividend.appliedToHolding = true
             
-            // make
+            // make a new transaction and purchase the number of shares you can buy for the dividend...
+            let newCash = dividend.amount * self.numShares
+            let newShares = newCash / divide
