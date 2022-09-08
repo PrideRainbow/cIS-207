@@ -173,4 +173,9 @@ extension Transaction {
     }
     
     // MARK: This will apply a dividend to the transaction and make a new transaction of the dividend
-    private func applyDividend(dividend: Dividend, chartD
+    private func applyDividend(dividend: Dividend, chartDividend: ChartData.Dividend, context: NSManagedObjectContext)
+    {
+        if dividend.appliedToHolding == false{
+            dividend.appliedToHolding = true
+            
+            // make
