@@ -183,4 +183,6 @@ extension Transaction {
             let newShares = newCash / dividend.stockPriceAtDate
             if let account = account {
                 let newTransaction = Transaction(context: context)
-                newTransaction.updateValuesFromBuy(account: account
+                newTransaction.updateValuesFromBuy(account: account, purchasePrice: dividend.stockPriceAtDate, numShares: newShares, buyDate: Date(timeIntervalSince1970: Double(chartDividend.date)))
+                newTransaction.eventType = "DIVIDEND"
+// 
