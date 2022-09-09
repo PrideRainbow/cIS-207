@@ -180,4 +180,7 @@ extension Transaction {
             
             // make a new transaction and purchase the number of shares you can buy for the dividend...
             let newCash = dividend.amount * self.numShares
-            let newShares = newCash / divide
+            let newShares = newCash / dividend.stockPriceAtDate
+            if let account = account {
+                let newTransaction = Transaction(context: context)
+                newTransaction.updateValuesFromBuy(account: account
