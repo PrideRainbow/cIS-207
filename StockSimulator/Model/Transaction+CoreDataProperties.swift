@@ -185,4 +185,6 @@ extension Transaction {
                 let newTransaction = Transaction(context: context)
                 newTransaction.updateValuesFromBuy(account: account, purchasePrice: dividend.stockPriceAtDate, numShares: newShares, buyDate: Date(timeIntervalSince1970: Double(chartDividend.date)))
                 newTransaction.eventType = "DIVIDEND"
-// 
+//                newTransaction.buyDate = Date(timeIntervalSince1970: Double(chartDividend.date))
+                // add this dividend to the newTransaction's Dividends, so that it will not make duplicates
+  
