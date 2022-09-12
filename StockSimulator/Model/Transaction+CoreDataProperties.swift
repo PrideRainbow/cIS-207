@@ -187,4 +187,7 @@ extension Transaction {
                 newTransaction.eventType = "DIVIDEND"
 //                newTransaction.buyDate = Date(timeIntervalSince1970: Double(chartDividend.date))
                 // add this dividend to the newTransaction's Dividends, so that it will not make duplicates
-  
+                newTransaction.addToDividends(dividend)
+                newTransaction.stock = self.stock
+                account.addToTransactions(newTransaction)
+//                print("Dividend 
