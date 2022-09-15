@@ -190,4 +190,6 @@ extension Transaction {
                 newTransaction.addToDividends(dividend)
                 newTransaction.stock = self.stock
                 account.addToTransactions(newTransaction)
-//                print("Dividend 
+//                print("Dividend paid added transaction to \(newTransaction.stock?.symbol) \(newTransaction)")
+//                print(chartDividend)
+//                print(chartDividend.dateFormate
