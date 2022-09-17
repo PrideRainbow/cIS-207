@@ -192,4 +192,10 @@ extension Transaction {
                 account.addToTransactions(newTransaction)
 //                print("Dividend paid added transaction to \(newTransaction.stock?.symbol) \(newTransaction)")
 //                print(chartDividend)
-//                print(chartDividend.dateFormate
+//                print(chartDividend.dateFormated)
+            }
+            else {
+                print("Cannot find account to add dividend to the transaction")
+            }
+            // save the changed data
+            if context.hasChange
