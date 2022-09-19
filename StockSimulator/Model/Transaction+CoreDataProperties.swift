@@ -198,4 +198,15 @@ extension Transaction {
                 print("Cannot find account to add dividend to the transaction")
             }
             // save the changed data
-            if context.hasChange
+            if context.hasChanges {
+                try? context.save()
+            }
+        }
+        else {
+            print("Cannot apply Dividend to Transaction")
+        }
+        
+    }
+    
+    
+    // MA
