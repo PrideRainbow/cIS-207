@@ -209,4 +209,4 @@ extension Transaction {
     }
     
     
-    // MA
+    // MARK:  check if dividend is valid to be applied to Transaction. It is valid if the dividend has not already been added to the transaction, and the dividend record date is within the time frame o
