@@ -209,4 +209,7 @@ extension Transaction {
     }
     
     
-    // MARK:  check if dividend is valid to be applied to Transaction. It is valid if the dividend has not already been added to the transaction, and the dividend record date is within the time frame o
+    // MARK:  check if dividend is valid to be applied to Transaction. It is valid if the dividend has not already been added to the transaction, and the dividend record date is within the time frame of the buy date and sell date
+    private func isDividendValid(dividend: ChartData.Dividend, dateOfRecord: String) -> Bool
+    {
+            return isDividendInValidTimeFrame(dividen
