@@ -215,4 +215,7 @@ extension Transaction {
             return isDividendInValidTimeFrame(dividend: dividend) && !isDividendAlreadyAddedToTransaction(dividend: dividend)
         
     }
-    // MARK: Checks if the dividend date is within the transactions window of holding the as
+    // MARK: Checks if the dividend date is within the transactions window of holding the asset.
+    private func isDividendInValidTimeFrame(dividend: ChartData.Dividend) -> Bool {
+//        let dividendDate = Date(timeIntervalSince1970: Double(dateOfRecord) ?? Double(dividend.date))
+     
