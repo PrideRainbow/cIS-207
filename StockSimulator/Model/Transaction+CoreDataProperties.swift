@@ -221,4 +221,9 @@ extension Transaction {
         let dividendDate = Date(timeIntervalSince1970: Double(dividend.date))
         if let theSellDate = sellDate {
             return dividendDate > wrappedBuyDate && dividendDate < theSellDate
-     
+        }
+        else { // this means that the transaction hasn't closed yet
+              return dividendDate > wrappedBuyDate
+        }
+    }
+    // MARK: Checks if the dividends already in the transactions contains the C
