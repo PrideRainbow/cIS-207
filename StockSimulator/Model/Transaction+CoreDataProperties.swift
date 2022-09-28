@@ -226,4 +226,7 @@ extension Transaction {
               return dividendDate > wrappedBuyDate
         }
     }
-    // MARK: Checks if the dividends already in the transactions contains the C
+    // MARK: Checks if the dividends already in the transactions contains the ChartData.dividend and if the transaction
+    private func isDividendAlreadyAddedToTransaction(dividend: ChartData.Dividend) -> Bool
+    {
+        let theDividends =
