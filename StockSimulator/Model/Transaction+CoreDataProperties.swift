@@ -233,4 +233,10 @@ extension Transaction {
         print("Found \(theDividends.count) dividends for \(self.stock?.wrappedSymbol ?? "noName")")
         for d in theDividends
         {
-            print("Dividend Date
+            print("Dividend Date of record: \(d.date), dividend date: \(dividend.date)")
+        }
+        return theDividends.contains {$0.date == dividend.date} // dates are stored as Int32's
+    }
+    
+    
+    // MAR
