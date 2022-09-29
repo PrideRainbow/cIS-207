@@ -229,4 +229,8 @@ extension Transaction {
     // MARK: Checks if the dividends already in the transactions contains the ChartData.dividend and if the transaction
     private func isDividendAlreadyAddedToTransaction(dividend: ChartData.Dividend) -> Bool
     {
-        let theDividends =
+        let theDividends = dividends?.allObjects as! [Dividend]
+        print("Found \(theDividends.count) dividends for \(self.stock?.wrappedSymbol ?? "noName")")
+        for d in theDividends
+        {
+            print("Dividend Date
