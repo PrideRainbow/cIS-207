@@ -239,4 +239,4 @@ extension Transaction {
     }
     
     
-    // MAR
+    // MARK:  check if split is valid to be applied to Transaction. It is valid if the split has not already been added to the transaction, and the split record date is within the time frame of the buy date and sell 
