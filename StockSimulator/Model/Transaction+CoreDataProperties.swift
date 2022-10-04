@@ -251,4 +251,8 @@ extension Transaction {
         let theSplits = splits?.allObjects as! [Split]
         return theSplits.contains {$0.date == split.date}
     }
-    // MARK: Checks if the split date is within the trans
+    // MARK: Checks if the split date is within the transactions window of holding the asset.
+    func isSplitInValidTimeFrame(split: ChartData.Split) -> Bool
+    {
+        let splitDate = Date(timeIntervalSince1970: Double(split.date))
+        if let theSellDat
