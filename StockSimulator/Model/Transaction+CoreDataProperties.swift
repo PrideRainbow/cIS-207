@@ -246,4 +246,9 @@ extension Transaction {
     }
     
     // MARK: Checks if the splits already the transactions contains the ChartData.split
-    func isSplitAlreadyAddedToTransaction(split: ChartData.S
+    func isSplitAlreadyAddedToTransaction(split: ChartData.Split) -> Bool
+    {
+        let theSplits = splits?.allObjects as! [Split]
+        return theSplits.contains {$0.date == split.date}
+    }
+    // MARK: Checks if the split date is within the trans
