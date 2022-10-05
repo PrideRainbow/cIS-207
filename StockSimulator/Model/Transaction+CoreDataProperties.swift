@@ -255,4 +255,8 @@ extension Transaction {
     func isSplitInValidTimeFrame(split: ChartData.Split) -> Bool
     {
         let splitDate = Date(timeIntervalSince1970: Double(split.date))
-        if let theSellDat
+        if let theSellDate = sellDate {
+            return splitDate > wrappedBuyDate && splitDate < theSellDate
+        }
+        else { // this means that the transaction hasn't closed yet
+              r
