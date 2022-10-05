@@ -259,4 +259,8 @@ extension Transaction {
             return splitDate > wrappedBuyDate && splitDate < theSellDate
         }
         else { // this means that the transaction hasn't closed yet
-              r
+              return splitDate > wrappedBuyDate
+        }
+    }
+    // MARK: This will check if Split from ChartData is valid before adding it to the transaction's list of splits and applying it.
+    func
