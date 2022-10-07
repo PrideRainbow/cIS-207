@@ -266,4 +266,6 @@ extension Transaction {
     func addAndApplySplitIfValid(split: ChartData.Split, dateOfRecord: String, context: NSManagedObjectContext)
     {
         if isSplitValid(split: split, dateOfRecord: dateOfRecord) {
-         
+            // make a new Split Object and add it to transaction
+            let s = Split(context: context)
+            s.updateSplitValuesFromChartDataSplit(split: split, dateOfRecord:
