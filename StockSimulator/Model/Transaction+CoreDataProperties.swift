@@ -263,4 +263,7 @@ extension Transaction {
         }
     }
     // MARK: This will check if Split from ChartData is valid before adding it to the transaction's list of splits and applying it.
-    func
+    func addAndApplySplitIfValid(split: ChartData.Split, dateOfRecord: String, context: NSManagedObjectContext)
+    {
+        if isSplitValid(split: split, dateOfRecord: dateOfRecord) {
+         
