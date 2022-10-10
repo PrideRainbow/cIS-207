@@ -268,4 +268,9 @@ extension Transaction {
         if isSplitValid(split: split, dateOfRecord: dateOfRecord) {
             // make a new Split Object and add it to transaction
             let s = Split(context: context)
-            s.updateSplitValuesFromChartDataSplit(split: split, dateOfRecord:
+            s.updateSplitValuesFromChartDataSplit(split: split, dateOfRecord: dateOfRecord)
+            s.transaction = self
+            self.addToSplits(s) // this and previous line may be redundant
+            
+            // change values on transaction
+            if s.appliedToHol
