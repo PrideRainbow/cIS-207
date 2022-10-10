@@ -273,4 +273,7 @@ extension Transaction {
             self.addToSplits(s) // this and previous line may be redundant
             
             // change values on transaction
-            if s.appliedToHol
+            if s.appliedToHolding == false {
+                let splitRatio = Double(split.numerator) / Double(split.denominator)
+                self.numShares *= splitRatio
+                self.purchasePrice /= splitR
