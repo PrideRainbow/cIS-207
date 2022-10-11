@@ -284,4 +284,7 @@ extension Transaction {
             }
         }
         else {
-//            print
+//            print("Split is not valid to be added to transaction")
+        }
+    }
+}
