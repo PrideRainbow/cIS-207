@@ -276,4 +276,12 @@ extension Transaction {
             if s.appliedToHolding == false {
                 let splitRatio = Double(split.numerator) / Double(split.denominator)
                 self.numShares *= splitRatio
-                self.purchasePrice /= splitR
+                self.purchasePrice /= splitRatio
+                s.appliedToHolding = true
+            }
+            if context.hasChanges {
+                try? context.save()
+            }
+        }
+        else {
+//            print
