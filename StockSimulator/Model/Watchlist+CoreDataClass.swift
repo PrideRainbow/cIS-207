@@ -6,4 +6,10 @@
 //
 //
 
-import Founda
+import Foundation
+import CoreData
+
+
+public class Watchlist: NSManagedObject {
+
+}
