@@ -7,4 +7,12 @@
 //
 
 import Foundation
-import CoreD
+import CoreData
+
+
+extension Watchlist {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Watchlist> {
+        return NSFetchRequest<Watchlist>(entityName: "Watchlist")
+    }
+   
