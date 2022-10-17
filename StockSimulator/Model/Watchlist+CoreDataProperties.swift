@@ -20,4 +20,16 @@ extension Watchlist {
     @NSManaged public var created: Date?
     @NSManaged public var stocks: NSSet?
     
-    var wrappedName: Stri
+    var wrappedName: String {
+        name ?? "No Name"
+    }
+
+}
+
+// MARK: Generated accessors for stocks
+extension Watchlist {
+
+    @objc(addStocksObject:)
+    @NSManaged public func addToStocks(_ value: Stock)
+
+ 
