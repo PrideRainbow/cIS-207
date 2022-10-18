@@ -32,4 +32,11 @@ extension Watchlist {
     @objc(addStocksObject:)
     @NSManaged public func addToStocks(_ value: Stock)
 
- 
+    @objc(removeStocksObject:)
+    @NSManaged public func removeFromStocks(_ value: Stock)
+
+    @objc(addStocks:)
+    @NSManaged public func addToStocks(_ values: NSSet)
+
+    @objc(removeStocks:)
+    @NSMa
