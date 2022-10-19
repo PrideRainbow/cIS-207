@@ -39,4 +39,10 @@ extension Watchlist {
     @NSManaged public func addToStocks(_ values: NSSet)
 
     @objc(removeStocks:)
-    @NSMa
+    @NSManaged public func removeFromStocks(_ values: NSSet)
+
+}
+
+extension Watchlist : Identifiable {
+
+}
