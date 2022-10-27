@@ -28,4 +28,9 @@ struct PersistenceController {
 //        return result
 //    }()
 
-    let container: NSPe
+    let container: NSPersistentContainer
+
+    init(inMemory: Bool = false) {
+        container = NSPersistentContainer(name: "StockSimulator")
+        if inMemory {
+            container.persistentSto
