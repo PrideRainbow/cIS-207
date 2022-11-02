@@ -12,4 +12,11 @@ import SwiftUI
 
 class StockDataService: ObservableObject {
     
-    @Pub
+    @Published var stockSnapshots: [StockSnapshot] = []
+    
+//    @Published var chartData: ChartData = ChartData(emptyData: true)
+    
+    @Published var marketData: [MarketSummary] = []
+    
+
+    @En
