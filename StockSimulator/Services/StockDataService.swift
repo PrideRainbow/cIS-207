@@ -26,4 +26,6 @@ class StockDataService: ObservableObject {
 //        getQuoteData(searchSymbols: "")
     }
     
-    // I used quickType.i
+    // I used quickType.io to decode the data. It was having trouble with the ExchangeTimeZone Enum, so I changed that to String and it works great now. More data than I need.
+    func getMarketData() {
+      
