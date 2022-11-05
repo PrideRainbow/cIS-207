@@ -19,4 +19,11 @@ class StockDataService: ObservableObject {
     @Published var marketData: [MarketSummary] = []
     
 
-    @En
+    @Environment(\.managedObjectContext) var moc
+    
+    var stockSubscription: AnyCancellable?
+    init() {
+//        getQuoteData(searchSymbols: "")
+    }
+    
+    // I used quickType.i
