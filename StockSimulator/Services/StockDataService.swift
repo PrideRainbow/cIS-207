@@ -33,4 +33,8 @@ class StockDataService: ObservableObject {
         apiCaller.getMarketData { connectionResult in
             switch connectionResult {
             case .marketSummarySuccess(let marketData):
-    
+                self.marketData = marketData
+            case .failure(let string):
+                print("Failure: \(string)")
+            default:
+                print("Found something that was unexpected 
