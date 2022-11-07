@@ -37,4 +37,13 @@ class StockDataService: ObservableObject {
             case .failure(let string):
                 print("Failure: \(string)")
             default:
-                print("Found something that was unexpected 
+                print("Found something that was unexpected in getting MarketData")
+            }
+        }
+        
+    }
+    
+    func getQuoteData(searchSymbols: String)
+    {
+        print("Getting quote data on stock data service")
+        let urlStr
