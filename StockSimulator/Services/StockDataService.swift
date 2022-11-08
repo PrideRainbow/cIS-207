@@ -46,4 +46,6 @@ class StockDataService: ObservableObject {
     func getQuoteData(searchSymbols: String)
     {
         print("Getting quote data on stock data service")
-        let urlStr
+        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
+        //        let urlString = Constants.quoteurlString + "AAPL"
+                guard let url = URL(strin
