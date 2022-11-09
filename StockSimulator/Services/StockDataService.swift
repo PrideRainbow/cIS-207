@@ -53,4 +53,8 @@ class StockDataService: ObservableObject {
                 }
                 var request = URLRequest(url: url)
                 request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
-  
+                request.httpMethod = "GET"
+                
+                let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+
+                    guard let
