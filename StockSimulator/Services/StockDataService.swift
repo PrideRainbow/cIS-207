@@ -48,4 +48,9 @@ class StockDataService: ObservableObject {
         print("Getting quote data on stock data service")
         let urlString = Constants.quoteurlString + searchSymbols.uppercased()
         //        let urlString = Constants.quoteurlString + "AAPL"
-                guard let url = URL(strin
+                guard let url = URL(string: urlString) else {
+                    return
+                }
+                var request = URLRequest(url: url)
+                request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+  
