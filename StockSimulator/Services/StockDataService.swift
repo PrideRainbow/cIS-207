@@ -57,4 +57,6 @@ class StockDataService: ObservableObject {
                 
                 let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
 
-                    guard let
+                    guard let data = data else { return }
+                    do {
+                        guard let results =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:
