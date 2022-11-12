@@ -59,4 +59,8 @@ class StockDataService: ObservableObject {
 
                     guard let data = data else { return }
                     do {
-                        guard let results =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:
+                        guard let results =  try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] else {
+                            print("error in getting JSON")
+                            return
+                        }
+                        if let message = results["m
