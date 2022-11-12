@@ -63,4 +63,9 @@ class StockDataService: ObservableObject {
                             print("error in getting JSON")
                             return
                         }
-                        if let message = results["m
+                        if let message = results["message"] as? String
+                        {
+                            print(message)
+        //                    completion(.failure(message))
+                        }
+           
