@@ -71,4 +71,7 @@ class StockDataService: ObservableObject {
                         do {
                             let json = try JSONSerialization.data(withJSONObject: results)
         //                    print(json)
-                            let decoder = J
+                            let decoder = JSONDecoder()
+                            let quoteSnapshot = try decoder.decode(QuoteSnapshot.self, from: json)
+        //                    print(quoteSnapshot)
+                          
