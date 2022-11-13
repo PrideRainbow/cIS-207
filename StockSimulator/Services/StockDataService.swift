@@ -68,4 +68,7 @@ class StockDataService: ObservableObject {
                             print(message)
         //                    completion(.failure(message))
                         }
-           
+                        do {
+                            let json = try JSONSerialization.data(withJSONObject: results)
+        //                    print(json)
+                            let decoder = J
