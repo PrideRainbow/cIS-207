@@ -76,4 +76,8 @@ class StockDataService: ObservableObject {
         //                    print(quoteSnapshot)
                             self.stockSnapshots = quoteSnapshot.quoteResponse.result
         //                    print("Found these stocks: \(self.stockSnapshots)")
-        //                    completion(.success(quo
+        //                    completion(.success(quoteSnapshot.quoteResponse.result))
+                        }
+                        catch {
+                            print(error)
+        //                    completion(.failure(error.localize
