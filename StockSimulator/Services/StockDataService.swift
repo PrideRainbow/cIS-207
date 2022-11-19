@@ -80,4 +80,10 @@ class StockDataService: ObservableObject {
                         }
                         catch {
                             print(error)
-        //                    completion(.failure(error.localize
+        //                    completion(.failure(error.localizedDescription))
+                        }
+                    }
+                    catch {
+                        print(error)
+        //                completion(.failure(error.localizedDescription))
+   
