@@ -94,4 +94,7 @@ class StockDataService: ObservableObject {
         
         
 //        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
-//    
+//        let apiCaller = APICaller.shared
+//        apiCaller.getQuoteData(searchSymbols: urlString) { connectionResult in
+//            switch connectionResult {
+//            case .success(let sto
