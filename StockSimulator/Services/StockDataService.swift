@@ -86,4 +86,12 @@ class StockDataService: ObservableObject {
                     catch {
                         print(error)
         //                completion(.failure(error.localizedDescription))
-   
+                    }
+                }
+                task.resume()
+        
+        
+        
+        
+//        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
+//    
