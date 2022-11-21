@@ -97,4 +97,8 @@ class StockDataService: ObservableObject {
 //        let apiCaller = APICaller.shared
 //        apiCaller.getQuoteData(searchSymbols: urlString) { connectionResult in
 //            switch connectionResult {
-//            case .success(let sto
+//            case .success(let stockSnapshots):
+//                self.stockSnapshots = stockSnapshots
+//                print("Found \(stockSnapshots.count) stocks")
+//            case .failure(let string):
+//         
