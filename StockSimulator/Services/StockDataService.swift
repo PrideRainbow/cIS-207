@@ -101,4 +101,10 @@ class StockDataService: ObservableObject {
 //                self.stockSnapshots = stockSnapshots
 //                print("Found \(stockSnapshots.count) stocks")
 //            case .failure(let string):
-//         
+//                print("Failure: \(string)")
+//            default:
+//                print("Got unexpected result when loading quote data.")
+//            }
+//        }
+        
+//        le
