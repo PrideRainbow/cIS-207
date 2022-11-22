@@ -107,4 +107,7 @@ class StockDataService: ObservableObject {
 //            }
 //        }
         
-//        le
+//        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
+//        guard let url = URL(string: urlString) else { return }
+//        var request = URLRequest(url: url)
+//        request.allHTTPHeader
