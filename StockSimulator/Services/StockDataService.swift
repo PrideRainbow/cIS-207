@@ -110,4 +110,7 @@ class StockDataService: ObservableObject {
 //        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
 //        guard let url = URL(string: urlString) else { return }
 //        var request = URLRequest(url: url)
-//        request.allHTTPHeader
+//        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
+//        request.httpMethod = "GET"
+//
+//        // Download Data using Combine. The teacher thinks it is the future of iOS Programming. Very po
