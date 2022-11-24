@@ -113,4 +113,6 @@ class StockDataService: ObservableObject {
 //        request.allHTTPHeaderFields = ["x-api-key": Constants.apiKey]
 //        request.httpMethod = "GET"
 //
-//        // Download Data using Combine. The teacher thinks it is the future of iOS Programming. Very po
+//        // Download Data using Combine. The teacher thinks it is the future of iOS Programming. Very powerful. A lot of the code for this has been refractored and put into static functions in NetworkingManager
+//        stockSubscription = NetworkingManager.download(urlRequest: request, url: url)
+//   
