@@ -115,4 +115,6 @@ class StockDataService: ObservableObject {
 //
 //        // Download Data using Combine. The teacher thinks it is the future of iOS Programming. Very powerful. A lot of the code for this has been refractored and put into static functions in NetworkingManager
 //        stockSubscription = NetworkingManager.download(urlRequest: request, url: url)
-//   
+//            .decode(type: [StockSnapshot].self, decoder: JSONDecoder())
+//            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedStocks) in
+//  
