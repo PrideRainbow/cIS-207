@@ -123,4 +123,8 @@ class StockDataService: ObservableObject {
     }
     
     
-//    func updateStockData(searchSymbols: St
+//    func updateStockData(searchSymbols: String, stocks: FetchedResults<Stock>)
+//    {
+//        let urlString = Constants.quoteurlString + searchSymbols.uppercased()
+//        let apiCaller = APICaller.shared
+//        apiCaller.getQuoteData(searchSymbols:
