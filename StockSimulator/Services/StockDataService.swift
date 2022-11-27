@@ -117,4 +117,10 @@ class StockDataService: ObservableObject {
 //        stockSubscription = NetworkingManager.download(urlRequest: request, url: url)
 //            .decode(type: [StockSnapshot].self, decoder: JSONDecoder())
 //            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedStocks) in
-//  
+//                self?.stockSnapshots = returnedStocks
+//                self?.stockSubscription?.cancel()
+//            })
+    }
+    
+    
+//    func updateStockData(searchSymbols: St
