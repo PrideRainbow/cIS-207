@@ -131,4 +131,6 @@ class StockDataService: ObservableObject {
 //            switch connectionResult {
 //            case .success(let stockSnapshots):
 //                self.stockSnapshots = stockSnapshots
-//      
+//                // update Stock prices in CoreData
+//                for snapshot in self.stockSnapshots {
+//                    if let stockCoreData = stocks.first(where: {$0.symbol == snapshot.symbol
