@@ -133,4 +133,8 @@ class StockDataService: ObservableObject {
 //                self.stockSnapshots = stockSnapshots
 //                // update Stock prices in CoreData
 //                for snapshot in self.stockSnapshots {
-//                    if let stockCoreData = stocks.first(where: {$0.symbol == snapshot.symbol
+//                    if let stockCoreData = stocks.first(where: {$0.symbol == snapshot.symbol}) {
+//                        stockCoreData.updateValuesFromStockSnapshot(snapshot: snapshot)
+//
+//                        print("updated values for \(stockCoreData.wrappedSymbol)")
+// 
