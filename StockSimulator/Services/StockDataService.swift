@@ -137,4 +137,11 @@ class StockDataService: ObservableObject {
 //                        stockCoreData.updateValuesFromStockSnapshot(snapshot: snapshot)
 //
 //                        print("updated values for \(stockCoreData.wrappedSymbol)")
-// 
+//                    }
+//
+//                }
+//                try? self.moc.save()
+//            case .failure(let string):
+//                print("Failure: \(string)")
+//            default:
+//
