@@ -144,4 +144,13 @@ class StockDataService: ObservableObject {
 //            case .failure(let string):
 //                print("Failure: \(string)")
 //            default:
-//
+//                print("Got unexpected result when loading quote data.")
+//            }
+//        }
+//    }
+    
+    
+    
+    
+    private struct Constants{
+        static let apiKey = "u0oXim
