@@ -153,4 +153,6 @@ class StockDataService: ObservableObject {
     
     
     private struct Constants{
-        static let apiKey = "u0oXim
+        static let apiKey = "u0oXimhO5g6AIR9DIy85D80DPTAtPQP95l9FiAkk" // started working on 3/12/22
+        static let quoteurlString = "https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols="
+//         'https://yfapi.net/v8/financ
