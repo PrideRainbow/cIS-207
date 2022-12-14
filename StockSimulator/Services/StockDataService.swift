@@ -165,4 +165,12 @@ class StockDataService: ObservableObject {
         static let charturlStringEnd = "&lang=en&events=div%2Csplit"
         
         
-        static let marketSummaryURL =
+        static let marketSummaryURL = "https://yfapi.net/v6/finance/quote/marketSummary?lang=en&region=US"
+    }
+
+}
+
+
+
+
+
