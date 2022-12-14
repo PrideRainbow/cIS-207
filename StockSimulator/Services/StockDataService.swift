@@ -157,4 +157,8 @@ class StockDataService: ObservableObject {
         static let quoteurlString = "https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols="
 //         'https://yfapi.net/v8/finance/chart/AAPL?range=1d&region=US&interval=5m&lang=en&events=div%2Csplit'
         
-//        "https://yfapi.net/v8/finance/chart/AAPL?range=1mo&region=US&interval=1d&lang=e
+//        "https://yfapi.net/v8/finance/chart/AAPL?range=1mo&region=US&interval=1d&lang=en&events=div%2Csplit"
+        static let charturlStringStart = "https://yfapi.net/v8/finance/chart/"
+        
+        static let charturlRange = "?range="
+        sta
