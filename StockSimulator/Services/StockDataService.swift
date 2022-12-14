@@ -161,4 +161,8 @@ class StockDataService: ObservableObject {
         static let charturlStringStart = "https://yfapi.net/v8/finance/chart/"
         
         static let charturlRange = "?range="
-        sta
+        static let charturlStringInterval = "&region=US&interval="
+        static let charturlStringEnd = "&lang=en&events=div%2Csplit"
+        
+        
+        static let marketSummaryURL =
