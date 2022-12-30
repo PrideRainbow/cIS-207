@@ -20,4 +20,12 @@ class NetworkingManager {
             case .badURLResponse(url: let url):
                 return "[🔥] Bad response from the URL: \(url)"
             case .unknown:
-                return "[⚠️] unknow
+                return "[⚠️] unknown error occurred"
+            }
+        }
+    }
+    
+    static func download(urlRequest: URLRequest, url: URL) -> AnyPublisher<Data, Error> {
+        
+        
+        return URLSession.shared.dataTaskPublis
