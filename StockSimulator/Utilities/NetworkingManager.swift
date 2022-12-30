@@ -9,4 +9,11 @@ import Foundation
 import Combine
 
 
-class Network
+class NetworkingManager {
+    
+    enum NetworkingError: LocalizedError {
+        case badURLResponse(url: URL)
+        case unknown
+        
+        var errorDescription: String? {
+            switc
