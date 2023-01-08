@@ -31,4 +31,8 @@ class NetworkingManager {
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .subscribe(on: DispatchQueue.global(qos: .default)) // background thread
             .tryMap({ try handleURLResponse(output: $0, url: url)})
-            .receive(on: Dis
+            .receive(on: DispatchQueue.main) // main thread
+            .eraseToAnyPublisher() // converts the Publisher to AnyPublisher, so we have a nice return type
+    }
+    
+    static func handleURLResponse(ou
