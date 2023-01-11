@@ -35,4 +35,6 @@ class NetworkingManager {
             .eraseToAnyPublisher() // converts the Publisher to AnyPublisher, so we have a nice return type
     }
     
-    static func handleURLResponse(ou
+    static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
+        guard let response = output.response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode < 300 else {
+      
