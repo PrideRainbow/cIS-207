@@ -266,3 +266,201 @@
 			children = (
 				380958B627EE1CB000705D9F /* StockDetailView.swift */,
 				83813CB827E7EDFA009344FE /* StockBasicView.swift */,
+				83FA26E627B85F38008DA2BC /* StockSearchView.swift */,
+				83FA26E327B82461008DA2BC /* StockRow.swift */,
+				833859F1288DD0C9002AF992 /* StatisticView.swift */,
+				838C220E28B999DF008BA3CB /* StatisticRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837EEB1D289AC96400EA539D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83385A0128921841002AF992 /* StockDetailViewModel.swift */,
+				8386139E2835249000FFBC34 /* StocksViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837EEB1E289AC98400EA539D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				837EEB22289AC9A300EA539D /* ViewModels */,
+				837EEB1F289AC98F00EA539D /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		837EEB1F289AC98F00EA539D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83D3FD2227A5FEF800F3746B /* ContentView.swift */,
+				383B41872857C2EA00586B2E /* HomeView.swift */,
+				83A64690285FA0F100B659E2 /* MarketSummaryRow.swift */,
+				83A646922860016700B659E2 /* MarketSummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837EEB22289AC9A300EA539D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83C1310B28CC0A5D0055D7C0 /* MarketSummaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837EEB23289AC9E400EA539D /* Watchlists */ = {
+			isa = PBXGroup;
+			children = (
+				837EEB25289AC9F800EA539D /* ViewModels */,
+				837EEB24289AC9F200EA539D /* Views */,
+			);
+			path = Watchlists;
+			sourceTree = "<group>";
+		};
+		837EEB24289AC9F200EA539D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8368B3F627D2BB06008AF135 /* AddWatchlistView.swift */,
+				839E97F227DE77CA0017C9AE /* WatchlistView.swift */,
+				8368B3FC27D2BD90008AF135 /* WatchlistsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837EEB25289AC9F800EA539D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837EEB26289ACA1B00EA539D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				837EEB28289ACA2F00EA539D /* ViewModels */,
+				837EEB27289ACA2600EA539D /* Views */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		837EEB27289ACA2600EA539D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83FA270A27BDF424008DA2BC /* AccountsView.swift */,
+				83F9F71627CAB04D00C14D87 /* AccountView.swift */,
+				83A6466C2856654400B659E2 /* DepositView.swift */,
+				83F9F71227CAAA4100C14D87 /* AccountRow.swift */,
+				83FA270C27BDF46D008DA2BC /* AddAccountView.swift */,
+				839E97F627E2B8450017C9AE /* AssetView.swift */,
+				839E97EC27DD9DC10017C9AE /* AssetRow.swift */,
+				833859E9288755F3002AF992 /* TransactionsView.swift */,
+				83F471DA29778234008A4A7F /* EditTransactionView.swift */,
+				833859EB2889855C002AF992 /* TransactionRow.swift */,
+				83F9F71827CAED9900C14D87 /* TradeFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837EEB28289ACA2F00EA539D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38E8B4FB285264200084843A /* AccountViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837EEB29289ACA6D00EA539D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				837EEB2B289ACA7F00EA539D /* ViewModels */,
+				837EEB2A289ACA7900EA539D /* Views */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		837EEB2A289ACA7900EA539D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83813CE627ED589E009344FE /* LineGraph.swift */,
+				83E86FBA27FA4010000A454D /* ChartLoader.swift */,
+				83813CE027ED528C009344FE /* ChartView.swift */,
+				838C221428BA6172008BA3CB /* BarChartView.swift */,
+				838C221E28BA6FAE008BA3CB /* BarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		837EEB2B289ACA7F00EA539D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83813CEB27F27FEF009344FE /* ChartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837EEB2C289ACC6D00EA539D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				837EEB2D289ACC9100EA539D /* CircleButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		838AD1A52808FBEB0035F0C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				838613A428352B8100FFBC34 /* Array.swift */,
+				838AD1A62808FBFD0035F0C5 /* Color.swift */,
+				838613A028352B2600FFBC34 /* Double.swift */,
+				838613A228352B5A00FFBC34 /* Date.swift */,
+				838613A628352BBD00FFBC34 /* UIApplication.swift */,
+				838613A828352BED00FFBC34 /* PreviewProvider.swift */,
+				83385A0328921AEF002AF992 /* Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		838AD1A82809005D0035F0C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				83C961FA28ABE6FD0019627B /* Launch */,
+				837EEB2C289ACC6D00EA539D /* Components */,
+				837EEB29289ACA6D00EA539D /* Charts */,
+				837EEB26289ACA1B00EA539D /* Accounts */,
+				837EEB23289AC9E400EA539D /* Watchlists */,
+				837EEB1E289AC98400EA539D /* Home */,
+				837EEB1B289AC94F00EA539D /* Stocks */,
+				837EEB17289AC8A500EA539D /* Settings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		83C961FA28ABE6FD0019627B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				83C961FB28ABE7050019627B /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		83C961FB28ABE7050019627B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83C961FC28ABE7170019627B /* LaunchScreen.storyboard */,
+				83C961FE28ABE72D0019627B /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83D3FD1427A5FEF800F3746B = {
+			isa = PBXGroup;
+			children = (
+				83D3FD1F27A5FEF800F3746B /* StockSimulator */,
+				83D3FD3527A5FEF800F3746B /* StockSimulatorTests */,
+				83D3FD3F27A5FEF800F3746B /* StockSimulatorUITests */,
+				83D3FD1E27A5FEF800F3746B /* Products */,
+			);
+			sourceTree = "<group>";
