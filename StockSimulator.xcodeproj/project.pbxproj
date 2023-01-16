@@ -659,3 +659,213 @@
 		83D3FD3027A5FEF800F3746B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D3FD3A27A5FEF800F3746B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D3FD1927A5FEF800F3746B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83385A0428921AEF002AF992 /* Codable.swift in Sources */,
+				838613A728352BBD00FFBC34 /* UIApplication.swift in Sources */,
+				837EEB12289A022900EA539D /* HapticManager.swift in Sources */,
+				83813CB927E7EDFA009344FE /* StockBasicView.swift in Sources */,
+				83F9F71927CAED9900C14D87 /* TradeFormView.swift in Sources */,
+				8368B40627D2C57C008AF135 /* Watchlist+CoreDataClass.swift in Sources */,
+				8339E2DF2885EACE006C3F63 /* Transaction+CoreDataClass.swift in Sources */,
+				83F9F71327CAAA4100C14D87 /* AccountRow.swift in Sources */,
+				38E8B4FC285264200084843A /* AccountViewModel.swift in Sources */,
+				839E97ED27DD9DC10017C9AE /* AssetRow.swift in Sources */,
+				8368B3D527D05B30008AF135 /* DataController.swift in Sources */,
+				83813CBF27EAA328009344FE /* ChartData.swift in Sources */,
+				839E97F327DE77CA0017C9AE /* WatchlistView.swift in Sources */,
+				83D3FD2327A5FEF800F3746B /* ContentView.swift in Sources */,
+				83385A0628986F22002AF992 /* StockRecomendations.swift in Sources */,
+				833859EA288755F3002AF992 /* TransactionsView.swift in Sources */,
+				833265172874C18900E7FA8C /* Account+CoreDataProperties.swift in Sources */,
+				838AD1A72808FBFD0035F0C5 /* Color.swift in Sources */,
+				8368B3F727D2BB06008AF135 /* AddWatchlistView.swift in Sources */,
+				838F679E2886045C005E3BA0 /* Dividend+CoreDataClass.swift in Sources */,
+				837EEB3228A2CB7500EA539D /* HomeView2.swift in Sources */,
+				83385A002891BD1B002AF992 /* Stock+CoreDataProperties.swift in Sources */,
+				383B41862857BD6D00586B2E /* MarketSummary.swift in Sources */,
+				838C221528BA6172008BA3CB /* BarChartView.swift in Sources */,
+				380958B727EE1CB000705D9F /* StockDetailView.swift in Sources */,
+				38CD5C89284E7DE100E96954 /* Persistence.swift in Sources */,
+				838613A328352B5A00FFBC34 /* Date.swift in Sources */,
+				83C1310C28CC0A5D0055D7C0 /* MarketSummaryViewModel.swift in Sources */,
+				837EEB1A289AC8BC00EA539D /* SettingsView.swift in Sources */,
+				8368B3FD27D2BD90008AF135 /* WatchlistsView.swift in Sources */,
+				833265162874C18900E7FA8C /* Account+CoreDataClass.swift in Sources */,
+				83385A0228921841002AF992 /* StockDetailViewModel.swift in Sources */,
+				83FA270D27BDF46D008DA2BC /* AddAccountView.swift in Sources */,
+				83A64691285FA0F100B659E2 /* MarketSummaryRow.swift in Sources */,
+				838F679C2886045C005E3BA0 /* Split+CoreDataClass.swift in Sources */,
+				833859EC2889855C002AF992 /* TransactionRow.swift in Sources */,
+				83C961FF28ABE72D0019627B /* LaunchView.swift in Sources */,
+				83813CEC27F27FEF009344FE /* ChartViewModel.swift in Sources */,
+				83A6466D2856654400B659E2 /* DepositView.swift in Sources */,
+				8368B40727D2C57C008AF135 /* Watchlist+CoreDataProperties.swift in Sources */,
+				83F9F71527CAAB2600C14D87 /* Asset.swift in Sources */,
+				83FA26E427B82461008DA2BC /* StockRow.swift in Sources */,
+				8368B3F527D2B936008AF135 /* StockSnapshot.swift in Sources */,
+				837EEB2E289ACC9100EA539D /* CircleButton.swift in Sources */,
+				383B41882857C2EA00586B2E /* HomeView.swift in Sources */,
+				833859FF2891BD1B002AF992 /* Stock+CoreDataClass.swift in Sources */,
+				83C961F928ABE6E70019627B /* LineGraphView.swift in Sources */,
+				838C220F28B999DF008BA3CB /* StatisticRow.swift in Sources */,
+				833859F2288DD0C9002AF992 /* StatisticView.swift in Sources */,
+				838613A528352B8100FFBC34 /* Array.swift in Sources */,
+				83813CE127ED528C009344FE /* ChartView.swift in Sources */,
+				833859F4288DD0FD002AF992 /* StatisticModel.swift in Sources */,
+				839CD19A281987E500DFC77B /* NetworkingManager.swift in Sources */,
+				838613A928352BED00FFBC34 /* PreviewProvider.swift in Sources */,
+				83E86FBB27FA4010000A454D /* ChartLoader.swift in Sources */,
+				83FA270B27BDF424008DA2BC /* AccountsView.swift in Sources */,
+				83813CE727ED589E009344FE /* LineGraph.swift in Sources */,
+				83813CE527ED5461009344FE /* ChartMockData.swift in Sources */,
+				837EEB102899A83500EA539D /* QuoteSummary.swift in Sources */,
+				83F471DB29778234008A4A7F /* EditTransactionView.swift in Sources */,
+				838F679F2886045C005E3BA0 /* Dividend+CoreDataProperties.swift in Sources */,
+				83D3FD2127A5FEF800F3746B /* StockSimulatorApp.swift in Sources */,
+				838C221F28BA6FAE008BA3CB /* BarView.swift in Sources */,
+				83FA26E727B85F38008DA2BC /* StockSearchView.swift in Sources */,
+				838F679D2886045C005E3BA0 /* Split+CoreDataProperties.swift in Sources */,
+				83F9F71727CAB04D00C14D87 /* AccountView.swift in Sources */,
+				8386139F2835249000FFBC34 /* StocksViewModel.swift in Sources */,
+				83D3FD2D27A5FEF800F3746B /* StockSimulator.xcdatamodeld in Sources */,
+				836E864E281625E8006EB6D9 /* StockDataService.swift in Sources */,
+				8339E2E02885EACE006C3F63 /* Transaction+CoreDataProperties.swift in Sources */,
+				83D3FD5627A60E7D00F3746B /* APICaller.swift in Sources */,
+				83A646932860016800B659E2 /* MarketSummaryView.swift in Sources */,
+				838613A128352B2600FFBC34 /* Double.swift in Sources */,
+				839E97F727E2B8450017C9AE /* AssetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D3FD2E27A5FEF800F3746B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D3FD3727A5FEF800F3746B /* StockSimulatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D3FD3827A5FEF800F3746B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D3FD4327A5FEF800F3746B /* StockSimulatorUITestsLaunchTests.swift in Sources */,
+				83D3FD4127A5FEF800F3746B /* StockSimulatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83D3FD3427A5FEF800F3746B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D3FD1C27A5FEF800F3746B /* StockSimulator */;
+			targetProxy = 83D3FD3327A5FEF800F3746B /* PBXContainerItemProxy */;
+		};
+		83D3FD3E27A5FEF800F3746B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D3FD1C27A5FEF800F3746B /* StockSimulator */;
+			targetProxy = 83D3FD3D27A5FEF800F3746B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83D3FD4427A5FEF800F3746B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83D3FD4527A5FEF800F3746B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
