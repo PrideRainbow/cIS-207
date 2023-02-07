@@ -1064,3 +1064,36 @@
 		};
 		83D3FD4927A5FEF800F3746B /* Build configuration list for PBXNativeTarget "StockSimulatorTests" */ = {
 			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D3FD4A27A5FEF800F3746B /* Debug */,
+				83D3FD4B27A5FEF800F3746B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D3FD4C27A5FEF800F3746B /* Build configuration list for PBXNativeTarget "StockSimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D3FD4D27A5FEF800F3746B /* Debug */,
+				83D3FD4E27A5FEF800F3746B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83D3FD2B27A5FEF800F3746B /* StockSimulator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83D3FD2C27A5FEF800F3746B /* StockSimulator.xcdatamodel */,
+			);
+			currentVersion = 83D3FD2C27A5FEF800F3746B /* StockSimulator.xcdatamodel */;
+			path = StockSimulator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 83D3FD1527A5FEF800F3746B /* Project object */;
+}
