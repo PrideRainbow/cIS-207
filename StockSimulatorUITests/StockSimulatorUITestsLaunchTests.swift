@@ -10,4 +10,13 @@ import XCTest
 class StockSimulatorUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        tr
+        true
+    }
+
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+    }
+
+    func testLaunch() throws {
+        let app = XCUIApplication()
+        app.launch()
